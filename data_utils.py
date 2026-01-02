@@ -1,10 +1,37 @@
 def get_baseline_dataset(df):
-    current = df[df["status"] == "ACTIVE"].copy()
-    X = current["position"]
-    y_department = current["department"]
-    y_seniority = current["seniority"]
-    meta = current[["cv_id"]]
+    """
+    Baseline dataset:
+    - uses only the current ACTIVE job title
+    - keeps only CVs with exactly one ACTIVE job
+    """
+
+    rows = []
+
+    for cv_id, cv_df in df.groupby("cv_id"):
+        active_jobs = cv_df[cv_df["status"] == "ACTIVE"]
+
+        # Require exactly one active job
+        if len(active_jobs) != 1:
+            continue
+
+        current = active_jobs.iloc[0]
+
+        rows.append({
+            "cv_id": cv_id,
+            "text": current["position"],
+            "department": current["department"],
+            "seniority": current["seniority"],
+        })
+
+    base = pd.DataFrame(rows)
+
+    X = base["text"]
+    y_department = base["department"]
+    y_seniority = base["seniority"]
+    meta = base[["cv_id"]]
+
     return X, y_department, y_seniority, meta
+
 
 
 def get_extended_dataset(df):
