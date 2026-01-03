@@ -1,3 +1,4 @@
+import pandas as pd
 def normalize_text(text):
     """
     Minimal text normalization for rule-based baseline.
