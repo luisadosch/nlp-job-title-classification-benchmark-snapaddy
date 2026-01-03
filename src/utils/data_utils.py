@@ -1,4 +1,7 @@
 import pandas as pd
+
+# make pd available even if module was cached incorrectly
+globals()["pd"] = pd
 def get_baseline_dataset(df):
     """
     Baseline dataset:
