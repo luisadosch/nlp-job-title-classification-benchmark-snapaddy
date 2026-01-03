@@ -1,5 +1,5 @@
 import pandas as pd
-from utils.data_utils import get_baseline_dataset, get_extended_dataset
+
 
 def data_preparation_pipeline(
     df,
