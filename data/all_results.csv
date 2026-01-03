@@ -1,0 +1,5 @@
+model,target,extension,accuracy,macro_f1
+Rule-based,department,False,0.6026315789473684,0.44918940911600075
+Rule-based,department,True,0.4368421052631579,0.30458751010937224
+Rule-based,seniority,False,0.5368421052631579,0.42616200731397247
+Rule-based,seniority,True,0.13421052631578947,0.02639751552795031
