@@ -24,6 +24,7 @@ def get_baseline_dataset(df):
             "seniority": current["seniority"],
         })
 
+    import pandas as pd
     base = pd.DataFrame(rows)
 
     X = base["text"]
@@ -73,6 +74,7 @@ def get_extended_dataset(df):
             "seniority": current["seniority"],
         })
 
+    import pandas as pd
     ext = pd.DataFrame(rows)
 
     X = ext["text"]
