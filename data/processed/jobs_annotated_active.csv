@@ -1,0 +1,624 @@
+row_id,cv_id,job_index,organization,position,startDate,endDate,status,department,seniority
+0,0,0,Depot4Design GmbH,Prokurist,2019-08,,ACTIVE,Other,Management
+1,0,1,Depot4Design GmbH,CFO,2019-07,,ACTIVE,Other,Management
+2,0,2,Depot4Design GmbH,Betriebswirtin,2019-07,,ACTIVE,Other,Professional
+3,0,3,Depot4Design GmbH,Prokuristin,2019-07,,ACTIVE,Other,Management
+4,0,4,Depot4Design GmbH,CFO,2019-07,,ACTIVE,Other,Management
+5,1,0,Computer Solutions,Solutions Architect,2024-03,,ACTIVE,Information Technology,Professional
+6,2,0,Udo Weber,Medizintechnik Beratung,2025-01,,ACTIVE,Consulting,Professional
+7,3,0,Grupo Viajes Kontiki.,Director expansión de negocio.,2024-09,,ACTIVE,Business Development,Director
+8,3,1,Air & Ground Operations Consultancy,Gerente comercial,2024-04,,ACTIVE,Sales,Lead
+9,3,2,Viajes Oceano S.L.,Administrador Unico,2010-12,,ACTIVE,Administrative,Professional
+10,4,0,Himmelstalunds Utbildningscentrum,"APL-ansvarig, samordning",2019-08,,ACTIVE,Administrative,Lead
+11,5,0,FSD Fahrzeugsystemdaten GmbH,Kaufmännischer Leiter,2007-05,,ACTIVE,Sales,Lead
+12,6,0,MacDermid Enthone Industrial Solutions,Lab-Supervisor,2007,,ACTIVE,Other,Lead
+13,7,0,Boise Cascade Company,Human Resources Generalist,2023-12,,ACTIVE,Human Resources,Professional
+14,8,0,PhoboSys GmbH,Managing Director,2016-01,,ACTIVE,Other,Management
+15,11,0,Twentieth Century Fox,Set Lighting,2000-01,,ACTIVE,Other,Professional
+16,11,1,Sony,Set Lighting,2000-01,,ACTIVE,Other,Professional
+17,11,2,Warner Bros. Studios,Set Lighting,2000-01,,ACTIVE,Other,Professional
+18,11,3,Paramount,Set Lighting,2000-01,,ACTIVE,Other,Professional
+19,11,4,NBCUniversal,Set Lighting,2000-01,,ACTIVE,Other,Professional
+20,12,0,msg systems ag,Projektmanager,2018-02,,ACTIVE,Project Management,Professional
+21,13,0,Landeshauptstadt Wiesbaden,Leistungssachbearbeiter SGB II,2017-12,,ACTIVE,Other,Professional
+22,14,0,ee concept gmbh,energy and sustainability consultant bei,2014-01,,ACTIVE,Consulting,Professional
+23,15,0,ACCOPPIATURA DI ASOLO S.P.A.,Purchasing Manager,2019-09,,ACTIVE,Purchasing,Professional
+24,16,0,Team Jösten,Geschäftsführer,2005-07,,ACTIVE,Other,Management
+25,18,0,Swiss Life Asset Managers Deutschland,Senior Project Manager,2021-09,,ACTIVE,Project Management,Senior
+26,20,0,Selbstständig,Dr. phil.,2024-09,,ACTIVE,Other,Professional
+27,21,0,Thurm GmbH,"Geschäftsführer, CMO",2014-07,,ACTIVE,Marketing,Management
+28,21,1,Gebrüder Weiß & Cie. KG,Geschäftsführender Gesellschafter,2012-01,,ACTIVE,Other,Management
+29,22,0,Vorruhestand,Bereichsleiter Maschinen,1996-07,,ACTIVE,Other,Lead
+30,23,0,Etse Electronics (Pty) Ltd,Principal RF Design Engineer,2003-09,,ACTIVE,Information Technology,Senior
+31,24,0,Tallahassee Orthopedic Clinic,Physician Assistant,2023-01,,ACTIVE,Other,Professional
+32,27,0,Stork Lijmen,Co-Owner,2002-01,,ACTIVE,Other,Management
+33,27,1,Stork Lijmen,CEO,2002-01,,ACTIVE,Other,Management
+34,27,2,ESBA Horti Solutions BV,CEO/Founder,2015-12,,ACTIVE,Other,Management
+35,30,1,VR Bank Lahn-Dill,Qualifizierter Kreditsachbearbeiter im risikorelevanten Kreditgeschäft,1992-08,,ACTIVE,Other,Professional
+36,31,0,Consultant Juridique International Ltd,Director,2025-03,,ACTIVE,Other,Director
+37,32,0,TALLY WEiJL,IT Systems and Network Engineer,2021-11,,ACTIVE,Information Technology,Professional
+38,33,0,ALIUD PHARMA GmbH,IT-Teamleiter,2022-08,,ACTIVE,Information Technology,Lead
+39,33,1,ALIUD PHARMA GmbH,Senior IT-Sicherheitsbeauftragter,2010-01,,ACTIVE,Information Technology,Senior
+40,33,2,ALIUD PHARMA GmbH,IT-Systemadministrator,2002-09,,ACTIVE,Information Technology,Professional
+41,34,0,Hypergene,Senior Project Manager,2022-10,,ACTIVE,Project Management,Senior
+42,36,0,Giesecke+Devrient,Head of HR/CHRO,2021-10,,ACTIVE,Human Resources,Lead
+43,39,0,Quest ontheFRONTIER,Human Resources Consultant,2024-12,,ACTIVE,Consulting,Professional
+44,41,0,Exelonix GmbH,Managing Director,2013-02,,ACTIVE,Other,Management
+45,44,0,FRANK GmbH,Product Manager,2023-11,,ACTIVE,Project Management,Professional
+46,45,0,Norra Halland,Reporter,2024-06,,ACTIVE,Other,Professional
+47,45,1,Levantine Bistro,Waiter & Bartender,2024-03,,ACTIVE,Other,Professional
+48,46,0,EnBet Consulting,Geschäftsführer,2021-02,,ACTIVE,Other,Management
+49,47,0,TOPMOTIVE,CEO / Managing Shareholder,2013,,ACTIVE,Other,Management
+50,47,2,DigitalNativeAlliance,Member of the Advisory Board,2025-01,,ACTIVE,Other,Management
+51,47,3,Studien- und Fördergesellschaft der Schleswig-Holsteinischen Wirtschaft e.V.,Member of the Advisory Board,2022-08,,ACTIVE,Other,Management
+52,49,0,Wehner Consulting GmbH,Geschäftsführer,2019-06,,ACTIVE,Other,Management
+53,50,0,Kampffmeyer Food Innovation GmbH,Director Sales,1989-01,,ACTIVE,Sales,Director
+54,51,0,Lufthansa,Sub-Stream Lead Simplify | Turnaround Programs,2025-01,,ACTIVE,Project Management,Lead
+55,52,0,noury AG,Chief Revenue Officer (CRO),2024-11,,ACTIVE,Sales,Management
+56,54,0,Nordson Adhesive Dispensing Systems,Business Development Manager,2024-03,,ACTIVE,Business Development,Professional
+57,55,0,myclimate,Projektleiterin Bildung,2021-06,,ACTIVE,Other,Lead
+58,56,0,Dreamcatcher Alley,Co Owner,2007,,ACTIVE,Other,Management
+59,57,0,Desjardins,"Practice Leader, Data Valorization Strategy",2025,,ACTIVE,Consulting,Lead
+60,58,0,Sedef Shipbuilding Inc.,iş güvenliği,2020-02,,ACTIVE,Other,Professional
+61,59,0,Giganet Services GmbH,Geschäftsführer bei Giganet Services GmbH,2024-09,,ACTIVE,Other,Management
+62,59,1,Expert Link GmbH,Owner,2010-02,,ACTIVE,Other,Management
+63,60,0,moodley,Strategic Design Director,2021-09,,ACTIVE,Marketing,Director
+64,61,0,FC Bayern München,Museumspädagoge,2024-10,,ACTIVE,Other,Professional
+65,61,1,Vulkankultour GmbH,Geschäftsführer,2005-06,,ACTIVE,Other,Management
+66,62,0,Nextwo Co.,Technical Team Lead,2024-02,,ACTIVE,Information Technology,Lead
+67,63,0,WIDMER Skippers,Managing Director,2017,,ACTIVE,Other,Management
+68,64,0,Augustin Entsorgung Holding GnbH,Gesellschafter,1993-01,,ACTIVE,Other,Management
+69,65,0,VTA Verfahrenstechnische Anlagen GmbH & Co. KG,Maschinenbautechniker,2008-09,,ACTIVE,Other,Professional
+70,66,0,Henkel,Technical Customer Service Manager - Flexible Packaging,2021-01,,ACTIVE,Customer Support,Lead
+71,67,0,Selecty,Java Software Engineer,2023-01,,ACTIVE,Information Technology,Professional
+72,68,0,Fieldspace Property Group,New Business Manager,2024-06,,ACTIVE,Business Development,Lead
+73,69,0,Atlassian,Strategic Engagement Manager,2023-06,,ACTIVE,Business Development,Lead
+74,70,1,EDAG Engineering GmbH,Projektmanager,1987,,ACTIVE,Project Management,Professional
+75,72,0,Austria Wirtschaftsservice,Head of aws Preseed and Seedfinancing - Innovative Solutions,2023-05,,ACTIVE,Other,Lead
+76,72,4,Vitamin Well AB,Brand Ambassador,2019-09,,ACTIVE,Marketing,Professional
+77,73,0,Murata Vios,Director of Product Management,2022-01,,ACTIVE,Project Management,Director
+78,74,0,Children's Wisconsin,Executive Director of Therapies and Developmental Services,2024-10,,ACTIVE,Other,Director
+79,76,0,Axians NEO Solutions & Technology GmbH,Projektmanager,2025-01,,ACTIVE,Project Management,Professional
+80,77,0,Körber Technologies,Project Engineer Process Technology - Future Farming,2024-07,,ACTIVE,Information Technology,Professional
+81,78,0,SOR Eğitim Danışmanlık,Kurucu Ortak,2021-12,,ACTIVE,Other,Management
+82,78,1,Serbest çalışan,Danışmanlık,2017-01,,ACTIVE,Consulting,Professional
+83,79,0,Cranfield University School of Management,Digital Marketing Manager,2008-06,,ACTIVE,Marketing,Professional
+84,80,0,"Bureau Maaiveld, het breed inzetbare bureau voor ontwikkeling",Eigenaar,2015-01,,ACTIVE,Other,Management
+85,80,1,Theatergroep Maaistoff,Theatermaker,2017-04,,ACTIVE,Other,Professional
+86,80,2,Het Betere Goede Gesprek,Trainer/coach,2017-06,,ACTIVE,Project Management,Professional
+87,80,3,Dubbel E Acteerservice B.V.: voor Echte Trainingsacteurs,Trainingsacteur en trainer,2019-01,,ACTIVE,Consulting,Professional
+88,80,4,Ministerie van Justitie en Veiligheid - NIFP,Co trainer/trainingsacteur,2006-08,,ACTIVE,Other,Professional
+89,80,5,Theater A la Carte,Acteur en theatermaker,2015-01,,ACTIVE,Other,Professional
+90,80,7,Hogeschool Utrecht,Trainer/docent,2019-09,,ACTIVE,Human Resources,Professional
+91,80,8,Diverse opdrachtgevers,"Freelance acteur, regisseur en scriptschrijver",1995,,ACTIVE,Other,Professional
+92,81,0,Byldis,Procurement Manager Strategische Inkoop,2024-02,,ACTIVE,Purchasing,Professional
+93,81,1,Byldis,Strategisch inkoper,2024-02,,ACTIVE,Purchasing,Professional
+94,83,0,Rüdisühli Rechtsanwälte Part mbB,Partner,2019-07,,ACTIVE,Business Development,Management
+95,84,0,Naval Sea Systems Command (NAVSEA) SUPSHIP San Diego,Lead Naval Architect,2024-11,,ACTIVE,Other,Lead
+96,85,0,Nidec Control Techniques,Inside Sales,1988-08,,ACTIVE,Sales,Professional
+97,86,0,"Detlef Meyer ""DM108.de - LEH Vertrieb""",Key-Account-Manager,2020-08,,ACTIVE,Sales,Professional
+98,89,0,s h e d,Managing Director,2011-11,,ACTIVE,Other,Management
+99,90,0,Paul Schockemöhle Logistics GmbH & Co. KG,Berufskraftfahrer,2009-02,,ACTIVE,Other,Professional
+100,91,0,HEINZ-GLAS Produktion GmbH & Co KGaA,Head of Glass Technology,2013,,ACTIVE,Other,Lead
+101,93,0,Nagel-Group,Key-Account-Manager,2022-01,,ACTIVE,Sales,Professional
+102,95,0,Dow Jones Local Media Group,Accounting Manager,2004-10,,ACTIVE,Other,Lead
+103,96,0,TTS NMF GmbH,Interims Technical Manager,2014-02,,ACTIVE,Information Technology,Lead
+104,97,0,"MADELINE STUART & ASSOCIATES, INC.",Project Manager,2022-04,,ACTIVE,Project Management,Professional
+105,98,0,Cassini Consulting AG,Management Consultant Information Security and Privacy,2022-12,,ACTIVE,Consulting,Professional
+106,99,0,Dr. Zanda Martens MdB | Büro Düsseldorf,Büroleiter | Pressesprecher,2021-12,,ACTIVE,Administrative,Lead
+107,101,0,Stadt Zug,Departementssekretär Finanz,2005-09,,ACTIVE,Other,Professional
+108,102,0,Aximpro,Managing Director,2024-10,,ACTIVE,Other,Management
+109,105,0,PwC Switzerland,Senior Manager Strategy & Business Transformation Health,2023-03,,ACTIVE,Consulting,Senior
+110,105,1,Berner Fachhochschule BFH,Lehrbeauftragter,2024-10,,ACTIVE,Consulting,Lead
+111,106,0,Deloitte,Manager | Mergers & Acquisitions,2022-12,,ACTIVE,Other,Professional
+112,107,0,Roche Pharmaceuticals,Technical Transfer Leader,2010-12,,ACTIVE,Consulting,Lead
+113,108,0,Helly Hansen,Account manager / Sælger Helly Hansen Workwear Sjælland & Bornholm,2024-01,,ACTIVE,Sales,Professional
+114,109,0,agn Gruppe,Geschäftsführender Gesellschafter,2004-01,,ACTIVE,Other,Management
+115,110,0,Peter van Setten Transport B.V.,Director,1996-02,,ACTIVE,Other,Director
+116,112,0,Herz Transporte und Spedition,Unternehmensinhaber,2016-11,,ACTIVE,Other,Management
+117,113,0,KZVK,"Board Member, CFO / Asset Management",2018-04,,ACTIVE,Other,Management
+118,114,0,Tirol Werbung,CEO,2022-05,,ACTIVE,Other,Management
+119,114,1,Tirol Werbung,Arbeitgeber,2022-05,,ACTIVE,Other,Management
+120,115,0,Amazon Web Services (AWS),Finance - AWS Global Private Pricing,2022-05,,ACTIVE,Other,Professional
+121,116,0,Harmonic,Software Developer,2020-07,,ACTIVE,Information Technology,Professional
+122,117,0,SSI SCHÄFER,Vice President Global Head Order Processing / Prokurist,2020-04,,ACTIVE,Other,Management
+123,119,0,DDV Mediengruppe,CEO Morgenpost & TAG 24 | Vertriebsleiter Sächsische Zeitung / Lesermark | CEO MVD Ökoflitzer,1991-10,,ACTIVE,Other,Lead
+124,120,0,Equipnor AS,Key Account / Supply Manager,2002-09,,ACTIVE,Other,Lead
+125,120,1,Hellemyr Eiendom AS,Styreleder / Partner,2003-03,,ACTIVE,Other,Management
+126,124,0,Mercedes-Benz AG,Projektleiter Qualität HV-Batterie,2019-12,,ACTIVE,Project Management,Lead
+127,125,0,Giesecke+Devrient,Global Director Head of Portfolio and Business Development Global Service,2021-07,,ACTIVE,Business Development,Director
+128,127,0,Thayer Academy,Summer Camp Counselor,2019-06,,ACTIVE,Other,Professional
+129,128,0,Davidson Kempner Capital Management,Project Lead for Swap Re-engineering Project,2024-09,,ACTIVE,Project Management,Lead
+130,128,1,FILLY BROOK LTD,Business Owner,2019-03,,ACTIVE,Other,Management
+131,129,0,Frankfurt School of Finance & Management,Kanzler / CFO,2017-11,,ACTIVE,Other,Management
+132,129,1,Frankfurt School of Finance & Management,Kaufmännische Leiterin,2015-04,,ACTIVE,Other,Lead
+133,129,2,Frankfurt School of Finance & Management,Head of Accounting & Controlling,2009-01,,ACTIVE,Other,Lead
+134,129,3,Frankfurt School of Finance & Management,"Member of the Board, Frankfurt School Stiftung",2010-03,,ACTIVE,Other,Management
+135,131,0,Lebenhilfe Augsburg,Personalleiter,2025-04,,ACTIVE,Human Resources,Lead
+136,131,1,Selbstständig,Rechtsanwalt,1995-06,,ACTIVE,Other,Professional
+137,132,0,The Johns Hopkins University,Assistant Director of Prospect Management and Data Analytics,2023-07,,ACTIVE,Other,Director
+138,132,1,michaelbtager.com,"Writer, Editor, Publisher",2012-08,,ACTIVE,Marketing,Professional
+139,133,0,Jugendmusikschule Württembergisches Allgäu,"Klavierlehrer, Korrepetitor",2001-09,,ACTIVE,Other,Professional
+140,134,0,Alexander Hughes Germany / Alexander Hughes International,Managing Partner / Group Managing Board,2006-02,,ACTIVE,Other,Management
+141,135,0,Queensland Corrective Services,Manager,2025-01,,ACTIVE,Other,Professional
+142,136,0,Black Forest Business Solutions,Founder and Senior Partner,2012-01,,ACTIVE,Consulting,Management
+143,137,0,LÖHR & BECKER Aktiengesellschaft,Vorsitzender des Vorstandes,2002-06,,ACTIVE,Other,Management
+144,138,0,FTI Engineering Network GmbH,Head of Engineering,2022-07,,ACTIVE,Information Technology,Lead
+145,140,0,FedEx Express,District Sales manager,1995-06,,ACTIVE,Sales,Lead
+146,141,0,EFG Bank,Assistant Treasurer Real Estate,2017-04,,ACTIVE,Other,Junior
+147,141,1,BSI Bank,Assistant Treasurer Real Estate,2008-07,,ACTIVE,Other,Junior
+148,142,0,NP4 GmbH,Managing Dircector,1997-11,,ACTIVE,Other,Management
+149,143,0,SouthEast Bank,Director of Business Analysts and Special Projects,2025-02,,ACTIVE,Information Technology,Director
+150,144,0,EDAG Austria,Robotertechniker,2020,,ACTIVE,Information Technology,Professional
+151,145,0,Sozialversicherung der Selbständigen,OÖ Koordinator für das Team der Bereiche Beschlagwortung / Zustellproblem,2023-01,,ACTIVE,Purchasing,Lead
+152,145,1,Sozialversicherung der Selbständigen,Sachbearbeiter in der Beschlagwortung / Rückpost,2020-08,,ACTIVE,Purchasing,Professional
+153,146,0,IBM iX DACH,Head of Content & Workflows,2024-01,,ACTIVE,Marketing,Lead
+154,146,1,IBM iX DACH,Head Of Business Consulting | Content & Digital Assets,2022-04,,ACTIVE,Other,Lead
+155,147,0,SCIERIE COLLIGNON,Scierie collignon,2015-01,,ACTIVE,Other,Professional
+156,149,0,Deichmann SE,Senior Microsoft 365 Engineer,2024-04,,ACTIVE,Information Technology,Senior
+157,150,0,ZF Group,Product Manager Online Catalog & Shop,2024-04,,ACTIVE,Other,Professional
+158,151,0,ISP Stahlbauplanung,Diplom Bauingenieur,1998-11,,ACTIVE,Other,Professional
+159,152,0,JPMorgan Chase & Co.,"Executive Director, Marketing Strategy Director",2014-07,,ACTIVE,Marketing,Management
+160,153,0,VRG GmbH,Leiter Controlling und Rechnungswesen,1990-01,,ACTIVE,Other,Lead
+161,154,0,"Liberty Civil Construction, LLC",President,2016-08,,ACTIVE,Other,Management
+162,155,0,Kreisverwaltung Darmstadt-Dieburg,"Architektin, Fachgebietsleitung Technisches und Strategisches Gebäudemanagement",2024-10,,ACTIVE,Project Management,Lead
+163,157,0,VIRTWO,Co-CEO,2022-10,,ACTIVE,Other,Management
+164,160,0,Bogner Construction Company,Vice President,1997-05,,ACTIVE,Other,Management
+165,161,0,Hospital Management Group GmbH,Krankenhausgeschäftsführer,2021,,ACTIVE,Other,Management
+166,162,0,Atos Information Technology GmbH,Co-Head of Bid Management CE,2023-10,,ACTIVE,Sales,Lead
+167,162,1,Atos Information Technology GmbH,Bid Manager,2011-10,,ACTIVE,Sales,Lead
+168,163,0,GO! Express & Logistics,Leiter IT-Service- und Betriebsmanagement,2025-04,,ACTIVE,Information Technology,Lead
+169,164,0,Independent Contractor,Senior Human Resources Consultant,2022-04,,ACTIVE,Consulting,Senior
+170,165,0,Telenor,Senior Legal Advisor,2023-09,,ACTIVE,Other,Senior
+171,166,0,TZ Garsten,Physiotherapeutin,2007-10,,ACTIVE,Other,Professional
+172,167,0,Fraunhofer Institute of Machine Tools and Forming Technology,Research Associate,2019-10,,ACTIVE,Consulting,Junior
+173,168,0,medpirica,Geschäftsführender Gesellschafter,2011-04,,ACTIVE,Other,Management
+174,169,0,Harvey Nash,Finance Director Central Europe 🇩🇪🇨🇭🇵🇱,2023-06,,ACTIVE,Other,Director
+175,170,0,U.S. Department of Labor,Senior Program Analyst (Immigration),2022-02,,ACTIVE,Other,Senior
+176,171,0,Benteler Distribution,Betriebsleiter,2012-09,,ACTIVE,Other,Lead
+177,172,0,ZF Group,Chief Executive Officer,2023-01,,ACTIVE,Other,Management
+178,173,0,Mediaschneider AG,Chief Strategy Officer (CSO),2023-01,,ACTIVE,Other,Management
+179,176,0,AVL,Software Developer,2011-01,,ACTIVE,Information Technology,Professional
+180,177,0,Vejle Brand,CTO,2024-03,,ACTIVE,Information Technology,Management
+181,177,1,Kodestuen,Self-Employed at Kodestuen ApS,2009-05,,ACTIVE,Other,Professional
+182,179,0,ACE Auto Club Europa e. V.,Projektkoordinator,2022-01,,ACTIVE,Project Management,Lead
+183,179,1,ACE Auto Club Europa e. V.,"Regionalbeauftragter Club Sachsen, Thüringen, Sachsen-Anhalt Süd",2021-06,,ACTIVE,Other,Lead
+184,180,0,Kroon & de Koning BV,Hoofd Bouwbureau,2021-09,,ACTIVE,Other,Lead
+185,181,0,Siemens Energy,Head of Package & Installation Design IGC,2023-09,,ACTIVE,Project Management,Lead
+186,182,0,Deutsche Gesellschaft für Internationale Zusammenarbeit GmbH,Director General Sector and Global Programmes,2025-05,,ACTIVE,Other,Director
+187,182,1,Deutsche Gesellschaft für Internationale Zusammenarbeit GmbH,Landesdirektor,2023-09,,ACTIVE,Other,Director
+188,183,0,Ground2air Assistance,Station Manager at Ground2Air in Palma de Mallorca,2021-05,,ACTIVE,Other,Lead
+189,184,0,St. Walburga Krankenhaus Meschede GmbH,Bereichs PDL,2005-12,,ACTIVE,Other,Lead
+190,186,0,TouchPoint Communication AG,Geschäftsinhaber,1985,,ACTIVE,Other,Management
+191,187,0,APOGEPHA Arzneimittel GmbH,Geschäftsführer CFO,2024-03,,ACTIVE,Other,Management
+192,189,0,ALPS ALPINE Europe,Senior Project Leader,2021-09,,ACTIVE,Project Management,Lead
+193,192,0,Alium Technology AG,Verwaltungsratsvorsitzender,2015-01,,ACTIVE,Other,Management
+194,193,0,HWK Erfurt,Dozent/ Ausbilder,2005-11,,ACTIVE,Other,Professional
+195,194,0,VID vitenskapelige høgskole,"Teamleder arkitektur, drift og sikkerhet IT-seksjonen VID",2019-06,,ACTIVE,Information Technology,Lead
+196,197,0,Ecole Hôtelière de Genève | EHG,Responsable technique,2016-08,,ACTIVE,Information Technology,Lead
+197,198,0,Luxcenture,Partner,2023-08,,ACTIVE,Business Development,Management
+198,198,1,Weber Advisory Consulting,Founder,2015-12,,ACTIVE,Other,Management
+199,199,0,Mittelstars,Geschäftsführer und Podcast-Host,2024-01,,ACTIVE,Other,Management
+200,199,1,Firstlead GmbH / ADCELL,Geschäftsführender Gesellschafter,2004-05,,ACTIVE,Other,Management
+201,199,2,Bermuc Holding GmbH,Geschäftsführender Gesellschafter,2015-04,,ACTIVE,Other,Management
+202,199,3,Businessangels.de,Geschäftsführender Gesellschafter,2003-01,,ACTIVE,Other,Management
+203,199,4,Smartbroker Holding AG,Aufsichtsrat,2020-08,,ACTIVE,Other,Management
+204,200,0,F Henningsen ApS,Business Consultant,2016-06,,ACTIVE,Consulting,Professional
+205,201,0,Instituto Vladimir Herzog,President Of The Board Of Directors,2017-07,,ACTIVE,Other,Management
+206,203,0,Raiffeisen Bank International AG,Head of Group Capital Markets,2023-09,,ACTIVE,Other,Lead
+207,205,0,European Patent Office,Chairman of Board of Appeal and Member of Enlarged Board of Appeal,2018-04,,ACTIVE,Other,Management
+208,206,0,Raymond James,Citrix Systems Engineer,2024-10,,ACTIVE,Information Technology,Professional
+209,207,0,Amsterdam UMC,Anesthesiemedewerker,2024-02,,ACTIVE,Other,Professional
+210,210,0,VR Payment GmbH,Vertriebsdirektor,2024-01,,ACTIVE,Sales,Director
+211,210,1,VR Payment GmbH,Regionalleiter Bankenbetreuung Baden-Württemberg,2019-01,,ACTIVE,Sales,Lead
+212,211,0,Montera ApS,Projektleder,2024-03,,ACTIVE,Project Management,Lead
+213,212,0,GENUSSMOMENTE für digitales Zusammensein,Geschäftsführer,2020-03,,ACTIVE,Other,Management
+214,212,1,GENUSSMOMENTE für digitales Zusammensein,Geschäftsführer,2020-03,,ACTIVE,Other,Management
+215,212,2,GENUSSMOMENTE für digitales Zusammensein,Geschäftsführer,2020-03,,ACTIVE,Other,Management
+216,212,3,KAISERSCHOTE Feinkost Catering GmbH,CEO,1992-11,,ACTIVE,Other,Management
+217,212,4,KAISERSCHOTE Feinkost Catering GmbH,Impulsgeber bei KAISERSCHOTE GmbH,1992-03,,ACTIVE,Other,Professional
+218,212,5,KAISERSCHOTE Feinkost Catering GmbH,Geschäftsführer,1992-02,,ACTIVE,Other,Management
+219,212,6,KAISERSCHOTE | GENUSSMOMENTE für reales und digitales Zusammensein,Geschäftsführer,1992-02,,ACTIVE,Other,Management
+220,213,0,BBHT Beratungsgesellschaft mbH & Co. KG,Geschäftsführender Gesellschafter,2015-02,,ACTIVE,Other,Management
+221,213,1,BBHT Beratungsgesellschaft mbH & Co. KG,Senior Managing Consultant,2015-01,,ACTIVE,Consulting,Senior
+222,213,2,BBHT Solutions S.R.L.,Geschäftsführer,2019-02,,ACTIVE,Other,Management
+223,214,0,Ing. Büro W.Meier GmbH,CEO,1989-03,,ACTIVE,Other,Management
+224,215,0,Casas André Luiz,Gerente de Comunicação e Marketing,2024-06,,ACTIVE,Marketing,Professional
+225,218,0,Karwendel-Werke Huber GmbH & Co. KG,Geschäftsführer Finanzen,2006-05,,ACTIVE,Other,Management
+226,219,0,A-ROSA Kreuzfahrten,CEO,2025-02,,ACTIVE,Other,Management
+227,221,0,de Taxatheek,Algemeen directeur,1996-01,,ACTIVE,Other,Management
+228,222,0,JPMorgan Chase & Co.,Executive Director,2017-03,,ACTIVE,Other,Management
+229,224,0,ENOUGH,Supply Chain Lead & Master Planning,2024-10,,ACTIVE,Other,Lead
+230,225,0,Switch GmbH,Chief Executive Officer,2022-02,,ACTIVE,Other,Management
+231,226,0,"Triad Technologies, LLC",Information Technology Business Analyst,2023-04,,ACTIVE,Information Technology,Professional
+232,227,0,SAP,Global VP and Head of Sustainability Innovation,2021-04,,ACTIVE,Other,Management
+233,227,1,SAP,Head of Startup Engagements for S/4HANA and Digital Supply Chain,2019-09,,ACTIVE,Business Development,Lead
+234,229,0,EIKONA AG,Vorstandsvorsitzender,2019-03,,ACTIVE,Other,Management
+235,229,1,EIKONA AG,Geschäftsführer,2019-03,,ACTIVE,Other,Management
+236,230,0,Principal Vermögensverwaltung AG,Private Equity Investments,2017-12,,ACTIVE,Other,Professional
+237,231,0,University of Central Lancashire,DevOps Orchestration Manager,2025-01,,ACTIVE,Information Technology,Professional
+238,232,0,SPAR Österreich,Leiter Expansion und Projektentwicklung,2010-09,,ACTIVE,Project Management,Lead
+239,234,0,Amphasys,Head of Marketing: Promoting label-free cell analysis technology,2024-03,,ACTIVE,Marketing,Lead
+240,235,0,Autohaus Walter Mulfinger GmbH,Kfz-Mechatroniker,2006-09,,ACTIVE,Other,Professional
+241,236,0,HEUSSINGER.de,Grafik Designer,1989-10,,ACTIVE,Marketing,Professional
+242,237,0,Solid Technology Solutions,Chief Technology Officer,2009-08,,ACTIVE,Information Technology,Management
+243,238,0,Qatar Airways,Manager Regional Key Accounts Americas,2024-01,,ACTIVE,Sales,Professional
+244,239,0,GE Healthcare,Digital Project Managerin Marketing,2020-03,,ACTIVE,Marketing,Professional
+245,240,0,Beckmann Verlag,Mediaberater DpS - Fachzeitschrift f. Schädlingsbekämpfung/SalesManager DpS - Pest Control Magazine,2014-10,,ACTIVE,Sales,Professional
+246,242,1,European Union Mission in Armenia,Head of Logistics,2023-03,,ACTIVE,Other,Lead
+247,243,0,AXRO GmbH,Data Analyst,2024-09,,ACTIVE,Information Technology,Professional
+248,245,0,WEVG Salzgitter GmbH & Co. KG,kfm. Prokurist,2010-01,,ACTIVE,Other,Management
+249,246,0,CEIR - Center for Enterprise Information Research at University of Koblenz,Professor,2006-10,,ACTIVE,Other,Professional
+250,246,1,IBD | Integrated Business Design,Founding Partner,2021-12,,ACTIVE,Other,Management
+251,247,0,Edusco construction,Directeur de la construction,2025-01,,ACTIVE,Other,Director
+252,247,1,Groupe Pelco/Dmo,Directeur projet,2023-03,,ACTIVE,Project Management,Director
+253,247,2,Concept SJDL inc,Entrepreneur general et consultat construction,2022-01,,ACTIVE,Consulting,Management
+254,249,0,M H windows decor pvt ltd,Director of Business Development,2000,,ACTIVE,Business Development,Director
+255,250,0,Scheck Lagerhaus Transporte GmbH,Neutraubling,1993-04,,ACTIVE,Other,Professional
+256,251,0,ALTE OLDENBURGER Krankenversicherung AG,Abteilungsdirektor Vertrieb,2009-04,,ACTIVE,Sales,Director
+257,252,0,Tetrao,Data Analyst (Sustainable & Fund Finance),2020-03,,ACTIVE,Other,Professional
+258,253,0,Itsy,Kundansvarig,2025-01,,ACTIVE,Sales,Professional
+259,254,0,FalkenSteg,Geschäftsführer,2016-01,,ACTIVE,Other,Management
+260,255,0,Bürgeramt Bremen,Referatsleiter,2023-10,,ACTIVE,Other,Lead
+261,255,3,Freie Hansestadt Bremen - Der Senator für Inneres - Bürgeramt,Verwaltungsangestellter,2005-10,,ACTIVE,Administrative,Professional
+262,256,0,Evonik,Global IT | Solution Architect Supply Chain Transportation,2021-09,,ACTIVE,Information Technology,Professional
+263,258,0,Musik Hug AG,Leiterin E-Commerce,2023-09,,ACTIVE,Marketing,Lead
+264,259,0,Agentur Rinn,Büroleiter,2018-10,,ACTIVE,Administrative,Lead
+265,260,0,Eagle International Logistics,Managing Director,2021-08,,ACTIVE,Other,Management
+266,261,0,TMD Friction,ppa. Head of Treasury & Insurance,2023-04,,ACTIVE,Other,Lead
+267,262,0,GRUNDFOS,Sourcing Specialist,2025-04,,ACTIVE,Purchasing,Professional
+268,266,0,Suregen Health-IT consulting,"Founder, Owner",2023-01,,ACTIVE,Other,Management
+269,267,0,ONSKINERY,Marketplace Manager / Online Shop Manager,2022-05,,ACTIVE,Sales,Professional
+270,268,0,Deutsche Bahn,Vorsitzender des Vorstandes (CEO),2017,,ACTIVE,Other,Management
+271,269,0,Bodensee Pharma GmbH,Geschäftsführer,2016-03,,ACTIVE,Other,Management
+272,270,0,Kanton Aargau,Teamleiter Disposition Fahrzeuge und Stv. Ressourcenplaner,2012-05,,ACTIVE,Other,Lead
+273,272,0,Cisco,Account Manager,2025-05,,ACTIVE,Sales,Professional
+274,273,0,Oxford Instruments plc,Head of Marketing Communications EMEA - Oxford Instruments Group,2024-10,,ACTIVE,Marketing,Lead
+275,274,0,URBANCONCEPT,Unternehmensinhaber,2022-07,,ACTIVE,Other,Management
+276,274,1,URBANBOX.Container,Unternehmensinhaber,2020-05,,ACTIVE,Other,Management
+277,274,2,URBANSHOF,Unternehmensinhaber,1999-07,,ACTIVE,Other,Management
+278,275,0,Holland Pharma,Marktondersteuning,2010-10,,ACTIVE,Sales,Junior
+279,275,1,Nederlandse Drogisterij Service & Holland Pharma,Account Manager,2010-10,,ACTIVE,Sales,Professional
+280,276,0,OpenValue,Director OpenValue Amsterdam,2020-11,,ACTIVE,Other,Director
+281,276,1,Code Nomads,Director Code Nomads Amsterdam,2023-08,,ACTIVE,Information Technology,Director
+282,277,0,FedEx,Senior Customer Care Representative,2024-10,,ACTIVE,Customer Support,Senior
+283,279,0,VORWERK ELEKTROWERKE GMBH & CO.KG,CTO,2024-01,,ACTIVE,Information Technology,Management
+284,280,0,BMW Group,Group Design Strategy & -targets,2018-01,,ACTIVE,Other,Professional
+285,281,0,vsonix GmbH,CEO,2012-01,,ACTIVE,Other,Management
+286,282,0,CPS Anwendungsberatung für die Wellpappenindustrie,Managing Director,2006-04,,ACTIVE,Other,Management
+287,283,0,KPMG Austria,Assistant Manager,2025-01,,ACTIVE,Other,Lead
+288,283,1,KPMG Austria,Senior Audit Associate,2023-01,,ACTIVE,Other,Senior
+289,286,0,SCALES Group A/S,Lead consultant,2025-01,,ACTIVE,Consulting,Lead
+290,287,0,123BAG GmbH,Geschäftsführender Gesellschafter,2019-11,,ACTIVE,Other,Management
+291,287,1,Alexander Böhler,Werteorientiertes Führungskräftetraining,2016-01,,ACTIVE,Consulting,Professional
+292,288,0,JACOB Group,Head of IT Services & Operations Management,2021-04,,ACTIVE,Information Technology,Lead
+293,289,0,hGears,Teamleader IT Operations Management,2024-01,,ACTIVE,Information Technology,Lead
+294,290,0,N+S Bürocenter,Vertrieb,1997-02,,ACTIVE,Sales,Professional
+295,291,0,Siemens,Technischer Experte für Stellwerkstechnik,2020-01,,ACTIVE,Information Technology,Senior
+296,292,0,HvS-Consulting AG,HR-Manager,2019-01,,ACTIVE,Human Resources,Professional
+297,294,0,TAV Operation Services,Operation Supervisor,2024-08,,ACTIVE,Other,Lead
+298,296,0,MorgenFund,Geschäftsführer,2024-05,,ACTIVE,Other,Management
+299,297,0,Bosch,Konstrukteur,2024-02,,ACTIVE,Other,Professional
+300,298,0,Daimler Buses GmbH,Projektleiter in der Engineering IT,2022-10,,ACTIVE,Information Technology,Lead
+301,299,0,Evidentia bv,Sales & Marketing Management,2010-01,,ACTIVE,Other,Professional
+302,299,1,Jaguar Land Rover Belux,Retail Marketing Management,2018-01,,ACTIVE,Marketing,Professional
+303,301,0,blueReport (cognita AG),Ruby Fullstack Developer,2022-10,,ACTIVE,Information Technology,Professional
+304,302,0,Fischer-Plastik GesmbH,CEO,1990-04,,ACTIVE,Other,Management
+305,303,0,EQUANS France,Chef de projet senior,2021-07,,ACTIVE,Project Management,Senior
+306,305,0,Adform,Country Manager Czech Republic and Slovakia,2020-03,,ACTIVE,Other,Lead
+307,305,1,Adform,Executive Director at Adform s.r.o.,2018-11,,ACTIVE,Other,Director
+308,307,0,Yatego GmbH,Geschäftsführer,2017-01,,ACTIVE,Other,Management
+309,307,1,Yatego GmbH,Head of Account Management,2013-04,,ACTIVE,Sales,Lead
+310,308,0,AYRES Composite Panels,Group CEO,2018-07,,ACTIVE,Other,Management
+311,310,0,Thames Valley Children's Centre,"Director, Finance and Information Technology",2018,,ACTIVE,Other,Director
+312,311,0,Abschleppdienst Potsdam Nord Süd gmbh,Bergungsleiter,2004-04,,ACTIVE,Other,Lead
+313,313,0,Yorizon Cloud,Co-CEO,2024-06,,ACTIVE,Other,Management
+314,313,1,SCHWEINAR CONSULTING,Founder,2017-12,,ACTIVE,Other,Management
+315,314,0,Airbus,Aircraft Physical Security Expert,2006-10,,ACTIVE,Other,Senior
+316,316,0,BASF,General Manager,1994-10,,ACTIVE,Other,Management
+317,318,0,FNZ Bank SE,Head of Regulatory Projects,2023-09,,ACTIVE,Consulting,Lead
+318,319,0,GBOH Technology,Owner,2021-07,,ACTIVE,Other,Management
+319,320,0,Syrena Real Estate,Financial Analyst,2024-10,,ACTIVE,Other,Professional
+320,321,0,Tandem 50,Mentor,2017-07,,ACTIVE,Other,Senior
+321,322,0,Interstarch,Vertriebsingenieur,2024-10,,ACTIVE,Sales,Professional
+322,323,0,Westfälisches Energieinstitut,Professor im Ruhestand,2023-03,,ACTIVE,Other,Professional
+323,323,1,Westfälisches Energieinstitut,Vorstandsmitglied,2001-12,,ACTIVE,Other,Management
+324,325,0,Liebherr Group,Vedoucí pobočky Popůvky,2024-01,,ACTIVE,Administrative,Lead
+325,326,1,Strukton,Lead engineer/ groepscoordinator,1999,,ACTIVE,Information Technology,Lead
+326,327,0,Raff Sanitär GmbH,Geschäftsfüherer,1994-01,,ACTIVE,Other,Management
+327,328,0,Landeshauptstadt Mainz,"Dezernat für Wirtschaft, Stadtentwicklung, Liegenschaften und Ordnungswesen - Büroleitung/Referent",2019-02,,ACTIVE,Other,Lead
+328,329,0,CETIN Serbia,Senior Enterprise IT Systems Specialist,2024-04,,ACTIVE,Information Technology,Senior
+329,330,0,Botilbuddet Katrinebjerg,Vikar,2024-11,,ACTIVE,Other,Junior
+330,331,0,Rescop,General Manager,2023-01,,ACTIVE,Other,Management
+331,332,0,"GROB Systems, Inc",Chief Sales Officer (CSO),2024-01,,ACTIVE,Sales,Management
+332,333,0,Nestlé Waters Deutschland GmbH,Key Account Manager,2006-09,,ACTIVE,Sales,Professional
+333,334,0,Sleeping Bird,Selbstständig,2019-05,,ACTIVE,Other,Professional
+334,334,1,Verkehrsbetriebe St.Gallen,Projektleiter,2018-03,,ACTIVE,Project Management,Lead
+335,335,0,D18 Partners,Project Manager,2023-01,,ACTIVE,Project Management,Professional
+336,336,0,Université du Maine-Le Mans-Laval,Enseignant,2013-09,,ACTIVE,Other,Professional
+337,338,0,Eviden,Senior Account Manager Public Sector,2023-05,,ACTIVE,Sales,Senior
+338,339,0,ThyssenKrupp AG,Senior Consultant Procurement Excellence,2022-08,,ACTIVE,Consulting,Senior
+339,340,0,Anwaltskanzlei Heinemann,Rechtsanwalt,1995-07,,ACTIVE,Other,Professional
+340,340,1,Anwaltskanzlei Heinemann,Rechtsanwalt,1976-01,,ACTIVE,Other,Professional
+341,341,0,Wipotec,Commercial Service Manager,2023-07,,ACTIVE,Customer Support,Professional
+342,341,1,Wipotec,Teamleitung - Ersatzteile,2019-07,,ACTIVE,Purchasing,Lead
+343,342,0,Bayer,Head of CapEx Delivery Management and Planning Site Leverkusen,2025-01,,ACTIVE,Project Management,Lead
+344,343,0,Letec-Terem,Quality Manager,2002-02,,ACTIVE,Other,Professional
+345,344,0,Bechtle Schweiz AG,Senior IT-Lizenzspezialist,2010-08,,ACTIVE,Information Technology,Senior
+346,345,0,Sodexo Defence (UK),Strategy Director,2009,,ACTIVE,Business Development,Director
+347,346,0,Richnerstutz AG,Unternehmensinhaber,2023-01,,ACTIVE,Other,Management
+348,346,1,Richnerstutz AG,Geschäftsleiter,1988-01,,ACTIVE,Other,Lead
+349,347,0,doxx GmbH,Unternehmensinhaber,2010-03,,ACTIVE,Other,Management
+350,348,0,AWEX,Managing Director,2021-01,,ACTIVE,Other,Management
+351,349,0,EMEA Business Group,Director Commercial Operations,2012-01,,ACTIVE,Marketing,Director
+352,350,0,Roche Pharmaceuticals,Betriebsleiter API-Produktion,2001,,ACTIVE,Information Technology,Lead
+353,351,0,RACE FX LIMITED,Human Resources Specialist,2021-06,,ACTIVE,Human Resources,Professional
+354,352,0,BAUKING AG,49504,2009-08,,ACTIVE,Other,Professional
+355,353,0,PATTON STATE HOSPITAL,Family Nurse Practitioner,2012-12,,ACTIVE,Other,Professional
+356,354,0,Stellantis,Global Chief Engineer / Manager - Power Electronics (OBC/DCDC),2024-09,,ACTIVE,Information Technology,Lead
+357,355,0,rido gmbh,Inhaber rido gmbh,2018-08,,ACTIVE,Other,Management
+358,355,2,Selbstständig,Einrichtungsberater,2001-01,,ACTIVE,Other,Professional
+359,356,0,All for One Switzerland AG,SAP Solutions Consultant,2022-10,,ACTIVE,Consulting,Professional
+360,357,0,LR Global Holding GmbH,Senior Treasury Manager,2017-09,,ACTIVE,Other,Senior
+361,358,0,Randstad Deutschland,Senior Consultant,2024-07,,ACTIVE,Consulting,Senior
+362,359,0,Alexander Klaus Freelance- & Interims- Marketing Consulting,Freelance Marketing Consulting / Client Service / Interim Marketing & Branding,2022-04,,ACTIVE,Consulting,Professional
+363,360,0,Anyline,VP Product Management,2025-01,,ACTIVE,Project Management,Management
+364,361,0,VON ARDENNE GmbH,Head of Mechanical Engiuneering,2017,,ACTIVE,Other,Lead
+365,361,1,VON ARDENNE GmbH,Senior Manager Product Development,2014-06,,ACTIVE,Information Technology,Senior
+366,362,0,Masmec S.p.A.,Progettista Finanza Agevolata - Research Funding & Administration,2024-04,,ACTIVE,Other,Professional
+367,364,0,Oracle,Software Engineer IV,2022-10,,ACTIVE,Information Technology,Senior
+368,365,0,Whitefish Lake First Nation #459,Communications Coordinator,2019-10,,ACTIVE,Marketing,Lead
+369,366,0,Australian Museum,Head of ICT,2023-12,,ACTIVE,Information Technology,Lead
+370,367,0,aquantus gmbh,Managing Director,2017-02,,ACTIVE,Other,Management
+371,367,1,Simulation Technology,Chief Researcher,1997-08,,ACTIVE,Information Technology,Professional
+372,368,0,OCB RENOV,Responsable,2022-07,,ACTIVE,Other,Lead
+373,369,0,PREO Software AG,Head of Sales DACH,2022-10,,ACTIVE,Sales,Lead
+374,370,0,IBM Deutschland GmbH,Senior Partner,2022-11,,ACTIVE,Business Development,Senior
+375,370,1,IBM,Partner,2018-11,,ACTIVE,Business Development,Management
+376,371,0,Uhlmann Pac-Systeme,Application Consultant,2000-10,,ACTIVE,Consulting,Professional
+377,372,0,Oppskvær AS - for team som må lykkes,Partner,2020-05,,ACTIVE,Business Development,Management
+378,372,1,"KAI KRÜGER Krüger Kommunikasjon AS Liaveien 16, 1369 Stabekk",CEO Krüger Kommunikasjon AS,2018-03,,ACTIVE,Other,Management
+379,372,2,Modus Design AS,Board Member,2019-01,,ACTIVE,Other,Management
+380,372,3,Veidekke ASA,"Executive Vice President,Special Adviser",2013-06,,ACTIVE,Other,Management
+381,373,0,Technische Universität Kaiserslautern,Postdoctoral Researcher and Lecturer,2020-05,,ACTIVE,Other,Professional
+382,374,0,Benchmark Electrical Solutions,Purchasing Manager,2018-04,,ACTIVE,Purchasing,Professional
+383,375,0,University of New Brunswick,Postdoctoral Research Fellow,2024-01,,ACTIVE,Other,Professional
+384,377,0,Schleuniger Global,Strategic Purchasing Manager • Group Purchasing,2024-05,,ACTIVE,Purchasing,Professional
+385,378,0,Egen verksamhet,Konsult HR,2018-01,,ACTIVE,Human Resources,Professional
+386,379,0,Oldenburgische Landesbank AG,Leiter Vergütung & Versorgung,1983-07,,ACTIVE,Human Resources,Lead
+387,380,0,Vision Lasertechnik für Forschung und Industrie GmbH,Produktmanager Optomechanik,2017-04,,ACTIVE,Project Management,Professional
+388,381,0,LPL Financial,Senior Vice President,2023-04,,ACTIVE,Other,Management
+389,382,0,Beeldvorming MUMC+,Clinical Physicist,2023-07,,ACTIVE,Other,Professional
+390,382,1,"Institute of Radiology, Friedrich-Alexander University, Erlangen",Researcher,2023-11,,ACTIVE,Other,Professional
+391,382,2,"Eberhard Karls Universität, Tübingen",apl. Professor (adjunct professor),2011-08,,ACTIVE,Other,Professional
+392,383,0,keine Angabe,Arbeitslos,2023-07,,ACTIVE,Other,Professional
+393,384,0,UNSW,"Senior Lecturer, Education-Focused",2020-05,,ACTIVE,Other,Senior
+394,386,0,NEIS Collective,Director of Sales & Marketing,2023-01,,ACTIVE,Sales,Director
+395,387,0,KALORIMETA GmbH,Master Data & Demand Manager Supply Chain Management,2024-06,,ACTIVE,Other,Professional
+396,389,0,Gaugler & Lutz GmbH & Co.KG,Verkaufsleitung,1991-09,,ACTIVE,Sales,Lead
+397,390,0,Siemens Gamesa,Platform Support Direct Drive,2023-01,,ACTIVE,Customer Support,Professional
+398,392,0,ErgaNet,Recruitment Manager,2022-05,,ACTIVE,Human Resources,Professional
+399,393,0,Schwab Retirement Plan Services,"Vice President, National Sales Manager",2019-02,,ACTIVE,Sales,Management
+400,394,0,SPIE Deutschland & Zentraleuropa,Geschäftsführer SPIE GfT GmbH,2024-02,,ACTIVE,Other,Management
+401,395,0,University of Tuebingen,Professor,1990-01,,ACTIVE,Other,Professional
+402,396,0,Helios Kliniken GmbH,Head of Marketing Technology (Teamlead),2018-09,,ACTIVE,Marketing,Lead
+403,397,0,Saint-Gobain Isover,AUTOMATICIEN ELECTRICIEN,2008-01,,ACTIVE,Other,Professional
+404,400,0,CCL Label,General Manager,2018-01,,ACTIVE,Other,Management
+405,400,1,CCL Kontur,Commercial Director,2014-07,,ACTIVE,Other,Director
+406,401,0,marcoloeschdesign,Grafikdesigner (Freelance),2023-07,,ACTIVE,Marketing,Professional
+407,402,0,SaiVa SysTem – a CMMI Level III Company,Account Manager & Talent Acquisition Lead,2019-06,,ACTIVE,Human Resources,Lead
+408,403,0,Selbstständig,Geschäftsführender Gesellschafter,1995-02,,ACTIVE,Other,Management
+409,403,1,BAUMA Vermiet- und Handels GmbH,Geschäftsführender Gesellschafter CEO,1995-02,,ACTIVE,Other,Management
+410,404,0,Domtar,Maintenance & Engineering Manager,2010,,ACTIVE,Information Technology,Professional
+411,406,0,Bank-Verlag GmbH,Bereichsleiter Central Service Center,2022-12,,ACTIVE,Customer Support,Lead
+412,406,1,Christmann & Pfeifer GmbH & Co.,Mitglied des Aufsichtsrats,2014-09,,ACTIVE,Other,Management
+413,407,0,AI in Complex Systems Lab - CEHC - UAlbany,Researcher,2024-07,,ACTIVE,Other,Professional
+414,408,0,Wagener,Schornsteinfeger Meisterbetrieb,1999-01,,ACTIVE,Other,Lead
+415,411,0,Europris,Senior UX Designer,2022-03,,ACTIVE,Information Technology,Senior
+416,412,0,Accenture DACH,Cloud Advisory Analyst,2024-07,,ACTIVE,Consulting,Professional
+417,413,0,MSH Medien System Haus GmbH & Co. KG,Leiter Managed IT | Cloud Services,1999-04,,ACTIVE,Information Technology,Lead
+418,415,0,Magenta Telekom,Senior Manager B2B Contract & Implementation Management,2022-01,,ACTIVE,Project Management,Senior
+419,416,0,Automotive Lighting,Research Development Group Manager,2020-01,,ACTIVE,Information Technology,Professional
+420,417,0,Pirelli Deutschland GmbH,Head of accounting and tax department,1984-10,,ACTIVE,Other,Lead
+421,418,0,Liegenschaften Stadt Zürich,Teamleiter Bestandesentwicklung,2024-05,,ACTIVE,Other,Lead
+422,418,1,Liegenschaften Stadt Zürich,Projektleiter Bestandesentwicklung bei Liegenschaften Stadt Zürich,2023-06,,ACTIVE,Project Management,Lead
+423,418,2,Genossenschaft Neubühl,Vorstandsmitglied,2023-10,,ACTIVE,Other,Management
+424,420,0,Datenschutz,Juristin,2022-08,,ACTIVE,Other,Professional
+425,421,0,Rudolf Klaschka GmbH,Projektleiter,2015-07,,ACTIVE,Project Management,Lead
+426,422,0,Det Danske Madhus,Head of Procurement,2023-06,,ACTIVE,Purchasing,Lead
+427,423,0,BLOX IT AB,Ägare & affärsområdeschef IT (CTO),2021-04,,ACTIVE,Information Technology,Management
+428,423,1,Scandinavian Solutions,Founder and owner,2023-03,,ACTIVE,Other,Management
+429,423,2,Scandinavian Solutions,Grundare & ägare,2019-05,,ACTIVE,Other,Management
+430,425,1,Hotel An der Philharmonie GmbH,HGF,1995-01,,ACTIVE,Other,Professional
+431,426,0,Validatis,Managing Director (CTO),2025-04,,ACTIVE,Information Technology,Management
+432,426,1,Kerentia GmbH,Managing Director & Co-Founder,2022-09,,ACTIVE,Other,Management
+433,428,0,Robert Bosch GmbH,Senior Manager,2020-03,,ACTIVE,Other,Senior
+434,428,1,Robert Bosch GmbH,Quality Engineer,2013-10,,ACTIVE,Information Technology,Professional
+435,431,0,"Tyto Athene, LLC",Cyber Security Analyst - Senior,2022-07,,ACTIVE,Information Technology,Senior
+436,433,0,TRW,Purchasing Senior Manager,1985-08,,ACTIVE,Purchasing,Senior
+437,434,0,Arcadia,Partner,2000-03,,ACTIVE,Business Development,Management
+438,435,0,InfoCom GmbH,Managing Director,1988,,ACTIVE,Other,Management
+439,436,0,CONSTANT AG,"Vorstandsassistent, CMO",2017-01,,ACTIVE,Marketing,Management
+440,436,1,CONSTANT AG,Assistent der Geschäftsleitung,2013-02,,ACTIVE,Administrative,Lead
+441,437,0,Elevate Advertising,Co-Founder and CEO,2016-08,,ACTIVE,Other,Management
+442,438,0,Airbus Helicopters,Sub-Manager Coordination & Planning,2012-01,,ACTIVE,Project Management,Lead
+443,438,1,Airbus Helicopters,Sub-Manager Coordination & Planning,2012-01,,ACTIVE,Project Management,Lead
+444,439,0,Blaser Group,Geschäftsführer (CEO),2020-05,,ACTIVE,Other,Management
+445,440,0,Van Dijk Tuinen,Vakbekwaam Hovenier,2020-07,,ACTIVE,Other,Professional
+446,441,0,RMS Radio Marketing Service GmbH & Co. KG,Verkaufsmanager,2003-11,,ACTIVE,Sales,Professional
+447,443,0,Kennesaw State University Norman J. Radow College of Humanities and Social Sciences,Professor of French and Francophone Studies,2023-07,,ACTIVE,Other,Professional
+448,443,1,Conseil International d'Études Francophones (CIEF),Co-Executive Director,2016-06,,ACTIVE,Other,Management
+449,444,0,DB - DEUTSCHE BAHN AG,HR Specialist Personnel Development,2012-05,,ACTIVE,Human Resources,Professional
+450,445,0,Inno and Co,Directeur,2025-03,,ACTIVE,Other,Director
+451,446,0,Wow! Momo,Senior Executive in L&D Department,2022-07,,ACTIVE,Human Resources,Senior
+452,447,0,Vacon srl,Finance and HR,1990-12,,ACTIVE,Other,Professional
+453,448,0,"FZEY GmbH – Frohe Zukunft, ey!",Geschäftsführer + Berater + Designer,2009-01,,ACTIVE,Other,Management
+454,448,1,"FZEY GmbH – Frohe Zukunft, ey!",Geschäftsführer,2005-01,,ACTIVE,Other,Management
+455,449,0,Johann Wolfgang Goethe-Universität Frankfurt am Main,PHD Student,2021-10,,ACTIVE,Other,Junior
+456,450,0,Zürcher Hochschule der Künste,Dozent,2013,,ACTIVE,Other,Professional
+457,451,0,MetLife,"AVP, Dental Quality & Clinical Oversight",2023-12,,ACTIVE,Other,Professional
+458,452,0,Kick-Media AG,Vorstandsvorsitzender der Kick-Media AG,2001-10,,ACTIVE,Other,Management
+459,453,0,Carsat Sud-Est,Administrateur suppléant/ Membre des Commissions Marchés / Relations avec le Public / CTR2,2018-03,,ACTIVE,Other,Junior
+460,453,1,ANCIENS COMBATTANTS ET VICTIMES DE GUERRE,Assistant,2023-01,,ACTIVE,Administrative,Junior
+461,454,0,Neue Pressegesellschaft,"Gesamtleiterin Personal, Mitglied der Geschäftsleitung",2018-04,,ACTIVE,Human Resources,Lead
+462,456,0,The Strategy Group,Partner,2015-12,,ACTIVE,Business Development,Management
+463,457,0,HOTEL - RESTAURANT L OURS DE MUTZIG,Responsable de salle,2025-01,,ACTIVE,Administrative,Lead
+464,459,0,"Svendsen and Associates, LLC",Special Education Advocate/Education Consultant,2025-01,,ACTIVE,Consulting,Professional
+465,461,0,GEMELLii Drinks GmbH,CEO & Co-Founder,2017-03,,ACTIVE,Other,Management
+466,461,1,Havas Media,Project Coordinator Finance,2013-02,,ACTIVE,Project Management,Lead
+467,462,0,Johannes-Diakonie Mosbach,Bauprojektleiter,2023-01,,ACTIVE,Project Management,Lead
+468,462,1,Johannes-Diakonie Mosbach,"Projektleiter, Bau-+ Neubauprojekte",2023-01,,ACTIVE,Project Management,Lead
+469,465,0,Stefan Wulff AB,Owner,2010-12,,ACTIVE,Other,Management
+470,465,1,Wordplay trycksaksproduktion,Owner,2005-08,,ACTIVE,Other,Management
+471,466,0,Ingo Wolters,Systemischer Berater für Organisationsentwicklung und Coach,2017-05,,ACTIVE,Consulting,Professional
+472,467,0,Cosmetix West,General Manager/Vice President of Planning,2010-05,,ACTIVE,Other,Management
+473,468,0,"Novartis, P&O Switzerland",Senior Diversity & Inclusion Partner,2016-04,,ACTIVE,Human Resources,Senior
+474,469,0,Weber Management Solutions,Managing Director,2020-05,,ACTIVE,Other,Management
+475,470,0,Werimo Group,Key Account / Project Manager,2021-12,,ACTIVE,Other,Lead
+476,472,0,Grubers Beckett,Owner,2001-05,,ACTIVE,Other,Management
+477,473,0,Klarna,Senior Commercial Manager,2021-11,,ACTIVE,Sales,Senior
+478,475,0,IAV,Executive Vice President Connected Software Systems & Services,2021-04,,ACTIVE,Information Technology,Management
+479,476,0,Hausbank München eG,"Abteilungsleiter Vertrieb, Dipl. Bankbetriebswirt Management (ADG)",2003-01,,ACTIVE,Sales,Lead
+480,477,0,Continental,HR IT Consultant,2022-06,,ACTIVE,Consulting,Professional
+481,478,0,Sinosteel-Tech,CEO,2013,,ACTIVE,Other,Management
+482,479,0,Gemeente Arnhem,Bestuursassistent,2022-10,,ACTIVE,Administrative,Professional
+483,481,0,instagrid,Senior Data Analyst,2023-11,,ACTIVE,Information Technology,Senior
+484,483,0,Jönköping University ILO,Tekniklektor,2018-01,,ACTIVE,Information Technology,Lead
+485,483,1,Winkler Organisationsutveckling AB,"Utbildare och konsult inom organisation, ledarskap och projektledning",1997,,ACTIVE,Consulting,Professional
+486,484,0,Irwin Mitchell,Trainee Solicitor,2025-03,,ACTIVE,Other,Junior
+487,486,0,Reinvigorate Group,Managing Director,2003-09,,ACTIVE,Other,Management
+488,489,0,Verna,Chief Operating Officer,2020-05,,ACTIVE,Other,Management
+489,490,0,Selbständig,Geschäftsführer Bergauer-Logistic,2001-04,,ACTIVE,Other,Management
+490,490,1,Bergauer-Pharmalogistik e.K.,Geschäftsführer,2012-01,,ACTIVE,Other,Management
+491,491,0,Infosys,Senior Technology Architect,2023-11,,ACTIVE,Information Technology,Senior
+492,493,0,InterContinental Hotels Group (IHG®),Director Of Food And Beverage,2017-04,,ACTIVE,Other,Director
+493,494,0,John Hancock,Managing Sr. Underwriting Director,2025-03,,ACTIVE,Other,Senior
+494,495,0,msg global solutions,Head of Business Unit Finance | Executive Vice President,2023-06,,ACTIVE,Other,Lead
+495,496,0,CBRE GWS GmbH,Facility Coordinator CBRE GWS GmbH,2017-12,,ACTIVE,Administrative,Lead
+496,496,1,ISS Facility Services,Facility Coordinator,2017-12,,ACTIVE,Administrative,Lead
+497,497,0,CCA Corporate Counsel Advisors,Director,2025-02,,ACTIVE,Other,Director
+498,497,1,Institute of Corporate Directors Malaysia (ICDM),Member,2020-01,,ACTIVE,Other,Professional
+499,498,0,Brunswick Group,Associate,2021-10,,ACTIVE,Other,Junior
+500,499,0,Action Sales Food Service Equipment & Supplies,Buyer,2021-11,,ACTIVE,Purchasing,Professional
+501,501,0,Leatherman Tool Group,Warranty Service Specialist,2020-10,,ACTIVE,Customer Support,Professional
+502,502,0,Cognizant,HR - Talent Manager,2015-03,,ACTIVE,Human Resources,Professional
+503,502,3,Freelance,Freelance Photographer,2011-12,,ACTIVE,Other,Professional
+504,503,0,vialytics,Senior Director of Sales & SDR Germany,2025-01,,ACTIVE,Sales,Director
+505,503,1,vialytics,Director of Sales & SDR Germany,2023-07,,ACTIVE,Sales,Director
+506,505,0,GLS,Addetto alla logistica,2022-08,,ACTIVE,Other,Professional
+507,506,1,Xsenses GmbH,CEO,2020-10,,ACTIVE,Other,Management
+508,508,0,PPD,Assistant Clinical Research Associate,2023-06,,ACTIVE,Other,Junior
+509,508,1,Greeneeng,Chief Operating Officer,2019-01,,ACTIVE,Other,Management
+510,509,0,eccoform production GmbH,Office Administrator,2011-08,,ACTIVE,Administrative,Professional
+511,510,0,DEWESoft Deutschland GmbH,Regionaler Vertriebsleiter,2013-03,,ACTIVE,Sales,Lead
+512,511,0,Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH,Portfolio Manager,2022-01,,ACTIVE,Other,Professional
+513,512,0,Innocard Loyalty AG,Inhaber,2024-05,,ACTIVE,Other,Management
+514,513,0,"TTI, Inc. - Europe",Technical Development Manager - Interconnect,2024-10,,ACTIVE,Information Technology,Professional
+515,514,0,Wälchli und Partner AG,Partner und VRP,2001-06,,ACTIVE,Business Development,Management
+516,514,1,Wälchli & Partner AG,dipl. Bauingenieur FH/STV,2001-06,,ACTIVE,Other,Professional
+517,515,0,Winning BLW Group,Vice President,2020-11,,ACTIVE,Other,Management
+518,517,0,Quest Equity,Chief Executive Officer,2024-05,,ACTIVE,Other,Management
+519,518,0,Einzelunternehmen,Programmierer,2003-04,,ACTIVE,Information Technology,Professional
+520,519,0,Krones,Global Mobility Consultant,2023-09,,ACTIVE,Consulting,Professional
+521,520,0,Privatpraxis für Orthopädie und Naturheilverfahren,"Facharzt für Orthopädie und Unfallchirurgie,Chirurgie Chirotherapie, , Naturheilverfahren",2012-02,,ACTIVE,Other,Professional
+522,521,0,Smurfit Westrock,Qualitätsmanager,2024-07,,ACTIVE,Project Management,Lead
+523,521,1,Smurfit Kappa,Qualitätsmanager,2020-01,,ACTIVE,Project Management,Lead
+524,522,0,"Mimetics, LLC",CEO,2015-01,,ACTIVE,Other,Management
+525,522,1,"Criterion Capital, LLC",Principal,2010-06,,ACTIVE,Other,Senior
+526,523,0,ALDI Nord,Senior Manager,2023-01,,ACTIVE,Other,Senior
+527,524,0,Selbstständig,DayTrader,2017-08,,ACTIVE,Other,Professional
+528,525,0,Webasto Group,VP Purchasing & Supplier Quality Webasto China,2025-02,,ACTIVE,Purchasing,Management
+529,528,0,Clark National Accounts,Equipment Project Manager,2025-02,,ACTIVE,Project Management,Professional
+530,529,1,"Kunshan lian da information technology co., LTD","lian da information technology co., LTD",2013-08,,ACTIVE,Other,Professional
+531,530,0,Washington's Best Guides LLC,Business Owner,2017-02,,ACTIVE,Other,Management
+532,530,1,Karen Pohlmann Miller,Owner,2010-04,,ACTIVE,Other,Management
+533,531,0,CROWDFOX GmbH,Geschäftsführer - CEO,2020-08,,ACTIVE,Other,Management
+534,531,1,SchaeferJuede Consulting,Co-Founder,2019-07,,ACTIVE,Other,Management
+535,532,0,10X Health System,EVP Strategic Partnerships,2025-02,,ACTIVE,Business Development,Professional
+536,533,0,Service Experts Heating & Air Conditioning,Senior HVAC Technician,2022-10,,ACTIVE,Other,Senior
+537,534,0,AkzoNobel,Non Executive Director - Member of the Supervisory Board,2025-04,,ACTIVE,Other,Management
+538,534,1,LANXESS,Non Executive Director - Member of the Supervisory Board,2024-05,,ACTIVE,Other,Management
+539,535,0,Gemeinde Langgöns,Bauverwaltung,2020-09,,ACTIVE,Administrative,Professional
+540,535,1,Gemeinde Langgöns,Baubeamter,2020-09,,ACTIVE,Other,Professional
+541,536,0,Freiberuflich,Rechtsanwalt mit Schwerpunkt Gen-/Biotechnik und Arzneimittelrecht,2023-01,,ACTIVE,Other,Professional
+542,537,0,The Seattle Times,Sports Columnist,2015-08,,ACTIVE,Other,Professional
+543,538,0,IBM Switzerland Ltd.,Managing Consultant - Business Transformation,2024-11,,ACTIVE,Consulting,Professional
+544,541,0,BACHMANN Group,CEO,1989-07,,ACTIVE,Other,Management
+545,542,0,Mecklenburgische Versicherungsgruppe,Vorsitzender der Aufsichtsräte Mecklenburgische Versicherungen,2021-06,,ACTIVE,Other,Management
+546,543,0,KfW,Junior Referent Landesförderinstitute,2023-09,,ACTIVE,Other,Junior
+547,546,0,TheKingmaker,Kingmaker,2011-02,,ACTIVE,Other,Professional
+548,546,1,Carlo Chincarini Coaching,Founder,2020-05,,ACTIVE,Other,Management
+549,547,0,BookLogic,Head of Sales & Partnerships,2020-01,,ACTIVE,Sales,Lead
+550,547,1,Partnership Leaders,Member,2020,,ACTIVE,Other,Professional
+551,547,2,RevGenius,Member,2020,,ACTIVE,Other,Professional
+552,547,3,Cloud Software Association,Member,2020,,ACTIVE,Other,Professional
+553,548,0,GFA Consulting Group GmbH,Public Health Consultant,2024-06,,ACTIVE,Consulting,Professional
+554,549,0,Yve!decoration GmbH,Vertriebsleiter,2013-05,,ACTIVE,Sales,Lead
+555,550,0,Nokia,DevSecOps CoE Lead,2021-09,,ACTIVE,Information Technology,Lead
+556,551,0,RATIONAL AG,Executive Vice President Digital Customer Solutions,2025-01,,ACTIVE,Marketing,Management
+557,552,0,NASA Federal Credit Union,Senior Financial Crimes Investigator,2015-10,,ACTIVE,Other,Senior
+558,553,0,Georg Thieme Verlag KG,Projektmanager Therapieberufe,2016-09,,ACTIVE,Project Management,Professional
+559,554,0,Kernkraftwerk Gösgen-Däniken AG,Leiter Zerstörungsfreie Prüfungen MQP,2020-01,,ACTIVE,Other,Lead
+560,554,1,Kernkraftwerk Gösgen-Däniken AG,Qualitätsicherung,1992-03,,ACTIVE,Information Technology,Professional
+561,555,0,DB Engineering & Consulting,Referent Digitale Schiene,2020-01,,ACTIVE,Marketing,Professional
+562,556,0,Orange Lion Hospitality Consulting Sagl.,Director Projects,2019-03,,ACTIVE,Project Management,Director
+563,557,0,LASER COMPONENTS,Geschäftsführer / General Manager,2023-11,,ACTIVE,Other,Management
+564,558,0,Engel & Völkers Hotel Consulting GmbH,Managing Partner,2016-11,,ACTIVE,Business Development,Management
+565,561,0,Greenwood Health and Living,Diatary Aide,2011,,ACTIVE,Other,Professional
+566,563,0,Freelance,Consultant,2015-08,,ACTIVE,Consulting,Professional
+567,564,0,zeb consulting,Research Analyst,2020-09,,ACTIVE,Other,Professional
+568,565,0,Siemens AG,Senior Consultant Data Center,2016-04,,ACTIVE,Consulting,Senior
+569,566,0,RIV Technologies,Head Of RIV Academy - Blockchain,2024-04,,ACTIVE,Information Technology,Lead
+570,567,0,PROXORA Compliance Management. Next Level.,Software Architect,2023-11,,ACTIVE,Information Technology,Senior
+571,568,0,Bosch,Product and Service Manager Qualitymanagement; Solution architect,2021-05,,ACTIVE,Other,Professional
+572,569,0,Baumanu GmbH & Co. KG,Geschäftsführender Inhaber,2003-05,,ACTIVE,Other,Management
+573,570,0,B+S GmbH Logistik und Dienstleistungen,Team/Bereichsleiter,2024-10,,ACTIVE,Other,Lead
+574,571,0,B&S Sicherheits- und Elektrotechnik GmbH,Elektrotechniker mit erweitertem Aufgabenbereich,2010-10,,ACTIVE,Other,Professional
+575,572,0,Belastingdienst,(gedelegeerd) Business owner,2022-03,,ACTIVE,Other,Management
+576,573,0,MSA - The Safety Company,"Regional Sales Manager, Central European Region",2018-01,,ACTIVE,Sales,Professional
+577,574,0,ASH Adolf Schlünder Handelsagentur GmbH & Co. KG,Mitglied der Geschäftsleitung,2018-07,,ACTIVE,Other,Management
+578,574,1,ASH Adolf Schlünder Handelsagentur GmbH & Co. KG,Key-Account-Manager,2013-07,,ACTIVE,Sales,Professional
+579,575,0,CONTACT Software,Chief Transformation Officer,2023-05,,ACTIVE,Other,Management
+580,575,1,Freelance,In non compete phase,2023-01,,ACTIVE,Other,Professional
+581,576,0,C.H. Robinson Worldwide GmbH,General Manager:in,2018-01,,ACTIVE,Other,Management
+582,576,1,C.H. Robinson,Branch Manager,2011,,ACTIVE,Other,Professional
+583,577,0,Stealth Startup,Summoner,2023-11,,ACTIVE,Other,Professional
+584,577,1,dOrg,Business Development Agent,2024-08,,ACTIVE,Business Development,Professional
+585,577,2,Hive3,Advisor,2024-05,,ACTIVE,Consulting,Professional
+586,577,3,Redcurry,Advisor,2023-04,,ACTIVE,Consulting,Professional
+587,577,4,OpenExO,ExO Sprint Coach,2020-05,,ACTIVE,Consulting,Lead
+588,577,5,OpenExO,ExO Trainer,2020-07,,ACTIVE,Other,Professional
+589,577,6,OpenExO,Ambassador,2020-03,,ACTIVE,Sales,Professional
+590,577,7,OpenExO,ExO Consultant,2020-02,,ACTIVE,Consulting,Professional
+591,577,8,OpenExO,Member,2019-02,,ACTIVE,Other,Professional
+592,577,9,Sistema B,Multiplicador B,2018-12,,ACTIVE,Other,Professional
+593,578,0,Indépendant,Professeur de Mathématique particulier,2024-09,,ACTIVE,Other,Professional
+594,579,0,Teledyne DALSA,Business Development Leader,2022-01,,ACTIVE,Business Development,Lead
+595,581,0,Kulturliebekoeln,Mitgründerin,2020-01,,ACTIVE,Other,Management
+596,581,1,TOR COLOGNE LIMITED,Digitalbeauftragte,2018-01,,ACTIVE,Marketing,Lead
+597,582,0,Robert Fink Media,Eigenaar,2020-05,,ACTIVE,Other,Management
+598,582,1,Hrodberaht Film,Eigenaar,2022-01,,ACTIVE,Other,Management
+599,584,0,ThyssenKrupp Steel Europe AG,Automotive Sales Manager,2012-10,,ACTIVE,Sales,Professional
+600,585,0,MOVATI Athletic,Personal Trainer,2023-01,,ACTIVE,Other,Professional
+601,586,0,ederIT.com,Geschäftsführer,2010-06,,ACTIVE,Other,Management
+602,589,0,Holistic Industries,cultivation,2022,,ACTIVE,Other,Professional
+603,590,0,kein,Pensionär,2011-01,,ACTIVE,Other,Professional
+604,591,0,Flevorubber Extrusion B.V.,Supply Chain Manager,2025-02,,ACTIVE,Other,Professional
+605,592,0,Vereinigte Füllkörper-Fabriken GmbH & Co. KG,Member Board Of Directors,2003-07,,ACTIVE,Other,Management
+606,594,0,International SOS,"Vice President, Human Resources, Health & Security Subscription Services (H3S), North Americas",2021-11,,ACTIVE,Human Resources,Management
+607,595,0,Pembrokeshire County Council,Transport Manager,1996-04,,ACTIVE,Other,Professional
+608,596,1,habitA+,Président CCRG Hauts de France,2018-06,,ACTIVE,Other,Management
+609,597,0,Vertiv Co,"Key Account Director Europe, Middle East & Africa",2016-12,,ACTIVE,Sales,Director
+610,597,1,Emerson Network Power,Key Account Director Europe Middle East & Africa,2012-01,,ACTIVE,Sales,Director
+611,598,0,cooee GmbH,Softwareentwickler,2017-02,,ACTIVE,Information Technology,Professional
+612,600,0,Deutsche Telekom,Radio Engineering @ TDI | Huawei SRAN & Mobile Network Testing,2024-10,,ACTIVE,Information Technology,Professional
+613,602,0,Continental,Advanced Purchasing - Commercial Vehicles and Services,2020-04,,ACTIVE,Purchasing,Senior
+614,603,0,Lumiére Group A/S,Owner - CSO,2004-03,,ACTIVE,Sales,Management
+615,604,0,Voi Technology,Site Manager,2024-02,,ACTIVE,Project Management,Professional
+616,605,0,STELACON GmbH,"SAP Consultant, Geschäftsführer, Gesellschafter",2014-01,,ACTIVE,Consulting,Management
+617,606,0,bonprix,"Buying, Porecurement & Allocation",2018-05,,ACTIVE,Purchasing,Professional
+618,607,0,Malteserorden,Kanzler der deutschen Assoziation,2015-01,,ACTIVE,Other,Management
+619,607,1,Bistum,Justitiar,2014-03,,ACTIVE,Other,Professional
+620,607,2,FORESTA Management,Geschäftsführer,2010-01,,ACTIVE,Other,Management
+621,607,3,Malteser Hilfsdienst,Präsidium,1999,,ACTIVE,Other,Management
+622,607,4,Spies & Brunner RAe,Rechtsanwalt,1995-01,,ACTIVE,Other,Professional
