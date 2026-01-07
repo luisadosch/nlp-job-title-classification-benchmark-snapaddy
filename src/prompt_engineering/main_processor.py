@@ -129,7 +129,7 @@ def run_labeling(cfg: Config, max_retries: int = 3, base_sleep: float = 1.5):
 if __name__ == "__main__":
     cfg = Config()
     cfg.start_row_id = 1000
-    cfg.end_row_id = 1000
+    cfg.end_row_id = 1887
 
     labeled_df = run_labeling(cfg)
     print(labeled_df.head(20))

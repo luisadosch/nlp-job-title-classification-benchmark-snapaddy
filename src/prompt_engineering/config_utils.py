@@ -69,7 +69,7 @@ You must assign **exactly one** of the following seniority levels:
 - Professional → **2.0**
 - Senior → **3.0**
 - Lead → **4.0**
-- Management → **5.0**
+- Management → **5.0** (e.g., Geschäftsführer, Abteilungsleiter, CEO)
 - Director → **6.0**
 
 If the job title is ambiguous, select the **most likely seniority level** based on standard CV and job market conventions.
@@ -126,6 +126,7 @@ Output:
 * The output must be valid JSON
 * The department must be one of the allowed labels
 * The seniority level must be one of: "1.0", "2.0", "3.0", "4.0", "5.0", "6.0"
+* Fallback Rule: If the job title is ambiguous or does not clearly fit into any department or seniority, assign the department label "Other" and the seniority level "2.0"
 
 Task
 

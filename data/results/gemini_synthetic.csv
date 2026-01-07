@@ -54,22 +54,22 @@ row_id,position,department,seniority
 52,IT-Bereichsleiter,Information Technology,5.0
 53,Fachbereichsleiter IT-Services,Information Technology,5.0
 54,Abteilungsleiter IT-Produktion und Systemtechnik,Information Technology,5.0
-55,Geschäftsführer,Other,6.0
+55,Geschäftsführer,Other,5.0
 56,"Projektleiter, Teamleiter",Project Management,4.0
 57,"PC-Support und Installation, Verkauf",Customer Support,1.0
 58,Informatik Studium,Information Technology,1.0
-59,Founder & CEO,Business Development,6.0
+59,Founder & CEO,Other,5.0
 60,Senior Video Editor,Marketing,3.0
 61,Senior Video Editor,Marketing,3.0
 62,DI Colorist,Other,2.0
-63,Geschäftsführer,Other,6.0
+63,Geschäftsführer,Other,5.0
 64,Director,Other,6.0
 65,Senior Publicist,Marketing,3.0
 66,Manager,Other,5.0
 67,Freier Agent / Handelsvertreter,Sales,1.0
 68,Freier Agent / Handelsvertreter,Sales,1.0
 69,Assistant to the Managing Director,Administrative,1.0
-70,Teilhabender Geschäftsführer,Business Development,5.0
+70,Teilhabender Geschäftsführer,Other,5.0
 71,General Manager und Geschäftsinhaber,Other,5.0
 72,Soldat,Other,1.0
 73,Assistent to Managing Director,Administrative,2.0
@@ -106,11 +106,11 @@ row_id,position,department,seniority
 104,Buchhalterin,Administrative,2.0
 105,"Bankkauffrau, verschiedene Positionen",Administrative,2.0
 106,"Bankkauffrau, verschiedene Positionen",Administrative,2.0
-107,Geschäftsführer CFO,Other,6.0
+107,Geschäftsführer CFO,Other,5.0
 108,Vorstand,Other,5.0
 109,Aufsichtsrat,Other,5.0
-110,Investor,Business Development,2.0
-111,Investor,Business Development,2.0
+110,Investor,Other,5.0
+111,Investor,Other,5.0
 112,Mitglied der Geschäftsleitung,Other,5.0
 113,Manager,Other,5.0
 114,Senior Berater,Consulting,3.0
@@ -126,7 +126,7 @@ row_id,position,department,seniority
 124,Wissenschaftlicher Mitarbeiter Versorgungsforschung,Other,1.0
 125,Projektleitung: Prozessevaluation eines innovativen Versorgungsmodells,Project Management,4.0
 126,Freier Projektmitarbeiter Datenanalyse,Project Management,1.0
-127,CFO,Other,6.0
+127,CFO,Other,5.0
 128,Berater,Consulting,2.0
 129,Director,Other,6.0
 130,Vice President Sales / Senior Manager Quality and R&D,Sales,6.0
@@ -218,10 +218,10 @@ row_id,position,department,seniority
 216,IT Consultant,Consulting,2.0
 217,Human Resources Director,Human Resources,6.0
 218,Manager,Other,5.0
-219,CEO,Other,6.0
-220,CEO,Other,6.0
-221,CEO and Shareholder,Other,6.0
-222,CEO and Shareholder,Other,6.0
+219,CEO,Other,5.0
+220,CEO,Other,5.0
+221,CEO and Shareholder,Other,5.0
+222,CEO and Shareholder,Other,5.0
 223,Founder and Shareholder,Business Development,5.0
 224,Shareholder,Other,1.0
 225,Head of Payment IT Solutions,Information Technology,4.0
@@ -236,13 +236,13 @@ row_id,position,department,seniority
 234,Senior Financial & Business Strategy Analyst,Business Development,3.0
 235,Strategy and Operations Corporate Consultant,Consulting,2.0
 236,Financial Services Associate Auditor,Consulting,2.0
-237,Geschäftsführer,Other,6.0
-238,CEO,Other,6.0
+237,Geschäftsführer,Other,5.0
+238,CEO,Other,5.0
 239,Product Manager,Marketing,5.0
 240,Investor,Business Development,2.0
 241,Shareholder,Other,1.0
-242,SVP People & Culture Management and Services; CEO METRO Campus Services GmbH,Human Resources,6.0
-243,SVP HR Services & CEO METRO Campus Services GmbH,Human Resources,6.0
+242,SVP People & Culture Management and Services; CEO METRO Campus Services GmbH,Human Resources,5.0
+243,SVP HR Services & CEO METRO Campus Services GmbH,Human Resources,5.0
 244,Global Director HR Operations & Compensation / Managing Director METRO Campus Services GmbH,Human Resources,6.0
 245,Global Director HR Campus,Human Resources,6.0
 246,Director Campus HR Operations,Human Resources,6.0
@@ -269,7 +269,7 @@ row_id,position,department,seniority
 267,Commercial Manager,Business Development,5.0
 268,Commercial Manager,Sales,5.0
 269,Commercial Manager,Business Development,5.0
-270,CEO,Other,6.0
+270,CEO,Other,5.0
 271,Professional Freelancer,Other,2.0
 272,Senior Manager,Other,5.0
 273,Managing Consultant,Consulting,5.0
@@ -295,9 +295,9 @@ row_id,position,department,seniority
 293,Kfm. Leiter/Prokurist,Administrative,5.0
 294,Kfm. Leiter,Administrative,5.0
 295,Stellv. Kfm. Leiter/Leiter Controlling,Administrative,5.0
-296,Mitbegründer und Geschäftsführer,Business Development,5.0
+296,Mitbegründer und Geschäftsführer,Other,5.0
 297,Systemischer Coach und Organisationsberater,Consulting,2.0
-298,Sprecher der Geschäftsführung,Other,6.0
+298,Sprecher der Geschäftsführung,Other,5.0
 299,Geschäftsführer,Other,5.0
 300,Referent des Vorstands,Administrative,3.0
 301,Gründungsdirektor des IWM,Other,6.0
@@ -376,7 +376,7 @@ row_id,position,department,seniority
 374,Mechaniker in der Produktentwicklung,Other,1.0
 375,Mechaniker im Betriebsmittelbau,Other,1.0
 376,Senior Advisor to the CS Pension Fund in Switzerland,Consulting,3.0
-377,CEO CS Pension Fund in Switzerland,Other,6.0
+377,CEO CS Pension Fund in Switzerland,Other,5.0
 378,Board Member of the Supervisory Board of RFPSS,Other,5.0
 379,Board Member,Other,5.0
 380,Past President,Other,5.0
@@ -389,8 +389,8 @@ row_id,position,department,seniority
 387,"Duales Studium: Betriebswirt (VWA) / Bachelor of Arts, Ausbildung: Groß- und Außenhandelskaufmann",Administrative,1.0
 388,Chief Legal Officer,Other,6.0
 389,Associate,Other,2.0
-390,CEO,Other,6.0
-391,CEO,Other,6.0
+390,CEO,Other,5.0
+391,CEO,Other,5.0
 392,Verkaufsleiter,Sales,4.0
 393,Responsable développement projets,Project Management,4.0
 394,Assistante de direction,Administrative,1.0
@@ -413,7 +413,7 @@ row_id,position,department,seniority
 411,"Senior IT Consultant, European Technical Lead",Information Technology,4.0
 412,Statistical Consultant,Consulting,2.0
 413,Praktikant,Other,1.0
-414,Secretary General/CEO Welthungerhilfe,Administrative,6.0
+414,Secretary General/CEO Welthungerhilfe,Administrative,5.0
 415,Executive Director Programme and Projects,Project Management,6.0
 416,Head of Sector Unit,Other,5.0
 417,Regional Director West Africa,Other,6.0
@@ -421,7 +421,7 @@ row_id,position,department,seniority
 419,Chair of the Board of Directors,Other,6.0
 420,Junior Rural Development Expert,Consulting,1.0
 421,Fachreferent MatWerk - Materials Engineering Specialist,Other,2.0
-422,CEO,Other,6.0
+422,CEO,Other,5.0
 423,Gesellschafter,Other,1.0
 424,Head Of Sales,Sales,5.0
 425,Projektmanagement & Sales,Project Management,2.0
@@ -442,9 +442,9 @@ row_id,position,department,seniority
 440,Adjunct Researcher,Other,1.0
 441,Director eBusiness Development,Business Development,6.0
 442,Director Product Management,Project Management,6.0
-443,CEO,Other,6.0
+443,CEO,Other,5.0
 444,Director IT/Media-Industry,Information Technology,6.0
-445,CEO,Other,6.0
+445,CEO,Other,5.0
 446,Senior Consultant,Consulting,3.0
 447,Scientific Assistant,Other,1.0
 448,Self-Employed,Other,1.0
@@ -520,7 +520,7 @@ row_id,position,department,seniority
 518,Geschäftsführer,Other,5.0
 519,Senior Director Product Management,Project Management,6.0
 520,Director Product Management,Project Management,6.0
-521,CEO Emeldi Technologies,Other,6.0
+521,CEO Emeldi Technologies,Other,5.0
 522,VP Global Alliances,Business Development,6.0
 523,Alliance Manager,Business Development,4.0
 524,Project Manager & Business Consultant,Project Management,4.0
@@ -647,16 +647,16 @@ row_id,position,department,seniority
 645,Senior Software Developer,Information Technology,3.0
 646,Software Developer,Information Technology,2.0
 647,Software Developer,Information Technology,1.0
-648,Geschäftsführer / CEO&COO,Other,6.0
-649,Geschäftsführer - PLAZAMEDIA Austria GmbH,Business Development,5.0
+648,Geschäftsführer / CEO&COO,Other,5.0
+649,Geschäftsführer - PLAZAMEDIA Austria GmbH,Other,5.0
 650,Delegierter des Verwaltungsrats - PLAZAMEDIA Swiss AG,Other,5.0
 651,Leiter Technische Koordination/Herstellung,Other,4.0
 652,Leiter Produktionsplanung,Purchasing,4.0
 653,Produktionsmanager,Other,5.0
 654,Projektleiter / Mediengestalter / Kameramann,Project Management,4.0
 655,Customer Executive & Member of Management Northern Europe,Customer Support,5.0
-656,Strategic Advisor - CEO Office Energy Systems,Consulting,2.0
-657,SVP / Business Development Director & Member of Management North America,Business Development,6.0
+656,Strategic Advisor - CEO Office Energy Systems,Consulting,5.0
+657,SVP / Business Development Director & Member of Management North America,Business Development,5.0
 658,"VP / Business Development & Member of Management - Denmark, Sweden, Poland",Business Development,5.0
 659,VP / Regional Manager Sales - Northern & Eastern Europe,Sales,6.0
 660,Head of Training Academy - Northern & Eastern Europe,Human Resources,6.0
@@ -680,9 +680,9 @@ row_id,position,department,seniority
 678,Werkstudent Corporate M&A,Business Development,1.0
 679,Associate,Other,2.0
 680,Recruitment Consultant,Human Resources,2.0
-681,CEO,Other,6.0
+681,CEO,Other,5.0
 682,Geschäftsführender Gesellschafter,Other,5.0
-683,CEO,Other,6.0
+683,CEO,Other,5.0
 684,Corporate Communications & Marketing Services Senior Manager,Marketing,5.0
 685,Corporate & Marketing Communications Director,Marketing,6.0
 686,Corporate Communications Manager,Marketing,5.0
@@ -726,7 +726,7 @@ row_id,position,department,seniority
 724,SVP Sales & Accounts,Sales,6.0
 725,acting Vice President Consulting Services,Consulting,6.0
 726,Director Consulting Services,Consulting,6.0
-727,CEO and Owner,Business Development,6.0
+727,CEO and Owner,Business Development,5.0
 728,Director Product Development,Business Development,6.0
 729,Director of Global Demand & Integration,Business Development,6.0
 730,Director of Product Marketing,Marketing,6.0
@@ -758,7 +758,7 @@ row_id,position,department,seniority
 756,Director of Technical and Regulatory Affairs,Other,6.0
 757,Trustee,Other,1.0
 758,Senior Manager,Other,5.0
-759,Inhaber und Geschäftsführer,Business Development,5.0
+759,Inhaber und Geschäftsführer,Other,5.0
 760,Senior Manager,Other,5.0
 761,Manager,Other,5.0
 762,Senior Consultant,Consulting,3.0
@@ -807,7 +807,7 @@ row_id,position,department,seniority
 805,Sales Engineer,Sales,2.0
 806,Leiter Endkontrolle und Fertigungssteuerung Endkontrolle/Endfertigung,Other,4.0
 807,Lehrerin,Other,1.0
-808,CEO,Other,6.0
+808,CEO,Other,5.0
 809,Quality Coordinator,Other,2.0
 810,Betriebsratsvorsitzender,Human Resources,2.0
 811,"Pensionskundechef / Account Executive - Global Employee Benefits, Corporate Pension",Sales,4.0
@@ -839,12 +839,12 @@ row_id,position,department,seniority
 837,Quality Assurance Suppliers (Intern),Purchasing,1.0
 838,Human Resources (Intern),Human Resources,1.0
 839,Geschäftsführender Gesellschafter,Business Development,5.0
-840,Founder & CEO Investments,Business Development,6.0
-841,Geschäftsführer,Other,6.0
+840,Founder & CEO Investments,Business Development,5.0
+841,Geschäftsführer,Other,5.0
 842,Geschäftsführender Gesellschafter,Business Development,5.0
 843,Geschäftsführender Gesellschafter,Business Development,5.0
 844,Geschäftsführender Gesellschafter,Business Development,5.0
-845,Gesellschafterin,Other,1.0
+845,Gesellschafterin,Other,5.0
 846,Geschäftsführender Gesellschafter,Business Development,5.0
 847,Inhaber,Other,5.0
 848,Sales Director EMEA,Sales,6.0
@@ -880,7 +880,7 @@ row_id,position,department,seniority
 878,"General Manager, Capital Construction",Project Management,5.0
 879,"Manager, Construction Oversight",Project Management,5.0
 880,Independent Advisor to Founders and Funds,Consulting,2.0
-881,"Chairman, CEO & Founding Partner",Other,6.0
+881,"Chairman, CEO & Founding Partner",Other,5.0
 882,"Managing Partner, Venture Partner",Business Development,6.0
 883,"Member of the Board, Vice Chairman",Other,6.0
 884,"Managing Partner, Senior Advisor",Consulting,5.0
@@ -908,16 +908,16 @@ row_id,position,department,seniority
 906,Software Developer,Information Technology,2.0
 907,Intern,Other,1.0
 908,Software Developer,Information Technology,1.0
-909,COO (Geschäftsführende Gesellschafterin),Other,6.0
+909,COO (Geschäftsführende Gesellschafterin),Other,5.0
 910,ada Fellow,Other,1.0
 911,Principal,Other,3.0
 912,"Beraterin, Trainerin, Coach für Sondersituationen, Veränderungen und Perspektiven",Consulting,2.0
 913,Seniorpartnerin,Other,3.0
 914,Personalberaterin,Human Resources,2.0
-915,Geschäftsführender Gesellschafter,Business Development,6.0
+915,Geschäftsführender Gesellschafter,Other,5.0
 916,Geschäftsführer,Other,5.0
 917,Projektleiter,Project Management,4.0
-918,Geschäftsführer,Business Development,5.0
+918,Geschäftsführer,Other,5.0
 919,Expat Jumbo Operator,Other,1.0
 920,Jumbo Operator - offshore,Other,1.0
 921,Bogger relief jumbo operator,Other,1.0
@@ -929,7 +929,7 @@ row_id,position,department,seniority
 927,All rounder,Other,1.0
 928,Geschäftsführer,Other,5.0
 929,Retired,Other,1.0
-930,CEO; Shareholder,Other,6.0
+930,CEO; Shareholder,Other,5.0
 931,Software Engineer,Information Technology,2.0
 932,Vice President; Shareholder,Other,6.0
 933,Vice President; Shareholder,Other,6.0
@@ -999,3 +999,889 @@ row_id,position,department,seniority
 997,Application Engineer,Information Technology,3.0
 998,Research Internship,Other,1.0
 999,Scientific Assistant,Other,1.0
+1000,Scientific Assistant,Other,1.0
+1001,Nurse Practitioner,Other,2.0
+1002,Adult Gerontology Nurse Practitioner,Other,2.0
+1003,RN,Other,2.0
+1004,Adult Gerontology Nurse Practitioner,Other,2.0
+1005,"Staff Nurse, Case Management",Other,2.0
+1006,RN,Other,1.0
+1007,RN Unit Manager,Other,5.0
+1008,LPN,Other,1.0
+1009,Packhouse Managing consultant,Consulting,2.0
+1010,"Re-organization warehouse, plant management and quality control manager",Other,5.0
+1011,Organization Manager,Administrative,5.0
+1012,Project Manager packhouse organic vegetable,Project Management,2.0
+1013,Operational managing packhouse vegetable,Other,5.0
+1014,Organization Manager packhouse vegetable Kenya,Other,5.0
+1015,Operational Manager packhouse,Other,5.0
+1016,"Quality Research Manager, Indu Farm",Other,5.0
+1017,"Quality and packhouse manager, Kigali, Rwanda",Other,5.0
+1018,Quality and research manager,Other,5.0
+1019,Quality manager flowers,Other,5.0
+1020,Co-owner: of three flower shops,Business Development,5.0
+1021,Verwaltungsrat,Administrative,5.0
+1022,Chairman of the Board of Directors,Other,6.0
+1023,CEO,Other,5.0
+1024,"Deputy CEO, Member of the Executive Board, Head Banking and Securities Supervision",Other,5.0
+1025,Head Project Management / Head Management Office,Project Management,5.0
+1026,Development Manager,Business Development,5.0
+1027,Planungsmanager / Systemplanung,Project Management,5.0
+1028,Head of Application Technology / Leiter Anwendungstechnik,Information Technology,5.0
+1029,Anwendungstechniker,Information Technology,2.0
+1030,Vertriebsspezialist,Sales,2.0
+1031,Rechtsanwalt,Other,2.0
+1032,Business Owner,Business Development,5.0
+1033,HW-Developer BU Motion,Information Technology,2.0
+1034,"HW-Entwickler, Layout, Testsysteme",Information Technology,2.0
+1035,"Entwickler, Layout",Information Technology,1.0
+1036,Head of Organization Projects and Facility Operations,Project Management,5.0
+1037,General Operations Manager,Other,5.0
+1038,Landwirtschaftsmeister,Other,1.0
+1039,Head of Global Life Products,Other,6.0
+1040,Head of Performance Management / regional CFO China,Human Resources,5.0
+1041,"Interim Regional Manager India, Greece and Turkey",Other,5.0
+1042,Head of IT Benelux,Information Technology,5.0
+1043,Implementation Manager Ergo China Life,Project Management,4.0
+1044,Regional Management China (Market Entry & Controlling),Business Development,5.0
+1045,Consultant for Employee Benefits (Corporate New Business Department),Consulting,2.0
+1046,Consultant for Financial Services / Insurance,Consulting,2.0
+1047,Consultant for international Employee Benefits,Consulting,2.0
+1048,Investor,Business Development,1.0
+1049,Investor,Business Development,1.0
+1050,Investor,Business Development,2.0
+1051,Investor,Business Development,2.0
+1052,Investor,Business Development,2.0
+1053,Founder,Business Development,5.0
+1054,Professor,Other,1.0
+1055,Head of Nucleic Acid Research,Other,6.0
+1056,Chief Scientific Officer,Other,6.0
+1057,Postdoc,Other,1.0
+1058,Geschäftsführer,Other,5.0
+1059,Executive Assistant to the President,Administrative,5.0
+1060,Founder & President of GLELCS Inc.,Business Development,5.0
+1061,Department Head ILS & Product Support,Other,5.0
+1062,Manager LSA & Technical Publications,Other,5.0
+1063,G/L Test Support,Customer Support,1.0
+1064,ILS Subject Matter Expert,Other,3.0
+1065,Professor,Other,1.0
+1066,Partner,Consulting,3.0
+1067,Webentwickler,Information Technology,2.0
+1068,Director Construction & Engineering,Other,6.0
+1069,Geschäftsführender Inhaber,Business Development,5.0
+1070,Geschäftsführer,Other,5.0
+1071,Selbstständiger Unternehmer,Business Development,2.0
+1072,Selbständiger Unternehmer,Business Development,1.0
+1073,Produkt- und Key Account Manager Industrie Division,Sales,2.0
+1074,Chief Operating Officer - Consumer Bank | Head of Strategic Planning and Corporate Development,Business Development,6.0
+1075,Vice Chair Board Of Directors,Other,6.0
+1076,Partner,Business Development,5.0
+1077,"Executive Vice President, Corporate Development",Business Development,6.0
+1078,President,Other,6.0
+1079,Dekanatsrätin,Administrative,1.0
+1080,Mitarbeiter Produktmanagement,Marketing,1.0
+1081,Service Agent,Customer Support,1.0
+1082,Team Manager Area South / Gruppenleiter Region Süd,Sales,4.0
+1083,Partner Account Manager,Sales,4.0
+1084,Sales Manager,Sales,5.0
+1085,Filialleiter (Groß-Filialleiter),Sales,5.0
+1086,Stellvertretender Regionalmanager,Other,5.0
+1087,Verkäufer,Sales,1.0
+1088,Verkauf und Techniker,Sales,1.0
+1089,Manager | Prokurist | Strategie- und Managementberatung Financial Services,Consulting,5.0
+1090,Assistant Manager | Financial Services Strategie- und Managementberatung,Consulting,4.0
+1091,Praktikant Corporate Treasury Sales,Sales,1.0
+1092,Werkstudent Datenmanagement,Administrative,1.0
+1093,"Praktikant Corporate Finance, M&A",Business Development,1.0
+1094,Freiwilliges Soziales Jahr Mobile Soziale Dienste,Other,1.0
+1095,Head of Development,Business Development,5.0
+1096,Part Time lecturer in Principles of writing and in Mythology,Other,1.0
+1097,Development director / scriptwriter,Other,6.0
+1098,Manager,Other,5.0
+1099,Software Developer,Information Technology,2.0
+1100,Software Engineer,Information Technology,2.0
+1101,Intern,Other,1.0
+1102,Intern,Other,1.0
+1103,Chairman of the Board,Other,6.0
+1104,Independent Consultant,Consulting,2.0
+1105,"Advisor, Scanfil",Consulting,2.0
+1106,Chief Executive Officer,Other,6.0
+1107,"Director, Sales and Marketing",Sales,6.0
+1108,Board Member,Other,5.0
+1109,Managing Director,Other,6.0
+1110,"Vice President, Sales and Business Development",Sales,6.0
+1111,Various senior management positions in sales and services,Sales,5.0
+1112,Several management positions,Other,5.0
+1113,Stammdatenmanager R&D ENGINEERING / R&D,Other,2.0
+1114,Laserbediener,Other,1.0
+1115,Vorarbeiter,Other,1.0
+1116,aktiver Gesellschafter,Business Development,2.0
+1117,aktiver Gesellschafter,Business Development,1.0
+1118,Partner,Business Development,5.0
+1119,Geschäftsführer,Other,5.0
+1120,Geschäftsführender Gesellschafter,Other,5.0
+1121,Consultant,Consulting,2.0
+1122,Leiter Produktion / Mitinhaber,Other,5.0
+1123,Leiter Produktion,Other,5.0
+1124,Werstattleiter und Lehrlingsbetreuer,Other,4.0
+1125,Arbeitsvorbereiter für Spezialküchen,Purchasing,1.0
+1126,Bankschreiner und Oberflächenbehandlung,Other,2.0
+1127,Senior Manager,Other,5.0
+1128,Mall Head,Other,5.0
+1129,Assistant Manager - DLF Gurgaon Malls,Administrative,4.0
+1130,Service Delivery Engineer,Information Technology,2.0
+1131,Mediation Clinic,Other,1.0
+1132,Legal Intern,Other,1.0
+1133,Judicial Intern,Other,1.0
+1134,Paralegal,Administrative,1.0
+1135,Summer Intern,Other,1.0
+1136,Head of Information Technology,Information Technology,5.0
+1137,President,Other,5.0
+1138,Vice President Sales & Marketing,Sales,6.0
+1139,Senior Brand Manager,Marketing,3.0
+1140,Director of Marketing / Senior Marketing Manager,Marketing,6.0
+1141,Senior Brand Manager,Marketing,3.0
+1142,Global Brand Manager,Marketing,5.0
+1143,Account Development Manager,Sales,3.0
+1144,Inside Sales Representative,Sales,2.0
+1145,Business Trainee,Business Development,1.0
+1146,Weinbautechniker,Other,2.0
+1147,Leiter Instandhaltung,Other,5.0
+1148,Leiter Instandhaltung,Other,5.0
+1149,Arbeitsvorbereitung,Purchasing,1.0
+1150,Maschinenführer und Instandhalter,Other,1.0
+1151,Salesman,Sales,1.0
+1152,Rider,Other,1.0
+1153,Necrophore,Other,1.0
+1154,Senior Human Resources Manager,Human Resources,4.0
+1155,Human Resources Business Partner,Human Resources,2.0
+1156,"Director, Talent Acquisition/ HR Generalist",Human Resources,6.0
+1157,Talent Acquisition Manager,Human Resources,4.0
+1158,Director Talent Acquisition,Human Resources,6.0
+1159,Senior Regional Human Resources Manager,Human Resources,3.0
+1160,Sr. Recruiter/ Employee Relations Specialist,Human Resources,3.0
+1161,Regional Human Resources Generalist,Human Resources,3.0
+1162,Geschäftsführer,Other,5.0
+1163,Bankkaufmann,Other,1.0
+1164,Direktor,Other,6.0
+1165,Influencer Marketing Executive,Marketing,2.0
+1166,Marketing Executive,Marketing,2.0
+1167,"Brand, Marketing, PR & Communications Intern",Marketing,1.0
+1168,Head Of Content,Marketing,5.0
+1169,Head Of Marketing,Marketing,5.0
+1170,Sales And Marketing Intern,Marketing,1.0
+1171,Summer Marketing Development Strategy Intern,Marketing,1.0
+1172,Secretary,Administrative,1.0
+1173,Spring Marketing Development Strategy Intern,Marketing,1.0
+1174,Digital Strategist,Marketing,2.0
+1175,Social Media Officer,Marketing,2.0
+1176,Counter Assistant,Administrative,1.0
+1177,Content Creator,Marketing,2.0
+1178,Assistant in Global Transactions Department,Administrative,1.0
+1179,Unternehmensinhaber,Business Development,5.0
+1180,Physiotherapist,Other,2.0
+1181,Physical therapist rehabilitation,Other,2.0
+1182,Physical Therapist,Other,2.0
+1183,Physical Therapist,Other,2.0
+1184,Physical Therapist,Other,2.0
+1185,Physical Therapist,Other,2.0
+1186,Physical Therapist,Other,2.0
+1187,Student,Other,1.0
+1188,Ministerial Officer,Other,2.0
+1189,Vizepräsident Junior,Other,1.0
+1190,Prokurist / Direktor Touristik,Other,6.0
+1191,Prokurist / Direktor Touristik,Other,6.0
+1192,Prokurist / Leitung Touristik Pauschalreisen & eCommerce,Business Development,5.0
+1193,Leitung Expansion,Business Development,5.0
+1194,"Leitung eCommerce - New Media, Organisation",Marketing,4.0
+1195,Geschäftsleiter,Business Development,5.0
+1196,Kipper -Spedition,Other,1.0
+1197,Pedagoga,Other,1.0
+1198,Behavioral Health Clinician,Other,2.0
+1199,Counselor,Consulting,2.0
+1200,Chief Instructor,Other,3.0
+1201,Service Coordinator,Customer Support,2.0
+1202,Owner,Business Development,5.0
+1203,Web Developer,Information Technology,2.0
+1204,Web Developer,Information Technology,2.0
+1205,Game Developer,Information Technology,2.0
+1206,Java Programmer,Information Technology,1.0
+1207,C & C++,Information Technology,2.0
+1208,Manager Custom Solutions,Other,5.0
+1209,Manager Service Delivery Center Türkiye,Information Technology,5.0
+1210,Manager Smart Applications,Information Technology,5.0
+1211,Product Owner Smart Applications (IoT-Software),Project Management,4.0
+1212,Founder,Business Development,3.0
+1213,Softwareentwickler C#/Angular,Information Technology,2.0
+1214,Junior Consultant Analytics,Consulting,1.0
+1215,Corporate Student Business Informatics,Information Technology,1.0
+1216,Trainee Information technology clerk,Information Technology,1.0
+1217,Responsable Développement Automotive,Business Development,5.0
+1218,Responsable distribution,Sales,5.0
+1219,Responsable CRC,Customer Support,4.0
+1220,Chef de Groupe Réclamation,Customer Support,4.0
+1221,Projektmanager strat. BK E/E Infrastruktur,Project Management,4.0
+1222,Projektcontroller Entwicklungskosten BK AF & BK IuK (Gen18&21),Project Management,2.0
+1223,Indirekter Einkauf Produktionsanlagen & Bau,Purchasing,2.0
+1224,Freier Mitarbeiter (Marketing),Marketing,1.0
+1225,Werkstudent Marketing,Marketing,1.0
+1226,Praktikum Controlling,Administrative,1.0
+1227,Serviceberater für Sonder- und Entwicklungsfahrzeuge,Customer Support,2.0
+1228,Auszubildender zum Kfz-Mechatroniker,Other,1.0
+1229,Freelancer,Other,2.0
+1230,Responsable de projet marketing et communications,Marketing,4.0
+1231,Vendeuse,Sales,1.0
+1232,Conseiller ventes,Sales,2.0
+1233,Leiter Fachbereich IT Security & Engineering,Information Technology,5.0
+1234,Geschäftsführung,Other,5.0
+1235,Vermittlung und Verrentung von Immobilien,Sales,2.0
+1236,Geschäftsführung,Other,5.0
+1237,Approvisionneuse Bilingue,Purchasing,1.0
+1238,Assistant commercial,Sales,1.0
+1239,Gestionnaire appro / logistique,Purchasing,2.0
+1240,Assistant exploitation,Administrative,1.0
+1241,Attaché commercial,Sales,1.0
+1242,Agent immobilier,Sales,2.0
+1243,Hotesse de vente,Sales,1.0
+1244,Assistant direction,Administrative,1.0
+1245,Assistant direction,Administrative,1.0
+1246,Digital Product Owner,Project Management,4.0
+1247,Engineering Team Leader,Information Technology,4.0
+1248,Project Leader,Project Management,4.0
+1249,Project/Design Engineer,Project Management,2.0
+1250,Head of Legal,Other,4.0
+1251,Receptionist,Administrative,1.0
+1252,Owner,Business Development,5.0
+1253,Brand Ambassador,Marketing,1.0
+1254,Wine Sales Specialist,Sales,2.0
+1255,Cellar Operations Specialist,Other,2.0
+1256,Wine Specialist,Sales,2.0
+1257,Marine Sustainability Technician,Other,1.0
+1258,Greenhouse Operations Intern,Other,1.0
+1259,Retail Director DACH,Sales,6.0
+1260,Chief Sales Officer,Sales,6.0
+1261,Gesamtverkaufsleiter,Sales,5.0
+1262,Geschäftsleiter,Other,5.0
+1263,Regionalverkaufsleiter und Geschäftsleiter,Sales,5.0
+1264,Geschäftsleiter,Other,5.0
+1265,Geschäftsleiter,Other,5.0
+1266,Abteilungsleiter Vertrieb,Sales,5.0
+1267,Gruppenleiter,Other,4.0
+1268,Call Agent,Customer Support,1.0
+1269,Chief Executive Officer,Other,6.0
+1270,Prosjektleder,Project Management,3.0
+1271,General Manager,Other,5.0
+1272,General Manager,Other,5.0
+1273,Storage King USA,Other,1.0
+1274,****** **** *******,Other,5.0
+1275,****** *******,Other,5.0
+1276,****** ******** ****** ** ********** ** ***** **********,Other,1.0
+1277,Purser,Other,2.0
+1278,Purser,Other,2.0
+1279,Vorstandsvorsitzender,Other,6.0
+1280,Vorstandsmitglied,Other,6.0
+1281,Stellvertretender Geschäftsführer,Other,5.0
+1282,Bereichsleiter Arbeit | Bildung | Inklusion,Other,5.0
+1283,Geschäftsführer,Other,5.0
+1284,Vorstandsmitglied,Other,5.0
+1285,Geschäftsführer,Other,5.0
+1286,Abteilungsleiter Maschinenmontage,Other,4.0
+1287,Abteilungsleiter Produktion,Other,5.0
+1288,Aufsichtsratsmitglied,Other,5.0
+1289,Associate | M&A,Business Development,2.0
+1290,Intern | Corporate Finance (M&A),Business Development,1.0
+1291,Working Student | Strategy and M&A,Business Development,1.0
+1292,Intern | M&A Consulting,Consulting,1.0
+1293,Intern | Transaction & Valuation Services,Other,1.0
+1294,Working Student | Private Wealth Management,Business Development,1.0
+1295,Dual Study Programme,Other,1.0
+1296,VP - Talent Acquisition & People & Culture(HR),Human Resources,6.0
+1297,Vice President - Talent Experience,Human Resources,6.0
+1298,Global Head of Human Resources,Human Resources,6.0
+1299,Sr. Manager Strategic HR,Human Resources,5.0
+1300,Talent Acquisition India & North America,Human Resources,3.0
+1301,HR Specialist (India & South East Asia),Human Resources,2.0
+1302,Executive Talent Acquisition,Human Resources,5.0
+1303,Partner,Business Development,5.0
+1304,Manager,Other,5.0
+1305,Project manager,Project Management,2.0
+1306,Senior Vice President R&D,Other,6.0
+1307,Dr. Albrecht Hoene,Other,1.0
+1308,Vice President R&D Component Development,Other,6.0
+1309,Head of Partner Management and Controls (Siemens Production Logistics),Business Development,5.0
+1310,Head of electronic engineering,Information Technology,4.0
+1311,Developer Cellular Phones,Information Technology,2.0
+1312,Hotelier/Gastronom,Other,2.0
+1313,Mechanical Engineering Specialist,Other,2.0
+1314,Industriereiniger,Other,1.0
+1315,Finanzassistent,Administrative,1.0
+1316,CEO,Other,5.0
+1317,IT-Consultant & Solution Architekt,Information Technology,3.0
+1318,Agile Coach / Berater,Consulting,2.0
+1319,Berater/Entwickler,Consulting,2.0
+1320,IT-Consultant,Information Technology,2.0
+1321,Inhaber,Other,5.0
+1322,CTO,Information Technology,6.0
+1323,IT-Consultant,Consulting,2.0
+1324,Software-Architekt/-Entwickler,Information Technology,3.0
+1325,Software-Architekt/-Entwickler,Information Technology,3.0
+1326,Entwickler,Information Technology,2.0
+1327,Praktikant,Administrative,1.0
+1328,Qualified Person,Other,2.0
+1329,Senior Vice President Global Supplier Management,Purchasing,6.0
+1330,Geschäftsführer,Other,5.0
+1331,Zentraleinkauf (zentraler strategischer Einkauf),Purchasing,2.0
+1332,Sr. International Agent,Sales,3.0
+1333,Onsite Supervisor,Other,3.0
+1334,Onsite Supervisor,Other,3.0
+1335,ramp agent/ assistant manager,Other,1.0
+1336,Manager- Hr Ops & Talent Acquisition,Human Resources,5.0
+1337,Human Resources Team Lead,Human Resources,4.0
+1338,Talent Acquisition Specialist,Human Resources,2.0
+1339,HR Executive,Human Resources,2.0
+1340,HR cum Recruiter,Human Resources,2.0
+1341,CEO,Other,5.0
+1342,Geschäftsführer,Other,5.0
+1343,Project Manager / Authorised Officer,Project Management,4.0
+1344,Consultant,Consulting,2.0
+1345,Assistant Electrician,Other,1.0
+1346,Machine shop,Other,1.0
+1347,Production Engineer,Other,2.0
+1348,Leiter Qualitätssicherung,Other,4.0
+1349,Qualitätsprüfer / Messtechniker,Other,1.0
+1350,Qualitätsprüfer und Messtechniker,Other,1.0
+1351,Qualitätstechniker,Other,2.0
+1352,Teamleiter nachgelagerte Prozesse,Project Management,4.0
+1353,Werkstattleiter,Other,4.0
+1354,Militärangehöriger,Other,1.0
+1355,Quality Engineering Manager,Other,5.0
+1356,Quality Assurance Manager,Other,5.0
+1357,Quality Engineer,Other,2.0
+1358,Quality Engineer,Other,2.0
+1359,Quality Engineer,Other,2.0
+1360,Application Engineer,Information Technology,3.0
+1361,Graduate Assistant,Administrative,1.0
+1362,Consultant,Consulting,2.0
+1363,Service Manager,Customer Support,5.0
+1364,Vertriebsleiter,Sales,4.0
+1365,Online Marketing / Lesermarketing Digital,Marketing,2.0
+1366,Online-Marketing,Marketing,1.0
+1367,Event-/Online-Marketing,Marketing,2.0
+1368,Freier Redakteur,Marketing,2.0
+1369,Produktmanager,Marketing,5.0
+1370,CRM-Manager,Marketing,3.0
+1371,Ausbildungsleitung kaufm. Bereich,Human Resources,5.0
+1372,Projekt Manager,Project Management,2.0
+1373,Verkaufssachbearbeiter u. Teamleiter,Sales,4.0
+1374,Partner und Inhaber,Other,6.0
+1375,Geschäftsleitungsmitglied / Senior Account Director,Sales,6.0
+1376,Account Executive / Account Director,Sales,6.0
+1377,Senior Advisor,Consulting,3.0
+1378,"Unternehmensberater, Trainer, Coach, Publizist",Consulting,2.0
+1379,Senior Recruitment Manager,Human Resources,4.0
+1380,"Director, Shareholder",Other,6.0
+1381,Shareholder,Other,5.0
+1382,Partner,Other,5.0
+1383,Geschäftsführender Gesellschafter,Other,5.0
+1384,Leitender Redakteur,Marketing,4.0
+1385,Vertriebsmitarbeiter,Sales,1.0
+1386,Hockey Coach,Other,1.0
+1387,Head Coach,Other,4.0
+1388,Hockey Player,Other,1.0
+1389,Hockey Player,Other,1.0
+1390,Hockey Player,Other,1.0
+1391,Professional Hockey Player,Other,2.0
+1392,Professional Hockey Player,Other,2.0
+1393,Professional Hockey Player,Other,2.0
+1394,Professional Hockey Player,Other,2.0
+1395,Quality Assurance Manager / Quality Contract Managment / GMP Auditor,Other,5.0
+1396,SVP Transformation & Strategy,Business Development,6.0
+1397,SVP People & Culture,Human Resources,6.0
+1398,"Vice President Human Resources, Prokurist",Human Resources,6.0
+1399,Vice President Marketing,Marketing,6.0
+1400,Marketing Manager,Marketing,5.0
+1401,Marketing Mitarbeiterin,Marketing,1.0
+1402,Stagiaire chaîne logistique,Purchasing,1.0
+1403,"Director, Sales Unit Benelux",Sales,6.0
+1404,Area Sales Manager Tschechien,Sales,4.0
+1405,Area Sales Manager Industrial Applications Europe,Sales,4.0
+1406,Vertriebsleiter Division I - Structured Wall Pipe Systems - Europe,Sales,4.0
+1407,Abteilungsleiter Vertrieb Bau-/Energietechnik,Sales,5.0
+1408,Gruppenleiter Vertrieb Bau-/Energietechnik,Sales,4.0
+1409,Aussendienstmitarbeiter Vertrieb Bau-/Energietechnik,Sales,2.0
+1410,Immobilienmakler,Sales,2.0
+1411,Versicherungsfachmann,Sales,2.0
+1412,Kaufmännischer Mitarbeiter,Administrative,2.0
+1413,Strategischer Einkäufer,Purchasing,3.0
+1414,Contract Buyer im technischen Einkauf,Purchasing,2.0
+1415,Indirekter Einkauf,Purchasing,1.0
+1416,Contract Buyer im Rohmaterialeinkauf,Purchasing,2.0
+1417,Operational SYSTEMS Buyer,Purchasing,2.0
+1418,Operational SYSTEMS Buyer,Purchasing,2.0
+1419,technischer Projekteinkauf,Purchasing,2.0
+1420,stellvertretender und Projektleiter Baueinkauf,Purchasing,4.0
+1421,technischer Einkäufer (Senior Buyer) - Maschinenbau,Purchasing,3.0
+1422,"Facheinkäufer Metalle, Oberflächenbehandung (Senior Buyer)",Purchasing,3.0
+1423,technischer Einkäufer,Purchasing,2.0
+1424,technischer Einkäufer,Purchasing,2.0
+1425,Kaufmännischer Assistent des Leiters der Laserproduktion,Administrative,1.0
+1426,Stellvertreter und Assistent des Fertigungsleiters Elektronik und Mechanik,Administrative,1.0
+1427,"Kaufmännischer Angestellter, verantwortlich für den allgemeinen Einkauf",Purchasing,2.0
+1428,"kaufmännisch und technischer Angestellter, Einkauf und Fertigung",Purchasing,2.0
+1429,VP Market Intelligence - Business Development - Sales,Business Development,6.0
+1430,VP Business Development,Business Development,6.0
+1431,Director / Project implementation Manager,Project Management,6.0
+1432,Aktionär,Other,1.0
+1433,Beratungsexperte Verwaltungsrat,Consulting,2.0
+1434,Produzent und Lizensen,Other,1.0
+1435,Geschäftsinhaber,Other,5.0
+1436,Institution Sport,Other,1.0
+1437,Geschäftsinhaber Import Export,Other,5.0
+1438,CEO,Other,5.0
+1439,Geschäftsführender Gesellschafter,Other,5.0
+1440,Werkstudent Facheinkauf Interieur,Purchasing,1.0
+1441,"Praktikant im Bereich Controlling, Risikomanagement und Digitalisierung im Vertrieb",Administrative,1.0
+1442,Lehrassistent Physikalische Chemie,Other,1.0
+1443,Projektstudent Stryber,Project Management,1.0
+1444,Bankkaufmann,Other,1.0
+1445,Account Director,Sales,6.0
+1446,Head teacher in art,Other,5.0
+1447,Founder,Other,5.0
+1448,Student,Other,1.0
+1449,Puzzles,Other,1.0
+1450,Executive director,Other,6.0
+1451,Deputy of Board,Other,5.0
+1452,Teacher in art,Other,2.0
+1453,Teacher in art,Other,1.0
+1454,Teacher in art,Other,1.0
+1455,Chef,Other,1.0
+1456,Produktmanager Far East,Marketing,5.0
+1457,Geschäftsführer,Other,5.0
+1458,Geschäftsführer,Other,5.0
+1459,Geschäftsführer,Other,5.0
+1460,Geschäftsführer,Other,5.0
+1461,Prokurist bei Losch Airport Service GmbH,Administrative,5.0
+1462,Stationsleiter Losch Airport Service Stuttgart GmbH,Other,5.0
+1463,Geschäftsführer Losch Airport Service Stuttgart GmbH,Other,5.0
+1464,Geschäftsführer Losch Airport Service Allgäu GmbH,Other,5.0
+1465,Stationsleiter Losch Airport Service Allgäu GmbH,Other,5.0
+1466,General Manager,Other,5.0
+1467,Managing Director | CEO,Other,5.0
+1468,"Managing Director Germany & Austria | Head of Cluster Germany, Austria, Benelux, and Russia",Other,6.0
+1469,Head of German OEMs and Global Strategic Alliance,Sales,6.0
+1470,Deputy General Director for International Business Development,Business Development,6.0
+1471,Sales Director Mercedes-Benz Lubricants,Sales,6.0
+1472,Key Account Manager Automotive Lubes,Sales,3.0
+1473,"District and Regional Manager Automotive Lubes at Deutsche Veedol, Burmah Oil",Sales,5.0
+1474,Spa Concierge,Customer Support,1.0
+1475,Inside Sales,Sales,1.0
+1476,Customer Service Supervisor,Customer Support,4.0
+1477,Data Engineer,Information Technology,2.0
+1478,Vice President Technology Film,Information Technology,6.0
+1479,Geschäftsführender Gesellschafter,Other,5.0
+1480,Director Customer Insights & Data Analytics,Marketing,6.0
+1481,Unternehmer,Other,5.0
+1482,Senior Researcher,Other,3.0
+1483,Account-Manager,Sales,2.0
+1484,Senior Key Account Manager,Sales,3.0
+1485,Head of Digital Radio Design,Information Technology,4.0
+1486,Radio ASIC System Designer,Information Technology,3.0
+1487,Antenna System Engineer,Information Technology,3.0
+1488,Project Manager,Project Management,3.0
+1489,DSP Software and System Developer - Active Antenna Systems,Information Technology,2.0
+1490,System Engineer - Communication Solutions,Information Technology,3.0
+1491,Advisor to Director R&D Electronics,Other,2.0
+1492,FPGA and Software Developer - Remote Radio Heads,Information Technology,2.0
+1493,Assistent,Administrative,1.0
+1494,Verkoper,Sales,1.0
+1495,Polizistin,Other,1.0
+1496,Polizistin,Other,1.0
+1497,Managing Partner,Other,5.0
+1498,Geschäftsführer,Other,5.0
+1499,"Leitender Direktor, Niederlassungsleiter",Other,6.0
+1500,Global Product Marketing Manager,Marketing,5.0
+1501,Product Marketing Executive,Marketing,2.0
+1502,Marketing Executive,Marketing,2.0
+1503,Sales & Marketing Executive,Marketing,2.0
+1504,Front Office Associate,Administrative,1.0
+1505,Leiter Kundendienst,Customer Support,5.0
+1506,Rentner,Other,1.0
+1507,Geschäftsführer,Other,5.0
+1508,Produktingenieur,Other,2.0
+1509,Projektleiter,Project Management,4.0
+1510,Projektmanager,Project Management,3.0
+1511,Leiter Softwareentwicklung,Information Technology,5.0
+1512,Support-Ingenieur,Customer Support,2.0
+1513,Product Marketing Engineer,Marketing,2.0
+1514,Software-Entwickler,Information Technology,2.0
+1515,Geschäftsleiter,Other,5.0
+1516,Marketing,Marketing,1.0
+1517,Investment Operations Manager,Other,5.0
+1518,Assurance Analyst Lead,Consulting,4.0
+1519,Senior Fund Accountant,Other,3.0
+1520,Fund Accountant,Administrative,2.0
+1521,Trustee,Other,1.0
+1522,Head of Operations,Other,5.0
+1523,Head of Fund Accounting,Other,4.0
+1524,Senior Operations Manager: Client Services,Customer Support,3.0
+1525,Fund Accounting Manager,Administrative,5.0
+1526,Audit Manager,Consulting,5.0
+1527,Senior Associate,Consulting,3.0
+1528,Senior Fund Accountant,Administrative,3.0
+1529,"regional manager DACH, strategic account manager",Sales,5.0
+1530,Pan-European Account manager,Sales,4.0
+1531,HP Business Manager Europe,Business Development,5.0
+1532,HP business manager,Business Development,5.0
+1533,Business Development manager,Business Development,5.0
+1534,Intenational Product Manager,Marketing,5.0
+1535,Export area manager,Sales,5.0
+1536,Vorstand / CEO bei Eberhard AG,Other,5.0
+1537,Vorstand / COO,Other,6.0
+1538,Prokurist,Other,5.0
+1539,Technischer Leiter,Other,4.0
+1540,Leiter Arbeitsvorbereitung/Einkauf,Purchasing,4.0
+1541,Geschäftsführer,Other,5.0
+1542,Leiter Arbeitsvorbereitung/Einkauf,Purchasing,4.0
+1543,Leiter Arbeitsvorbereitung,Purchasing,4.0
+1544,Projektingenieur,Project Management,2.0
+1545,Bau- und Projektleitung,Project Management,4.0
+1546,Bau- und Projektleitung,Project Management,2.0
+1547,Managing Partner,Other,5.0
+1548,Chairman,Other,5.0
+1549,NED,Other,5.0
+1550,Trustee and Vice Chair,Other,5.0
+1551,Chairman,Other,5.0
+1552,Chairman,Other,5.0
+1553,Chairman,Other,5.0
+1554,Non Executive Director,Other,6.0
+1555,Non Executive Director,Other,6.0
+1556,Partner,Other,5.0
+1557,Non Executive Director,Other,6.0
+1558,Non Executive Director,Other,6.0
+1559,Board Member,Other,5.0
+1560,Non Executive Director,Other,6.0
+1561,Non Executive Director,Other,6.0
+1562,Non Executive Director,Other,6.0
+1563,Non Executive Director,Other,6.0
+1564,Manager,Other,5.0
+1565,Geschäftsführender Gesellschafter,Other,5.0
+1566,SVP 3DS-Solutions CENIT Group,Business Development,2.0
+1567,"COO, Keonys Group",Other,6.0
+1568,Steering Board Member,Other,5.0
+1569,General Manager,Other,5.0
+1570,"Director, AIRBUS ww Business Unit",Business Development,6.0
+1571,"Director, Sales Europe, ENOVIA MatrixONE",Sales,6.0
+1572,"Director, Channel, Germany, Switzerland, Austria",Sales,6.0
+1573,"Director, Center of Competence, ENOVIA Smarteam",Information Technology,6.0
+1574,"Director, Center of Competence, PLM Solutions for Consumer Goods & Electronic Industry",Information Technology,6.0
+1575,"Manager R&D, Digital Manufacturing Strategy",Business Development,5.0
+1576,"Manager R&D, Manufacturing - NC Software",Other,5.0
+1577,Vertriebsleiter Manufacturing,Sales,4.0
+1578,Consultant,Consulting,2.0
+1579,Senior Vice President APAC,Other,6.0
+1580,Zone Director Asia Pacific,Sales,6.0
+1581,Sales Director Asia Pacific,Sales,6.0
+1582,Regional Director,Other,6.0
+1583,Regional Manager,Other,5.0
+1584,"Service Assistant, Customer Experience and Review Management",Customer Support,1.0
+1585,"Intern, Insurance and Data Analytics",Other,1.0
+1586,CEO Co-owner,Other,5.0
+1587,CEO and Co-Owner,Other,5.0
+1588,Company Owner,Other,5.0
+1589,COO,Other,5.0
+1590,Consultant CEO and owner,Consulting,5.0
+1591,Co-Owner,Other,5.0
+1592,chefkonsulent,Consulting,3.0
+1593,Anlægsprojektleder project manager,Project Management,4.0
+1594,President Of The Board Of Directors,Other,6.0
+1595,Strategiforretningsudvikling,Business Development,2.0
+1596,Business Consulting,Consulting,2.0
+1597,Senior chief Project Manager,Project Management,6.0
+1598,Project Manager,Project Management,4.0
+1599,Project Manager/ Entreprise leder,Project Management,4.0
+1600,COO Operations Manager,Other,6.0
+1601,Chief Project Manager,Project Management,5.0
+1602,Project Manager,Project Management,3.0
+1603,CEO,Other,5.0
+1604,Ceo And Founder,Other,5.0
+1605,Corporal,Other,1.0
+1606,Business Strategy Consultant,Consulting,2.0
+1607,Business Strategy Analyst,Business Development,2.0
+1608,PhD Student Organic Chemistry (Prof. Dr. Bach),Other,1.0
+1609,Research Intern,Other,1.0
+1610,Managing Director,Other,6.0
+1611,Member of The Supervisory Board,Other,5.0
+1612,Co-Founder / Managing Director - EXIT 2023,Other,5.0
+1613,Partner,Other,5.0
+1614,Senior Lead Consultant,Consulting,4.0
+1615,Consultant,Consulting,2.0
+1616,Co-Founder - Managing Director - EXIT 2013,Other,5.0
+1617,Trainee & Regulierungsspezialist,Other,1.0
+1618,Recreation Manager,Other,5.0
+1619,Instructor,Other,2.0
+1620,Assistant Recreation Center Manager,Administrative,1.0
+1621,Sportsience and Personaltrainer,Other,1.0
+1622,Bartender,Other,1.0
+1623,Project Manager,Project Management,4.0
+1624,Project Manager / Team Leader,Project Management,4.0
+1625,Fitness Manager,Other,5.0
+1626,Customer Relations Manager,Customer Support,5.0
+1627,Climbing Instructor,Other,1.0
+1628,Lifeguard,Other,1.0
+1629,Retail Sales Specialist,Sales,2.0
+1630,Stiftungsrat,Other,5.0
+1631,Verwaltungsrat,Other,5.0
+1632,Stiftungsrat,Other,5.0
+1633,Head of Strategic Projects,Project Management,5.0
+1634,Vorstandsmitglied,Other,6.0
+1635,Präsident des Stiftungsrats,Other,6.0
+1636,Verwaltungsrat,Administrative,5.0
+1637,Präsident des Verwaltungsrats,Other,6.0
+1638,CEO,Other,5.0
+1639,"Senior Vice President Sales and Marketing / Asia - Pacific, India",Sales,6.0
+1640,Senior Vice President Sales and Marketing,Sales,6.0
+1641,"Vice President Marketing, Cooking Division",Marketing,6.0
+1642,Director Product Management,Project Management,6.0
+1643,Managing Director,Other,6.0
+1644,Vice Director Marketing & Business development,Marketing,6.0
+1645,"Executive Project Manager, Service division",Project Management,5.0
+1646,Officer,Administrative,2.0
+1647,Leiter Kalkulation,Purchasing,5.0
+1648,Psikolog,Other,2.0
+1649,Stajyer,Administrative,1.0
+1650,Projektplaner,Project Management,2.0
+1651,Dipl.-Ing. (FH) Architekt,Other,2.0
+1652,Dipl.-Ing. (FH) Architekt,Other,2.0
+1653,Dipl.-Ing. (FH) Architekt,Other,2.0
+1654,Praktikant im Architekturbereich,Other,1.0
+1655,Senior Manager,Other,5.0
+1656,Manager,Other,5.0
+1657,Sr Consultant,Consulting,3.0
+1658,Senior Business Analyst,Business Development,3.0
+1659,Staffing Specialist,Human Resources,2.0
+1660,Sales Manager,Sales,5.0
+1661,Manager-on-Duty,Other,5.0
+1662,Financial Analyst Intern- Pricing Department,Other,1.0
+1663,Store Management Intern,Other,1.0
+1664,Information Technology Specialist -ITCS,Information Technology,2.0
+1665,Senior End User Support Technician L2,Customer Support,3.0
+1666,Senior Information Technology Field Technician,Information Technology,3.0
+1667,IT Field Engineer III,Information Technology,3.0
+1668,IT System Administrator,Information Technology,2.0
+1669,Advanced Computer Repair Technician,Information Technology,2.0
+1670,Business Intelligence Intern,Information Technology,1.0
+1671,Working Student in IT,Information Technology,1.0
+1672,Geschäftsführender Inhaber,Other,5.0
+1673,Gebietsverkaufsleiterin Implantologie & Prothetik,Sales,4.0
+1674,"Gebietsverkaufsleiterin Implantologie, Prothetik & Biomaterials",Sales,4.0
+1675,"Gebietsverkaufsleiterin Implantologie, Prothetik & Biomaterials",Sales,4.0
+1676,Human Resources Consultant,Human Resources,2.0
+1677,Recruiter,Human Resources,2.0
+1678,Talent Acquisition Consultant,Human Resources,2.0
+1679,HR and Recruitment Intern,Human Resources,1.0
+1680,Director of Marketing,Marketing,6.0
+1681,North American Sales Manager,Sales,5.0
+1682,Audio Account Manager,Sales,2.0
+1683,Merchandising/Promotion Administrator and Field Sales Coordinator,Sales,2.0
+1684,Customer Assistance Manager-Chevrolet Motor Division,Customer Support,5.0
+1685,Reimbursement and Customer Assistance Specialist,Customer Support,2.0
+1686,Customer Assistance Rep,Customer Support,1.0
+1687,Vice President,Other,6.0
+1688,Senior Vice President,Other,6.0
+1689,VP Sales,Sales,6.0
+1690,Head of Sales,Sales,4.0
+1691,Head of BU Industry,Business Development,5.0
+1692,President,Other,6.0
+1693,Director Defense Business,Business Development,6.0
+1694,Business Development Manager,Business Development,5.0
+1695,Project Manager,Project Management,4.0
+1696,Head of Fuel Cell Lab,Other,4.0
+1697,Internship,Other,1.0
+1698,Internship,Other,1.0
+1699,Platin,Other,3.0
+1700,Insan kaynakları,Human Resources,1.0
+1701,Geschäftsführer,Other,5.0
+1702,Executive Partner Development Manager,Business Development,5.0
+1703,Director of Strategic Partnerships,Business Development,6.0
+1704,Executive Product Manager,Project Management,5.0
+1705,Senior Product Manager,Marketing,3.0
+1706,QA Manager,Information Technology,5.0
+1707,Senior Product Manager,Marketing,3.0
+1708,Product Manager,Marketing,5.0
+1709,Product Manager,Marketing,5.0
+1710,Departementssekretär / Leiter Amt für Militär und Bevölkerungsschutz,Administrative,5.0
+1711,Dozent,Other,1.0
+1712,Geschäftsführer,Other,5.0
+1713,CEO,Other,5.0
+1714,Partner,Other,5.0
+1715,Vice President - Head of People x Technology Consulting,Consulting,6.0
+1716,Founding Partner,Other,5.0
+1717,"Practice Lead Digital HR, Center of Excellence Europe at Cognizant",Human Resources,4.0
+1718,"Director - Head of HCM Consulting, HR-IT Strategy & Innovation Europe",Consulting,6.0
+1719,Director - Consulting HR-IT Strategy & Business Innovation Continental Europe,Consulting,6.0
+1720,Chief Executive Officer,Other,6.0
+1721,Startup Advisor,Consulting,2.0
+1722,Founder & Chief Product Officer,Business Development,6.0
+1723,Founder & CEO,Other,5.0
+1724,Enterprise Sales & Business Development; US,Sales,2.0
+1725,"Enterprise Sales EMEA – Higher Education, Research & Healthcare",Sales,2.0
+1726,Key Account Manager,Sales,3.0
+1727,Sales Representative,Sales,2.0
+1728,Industrial Engineer - Diploma thesis,Other,1.0
+1729,Industrial Engineer - Trainee,Other,1.0
+1730,Arbeitssuche,Other,1.0
+1731,Sachbearbeiter Buchhaltung,Administrative,2.0
+1732,Selbstständig,Other,2.0
+1733,Owner,Other,5.0
+1734,Managing Director,Other,6.0
+1735,Head of Global Competence Center MO/BO/Acc Business Analysis,Business Development,4.0
+1736,Consultant,Consulting,2.0
+1737,Full Stack (ASP.Net + Angular) Developer,Information Technology,2.0
+1738,Middle ASP.NET Developer,Information Technology,2.0
+1739,Angular developer,Information Technology,2.0
+1740,Junior Full Stack ASP.NET+Angular developer,Information Technology,1.0
+1741,Website Content Manager,Marketing,3.0
+1742,Alleiniger Vorstand,Other,6.0
+1743,Vorstandsvorsitzender,Other,6.0
+1744,Vorstandssprecher,Other,6.0
+1745,Vorstand,Other,5.0
+1746,Kaufmännischer Leiter DCSMM GmbH,Administrative,5.0
+1747,Investment Manager,Business Development,5.0
+1748,"Manager Strategie und Projekte, Mercedes-Benz LKW",Project Management,5.0
+1749,"Associate Consultant, Strategic Group",Consulting,2.0
+1750,Senior Software Engineer,Information Technology,3.0
+1751,Senior Software Engineer,Information Technology,3.0
+1752,Wissenschaftlicher Mitarbeiter,Other,1.0
+1753,"Software Engineer, Consultant",Consulting,2.0
+1754,Software Engineer,Information Technology,2.0
+1755,Software Engineer,Information Technology,2.0
+1756,Software Engineer,Information Technology,2.0
+1757,Owner - Executive Director,Other,6.0
+1758,Seminar Staff,Other,1.0
+1759,Admiral Aide,Administrative,1.0
+1760,Submarine Warfare Officer,Other,2.0
+1761,Division Manager,Other,5.0
+1762,Projektleiter,Project Management,4.0
+1763,Projektmanager,Project Management,2.0
+1764,Bereichsingenieur,Other,2.0
+1765,Bereichsingenieur,Other,2.0
+1766,Leiter Program Management RADAR,Project Management,4.0
+1767,Immobilien-und Finanzmakler,Sales,2.0
+1768,Geschäftsführer,Other,5.0
+1769,Pharmacy Sales Representative,Sales,2.0
+1770,Junior Brand Manager,Marketing,1.0
+1771,MIBS-Student,Other,1.0
+1772,Woman Soccer Coach,Other,1.0
+1773,FSJ Bildung,Other,1.0
+1774,Catering-Assistent,Administrative,1.0
+1775,Bereichsleiter Finanzen und Rechnungswesen,Other,5.0
+1776,Bereichsleiter Rechnungswesen und Finanzen,Other,5.0
+1777,Bereichsleiter Rechnungswesen und Finanzen,Other,5.0
+1778,Manager,Other,5.0
+1779,Warehouse Specialist,Purchasing,2.0
+1780,"Geschäftsleitung, Prokurist",Other,5.0
+1781,Rechtsanwalt,Other,2.0
+1782,Sales Manager,Sales,3.0
+1783,Sales Manager,Sales,5.0
+1784,"Sales Manager at Caliber Home Loans, Inc. |Portfolio Lender | NMLS#214269",Sales,4.0
+1785,Senior Loan Officer,Sales,3.0
+1786,Sales Manager / MLO Recruitment / Mortgage Planner,Sales,4.0
+1787,Branch Manager,Sales,5.0
+1788,Chief Executive Officer,Other,6.0
+1789,President - CEO,Other,5.0
+1790,Industrial Engineer,Other,2.0
+1791,Verfahrenstechniker / Process Engineer,Other,2.0
+1792,Pflegedienstleitung,Other,5.0
+1793,Bezirksleiter,Other,5.0
+1794,Residenzleitung,Other,5.0
+1795,Residenzleitung,Other,5.0
+1796,Residenzleitung im Interimsmanagement,Other,5.0
+1797,Pflegedienstleitung,Other,5.0
+1798,Gruppenleitung,Other,4.0
+1799,Principal Consultant,Consulting,3.0
+1800,Business & Data Analyst,Business Development,2.0
+1801,Alumni,Other,1.0
+1802,developer,Information Technology,1.0
+1803,Regional NOC Analyst,Information Technology,2.0
+1804,Consultant,Consulting,2.0
+1805,Consultant,Consulting,2.0
+1806,Market Intelligence Specialist,Marketing,2.0
+1807,"Projektexperte Sicherheit, Geschäftsleitung",Project Management,5.0
+1808,Projektleiter,Project Management,4.0
+1809,Owner,Other,1.0
+1810,Solution Designer,Information Technology,3.0
+1811,Founder -Owner,Other,5.0
+1812,International Manager Microbiology Western Europe,Other,5.0
+1813,Commercial Manager Urinalysis Europe,Sales,5.0
+1814,Manager Iris Integration Europe,Information Technology,5.0
+1815,Managing Director Germany,Other,6.0
+1816,Strategy Consultant,Consulting,2.0
+1817,Country Manager DE/AT,Business Development,5.0
+1818,Country Manager DE/AT,Business Development,5.0
+1819,Country Manager DE/AT,Business Development,5.0
+1820,Country Manager Germany&Austria,Business Development,5.0
+1821,European Operations Manager Primary Care Diagnostics,Other,5.0
+1822,Area Manager,Sales,5.0
+1823,Human Resources Manager,Human Resources,5.0
+1824,Human Resources Director,Human Resources,6.0
+1825,Assistant Manager,Other,4.0
+1826,Einkauf,Purchasing,1.0
+1827,Einkäufer Werkleistungen/Diestleistugen,Purchasing,2.0
+1828,Selbstständig,Other,2.0
+1829,Regional Manager,Other,5.0
+1830,Assistant,Administrative,1.0
+1831,Portfolio Manager,Project Management,5.0
+1832,Regional Manager,Other,5.0
+1833,Property Supervisor,Other,3.0
+1834,Regional Manager,Other,5.0
+1835,Asset Manager,Business Development,3.0
+1836,Investment Manager - Western Region,Business Development,5.0
+1837,District Manager,Sales,5.0
+1838,District Manager,Sales,5.0
+1839,Head of Hybrid Cloud Solution Sales Germany,Sales,6.0
+1840,Head of HPE Boeblingen Office,Other,6.0
+1841,Director - Global Banking,Sales,6.0
+1842,Head of Inventory Solutions EMEA,Purchasing,4.0
+1843,Head of Trade Finance,Business Development,4.0
+1844,International Trade Specialist,Business Development,2.0
+1845,Company Director,Other,6.0
+1846,Relationship Manager,Sales,3.0
+1847,Assistant Manager,Other,4.0
+1848,Doctoral Student,Other,1.0
+1849,Field Assistant,Other,1.0
+1850,Research Assistant,Other,1.0
+1851,Student Assistant,Administrative,1.0
+1852,Student Intern,Other,1.0
+1853,Project Manager,Project Management,4.0
+1854,Project Manager Entwicklung /Lebensmittel,Project Management,4.0
+1855,Consultant,Consulting,2.0
+1856,Leiterin Direktion Frische / Mitglied der Geschäftsleitung Migros Supermarkt AG,Other,6.0
+1857,Leiterin Direktion Super- und Verbrauchermarkt / Mitglied der Geschäftsleitung,Business Development,6.0
+1858,Leiterin Sparte Alnatura Bio Super Märkte,Other,5.0
+1859,Project Manager,Project Management,3.0
+1860,Leiterin Category Management Molkereiprodukte/Käse,Purchasing,5.0
+1861,Category Manager Früchte,Purchasing,5.0
+1862,Market Development Manager,Marketing,5.0
+1863,Head of Marketing Services,Marketing,4.0
+1864,Marketing- und Verkaufsanalyst,Marketing,2.0
+1865,Justitiar,Other,2.0
+1866,General Counsel / Leiter Rechtsabteilung,Other,6.0
+1867,Justitiar,Other,3.0
+1868,Rechtsanwalt,Other,2.0
+1869,Rechtsanwalt,Other,2.0
+1870,Team Lead Business Services,Business Development,4.0
+1871,Team Lead Application Management,Information Technology,4.0
+1872,Head of Corporate IT Central Systems,Information Technology,5.0
+1873,Head of IT Central Business Applications,Information Technology,5.0
+1874,Head of IT Performance Management & JIS,Information Technology,5.0
+1875,IT Project Coordinator,Information Technology,2.0
+1876,"Assistant Treasurer, Project management",Project Management,1.0
+1877,CEO & Co-founder,Other,5.0
+1878,Structural Engineer,Other,2.0
+1879,Site Civil Engineer,Other,2.0
+1880,Structural Engineer,Other,2.0
+1881,Juristischer Berater,Consulting,2.0
+1882,"Leitung Personal, Finanzen, Einkauf, IT | Folkwang Universität der Künste",Human Resources,5.0
+1883,Verwaltungsleitung Landesspracheninstitut in der Ruhr Universität Bochum,Administrative,5.0
+1884,"Leitung Gebäudemanagement, Einkauf und Controlling",Purchasing,5.0
+1885,Dekanat,Administrative,1.0
