@@ -1,0 +1,3 @@
+model,target,accuracy,macro_f1,mae
+Rule-based,department,0.6026315789473684,0.44918940911600075,
+Rule-based,seniority,0.5368421052631579,0.42616200731397247,
