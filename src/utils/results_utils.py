@@ -2,7 +2,7 @@ import pandas as pd
 from pathlib import Path
 
 
-def add_result(results, model_name, target, extension, metrics):
+def add_result(results, model_name, target, metrics):
     """
     Add a single model result to an in-memory results list.
 
@@ -14,19 +14,17 @@ def add_result(results, model_name, target, extension, metrics):
         Name of the model (e.g. 'rule_based', 'tfidf_logreg').
     target : str
         Prediction target ('department' or 'seniority').
-    extension : bool
-        Whether an extension was used.
     metrics : dict
         Dictionary containing evaluation metrics.
-        Must include keys: 'accuracy', 'macro_f1'.
+        Must include keys: 'accuracy', 'macro_f1', 'mae'.
     """
 
     results.append({
         "model": model_name,
         "target": target,
-        "extension": extension,
         "accuracy": metrics["accuracy"],
-        "macro_f1": metrics["macro_f1"]
+        "macro_f1": metrics["macro_f1"],
+        "mae": metrics["mae"],
     })
 
 
