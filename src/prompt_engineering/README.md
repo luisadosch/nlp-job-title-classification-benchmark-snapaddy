@@ -31,9 +31,10 @@ These results show that department prediction from job titles is substantially e
 `prompt_engineering/` contains:
 
 `config_utils.py`  
-Configuration for prompt experiments: model settings, temperature, prompt, output schema, and file paths.
+Configuration for prompt experiments: system prompt, output schema.
 
-`main_processor.py`  
+`main_processor.py` 
+Class Config: model settings, temperature, prompt, output schema, and file paths. 
 Main script that runs the pipeline: loads job titles, calls Gemini, validates outputs against a JSON schema, and writes results.
 
 Outputs:
