@@ -3,7 +3,7 @@ Rule-based,department,0.6026315789473684,0.44918940911600075,
 Rule-based,seniority,0.5368421052631579,0.42616200731397247,
 Prompt-engineered,department,0.7961,0.7340,
 Prompt-engineered,seniority,0.5843,0.5402,
-Fine-tuned-pretrained,seniority,0.5088,0.4421,0.7608
-Fine-tuned-pretrained-augmented,seniority,0.6164,0.5586
+Fine-tuned-pretrained,seniority,0.4943 ,0.4756,0.7751
+Fine-tuned-pretrained-augmented,seniority,0.6516,0.5840
 Fine-tuned-pretrained,department,0.2792,0.3813
 Fine-tuned-pretrained-augmented,department,0.6886,0.6374

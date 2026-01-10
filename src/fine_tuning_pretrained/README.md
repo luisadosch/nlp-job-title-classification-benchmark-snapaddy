@@ -98,8 +98,8 @@ This approach substantially improves coverage of rare and heterogeneous classes.
 
 | Model variant                         | Target      | Accuracy | Macro F1 | MAE |
 |--------------------------------------|-------------|----------|----------|-----|
-| Fine-tuned pretrained                | Seniority   | 0.5088   | 0.4421       | 0.7608 |
-| Fine-tuned pretrained + synthetic    | Seniority   | **0.6164**   | **0.5586**   | – |
+| Fine-tuned pretrained                | Seniority   | 0.4943   | 0.4756       | 0.7751 |
+| Fine-tuned pretrained + synthetic    | Seniority   | **0.6516**   | **0.5840**   | – |
 | Fine-tuned pretrained                | Department  | 0.2792   | 0.3813   | – |
 | Fine-tuned pretrained + synthetic    | Department  | **0.6886** | **0.6374** | – |
 
