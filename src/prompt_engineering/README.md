@@ -1,6 +1,6 @@
-# README — Prompt Engineering Approach (Gemini)
+# Prompt Engineering Approach
 
-This folder contains our prompt-engineering pipeline used to **(1) predict labels on annotated CV data** and **(2) generate synthetic labels for additional training data**. We use this approach as a lightweight alternative to training a model from scratch and as a way to improve downstream fine-tuning experiments.
+This folder contains our gemini-prompt-engineering pipeline used to **(1) predict labels on annotated CV data** and **(2) generate synthetic labels for additional training data**. We use this approach as a lightweight alternative to training a model from scratch and as a way to improve downstream fine-tuning experiments.
 
 ## Goal
 
@@ -59,7 +59,7 @@ This matters because synthetic data is only useful if it is **consistent, machin
 
 ## Why we used prompt engineering for synthetic data generation
 
-We used prompt engineering instead of only relying on rule-based matching for three reasons:
+We used prompt engineering instead of only relying on rule-based matching for two reasons:
 
 ### 1) Better quality labels than rule-based matching
 
@@ -70,7 +70,7 @@ This is important because synthetic training data needs to be as **low-noise** a
 
 ### 2) Handling the missing “Professional” seniority label
 
-A major limitation of rule-based matching is that **“Professional”** is underrepresented in our supervised training set.  
+A major limitation of rule-based matching is that **“Professional”** is not represented in our supervised training set.  
 Prompt engineering can still predict this label because the LLM has seen many examples during pretraining and can generalize beyond explicit keywords.
 
 This helps us cover all seniority labels without using test labels for training (no data leakage).
