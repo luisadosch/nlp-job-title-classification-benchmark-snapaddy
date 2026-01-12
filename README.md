@@ -55,45 +55,8 @@ This dataset is **never used for training or early stopping** and is used only f
 
 ---
 
-## Methods Implemented
+## Results of Methods Implemented
 
-### Rule-based matching (baseline)
-A deterministic baseline based on keyword/title rules, used as a simple and interpretable reference.
-
-### Simple baselines
-- Bag-of-words model
-- Embedding-based labeling
-
-### Prompt engineering (Gemini)
-We use a system-style prompt with:
-- strict closed-set labels
-- JSON-only output
-- response schema enforcement
-- fallback rule for ambiguity
-
-This is used for:
-1) direct label prediction on annotated test data  
-2) synthetic label generation for unlabeled job titles
-
-**Code:** `src/prompt_engineering/`
-
-### Fine-tuned transformer models 
-We fine-tune `xlm-roberta-base` because job titles are multilingual and we observed better OOD behavior than smaller alternatives.
-
-We evaluate:
-- Seniority regression baseline (no synthetic data)
-- Seniority classification with synthetic data + oversampling
-- Department classification:
-  - baseline
-  - oversampling
-  - synthetic data augmentation (best OOD results)
-
-**Code:** `src/fine_tuning_pretrained/`
-
-### Hybrid rule-based + fine-tuned fallback
-We test whether rule-based matching can handle easy cases and a fine-tuned model only handles the remainder.
-
-**Code:** `src/baseline_hybrid_finetuned_approach.ipynb`
-
+Hier machen wir am ende eine tablle of all results hin
 
 ---
