@@ -20,22 +20,31 @@ A key challenge is **distribution shift**: our curated fine-tuning datasets diff
 
 ## Repository Structure 
 
-- `src/`
-  - `prompt_engineering/`  
-    Prompt-engineering pipeline using **gemini-2.0-flash** for:
-    - evaluation on annotated titles (accuracy/F1 + classification report)
-    - synthetic label generation for unlabeled titles (`gemini_synthetic.csv`)
-  - `fine_tuning_pretrained/`  
-    Transformer fine-tuning experiments using **xlm-roberta-base** for:
-    - seniority (regression + classification with synthetic data and oversampling)
-    - department (baseline vs oversampling vs synthetic augmentation)
-  - `baseline_hybrid_finetuned_approach.ipynb`  
-    Hybrid experiment: rule-based first, fine-tuned model as fallback on remaining titles
+- `archive/`
+  Task description and meeting protocols.
 - `data/`
+  - `raw/`
+    annotated csv files that are used for in-distribution training
   - `processed/`  
     Input CSVs (annotated and unlabeled job titles)
   - `results/`  
     Model outputs, including Gemini predictions and synthetic labels
+- `src/`
+  - - `fine_tuning_pretrained/`  
+    Transformer fine-tuning experiments using **xlm-roberta-base** for:
+    - seniority (regression + classification with synthetic data and oversampling)
+    - department (baseline vs oversampling vs synthetic augmentation)
+  - `prompt_engineering/`  
+    Prompt-engineering pipeline using **gemini-2.0-flash** for:
+    - evaluation on annotated titles (accuracy/F1 + classification report)
+    - synthetic label generation for unlabeled titles (`gemini_synthetic.csv`)
+  
+  - `baseline_hybrid_finetuned_approach.ipynb`  
+    Hybrid experiment: rule-based first, fine-tuned model as fallback on remaining titles
+  - `model-1-baseline.ipynb`  
+    rule-based matching baseline approach.
+    
+
 
 ---
 
