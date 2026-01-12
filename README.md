@@ -95,17 +95,5 @@ We test whether rule-based matching can handle easy cases and a fine-tuned model
 
 **Code:** `src/baseline_hybrid_finetuned_approach.ipynb`
 
----
-
-## Key Outputs
-
-- `data/results/gemini_results.csv`  
-  Prompt-engineering predictions on annotated job titles (evaluation possible)
-
-- `data/results/gemini_synthetic.csv`  
-  Prompt-engineering predictions on unlabeled job titles (used for augmentation)
-
-- Figures in `images/`  
-  Label distribution comparisons and confusion matrices used in the report
 
 ---
