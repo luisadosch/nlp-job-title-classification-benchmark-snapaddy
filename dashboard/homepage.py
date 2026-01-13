@@ -12,7 +12,7 @@ from gemini_inference import (
 # Page config
 # -----------------------------
 st.set_page_config(
-    page_title="Predicting Career Domain and Seniority from Job Titles",
+    page_title="Predicting Career Domain and Seniority from LinkedIn Profiles",
     page_icon="🧭",
     layout="wide",
 )
@@ -36,7 +36,7 @@ def predict_labels(job_title: str, mode: str) -> dict:
 
         return predict_with_gemini(job_title=job_title, api_key=api_key)
 
-    # TODO: später echte Implementierungen
+    # Bag of words approach
     if mode == "Bag of Words":
         out = predict_bow(job_title)
         if not show_debug:
@@ -105,10 +105,7 @@ with logo_col2:
 st.markdown(
     """
     <div style="margin-top: 6px;">
-      <h1 style="margin-bottom: 4px;">Predicting Career Domain and Seniority from Job Titles</h1>
-      <p style="margin-top: 0; color: #666;">
-        Enter a job title to predict <b>Seniority Level</b> and <b>Department</b>.
-      </p>
+      <h1 style="margin-bottom: 4px;">Predicting Career Domain and Seniority from LinkedIn Profiles</h1>
     </div>
     """,
     unsafe_allow_html=True,
@@ -139,6 +136,7 @@ metrics = pd.DataFrame(
 # Pages
 # -----------------------------
 if page == "Prediction Prototype":
+    st.markdown("## Enter a job title to predict seniority and department")
     st.subheader("🔎 Enter a job title")
 
     job_title = st.text_input(
@@ -174,7 +172,7 @@ if page == "Prediction Prototype":
 
     if mode == "Prompt Engineering":
         st.warning(
-            "⚠️ Prompt Engineering requires a Google Gemini API key.\n\n"
+            " Prompt Engineering requires a Google Gemini API key.\n\n"
             "Add it in this repo at: `dashboard/.streamlit/secrets.toml`\n\n"
             'Set:\n'
             '`GEMINI_API_KEY = "YOUR_KEY"`',
@@ -193,7 +191,7 @@ elif page == "Project Overview":
         This dashboard is a lightweight UI prototype for our capstone project  
         **Predicting Career Domain and Seniority from LinkedIn Profiles**.
 
-        It takes a job title from the **ACTIVE position** and predicts:
+        It takes a job title from the **current position** and predicts:
 
         • **Seniority** (career level)  
         • **Department** (11-class closed set)
@@ -204,7 +202,7 @@ elif page == "Project Overview":
 
     st.markdown(
         """
-        **Why this is challenging**  
+        #### Seniority and Department Prediction Challenges
         Real CV titles often look very different from curated training data (**distribution shift**).  
         That’s why we compared multiple approaches instead of relying on a single model.
         """
@@ -214,10 +212,10 @@ elif page == "Project Overview":
 
     st.markdown(
         """
-        **Approaches implemented in the project**  
+        #### Approaches implemented in the project
         • **Rule-based matching (baseline):** substring matching against predefined label lists (fast + interpretable).  
         • **Bag of Words (TF–IDF + Logistic Regression):** classical baseline trained on labeled job titles.  
-        • **Prompt engineering (Gemini):** zero-/few-shot classification using a structured prompt + JSON output schema.  
+        • **Prompt engineering (Gemini):** few-shot classification using a structured prompt + JSON output schema.  
         • **Fine-tuned transformer:** trained on labeled + synthetic data (not included here due to GPU constraints).  
         • **Embedding-based labeling:** similarity-based matching using embeddings of titles and label descriptions.
         """
