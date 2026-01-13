@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.6.2)  13 JAN 2026 11:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.6.2)  13 JAN 2026 12:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -663,13 +663,13 @@ Package biblatex Info: ... file 'main.bbl' found.
  (./main.bbl)
 Package biblatex Info: Reference section=0 on input line 64.
 Package biblatex Info: Reference segment=0 on input line 64.
- (./main.toc)
+ (./main.toc [1
+
+{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/paratype/ptsans_t1.enc}])
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- [1
-
-{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/paratype/ptsans_t1.enc}]
+ [2]
 LaTeX Font Info:    Trying to load font information for T1+PTMono-TLF on input line 106.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/paratype/T1PTMono-TLF.fd
 File: T1PTMono-TLF.fd 2014/02/02 Font definitions for T1/PTMono-TLF.
@@ -680,19 +680,19 @@ Overfull \hbox (74.46169pt too wide) in paragraph at lines 128--129
 \T1/PTSans-TLF/m/n/12 per-vised train-ing data (e.g., \T1/PTSans-TLF/m/it/12 Pro-fes-sional \T1/PTSans-TLF/m/n/12 for se-nior-ity). The re-sult-ing file (data/results/gemini_synthetic.csv)
  []
 
-<images/label-distribution-seniority-comparison.png, id=122, 867.24pt x 361.35pt>
+<images/label-distribution-seniority-comparison.png, id=131, 867.24pt x 361.35pt>
 File: images/label-distribution-seniority-comparison.png Graphic file (type png)
 <use images/label-distribution-seniority-comparison.png>
 Package pdftex.def Info: images/label-distribution-seniority-comparison.png  used on input line 134.
 (pdftex.def)             Requested size: 460.72124pt x 191.96672pt.
 [2 <./images/label-distribution-seniority-comparison.png>]
-<images/label-distribution-department.png, id=132, 867.24pt x 361.35pt>
+<images/label-distribution-department.png, id=141, 867.24pt x 361.35pt>
 File: images/label-distribution-department.png Graphic file (type png)
 <use images/label-distribution-department.png>
 Package pdftex.def Info: images/label-distribution-department.png  used on input line 144.
 (pdftex.def)             Requested size: 460.72124pt x 191.96672pt.
  [3 <./images/label-distribution-department.png>]
-<images/confusion_matri_regression_finetune_seniority.png, id=140, 500.87125pt x 187.70125pt>
+<images/confusion_matri_regression_finetune_seniority.png, id=149, 500.87125pt x 187.70125pt>
 File: images/confusion_matri_regression_finetune_seniority.png Graphic file (type png)
 <use images/confusion_matri_regression_finetune_seniority.png>
 Package pdftex.def Info: images/confusion_matri_regression_finetune_seniority.png  used on input line 166.
@@ -705,7 +705,7 @@ Overfull \hbox (2.52731pt too wide) in paragraph at lines 177--178
 []\T1/PTSans-TLF/b/n/12 Consistent er-ror pat-tern: \T1/PTSans-TLF/m/n/12 Most mis-takes oc-cur be-tween ad-ja-cent se-nior-ity lev-els, which
  []
 
-<images/confusion_matrix_2_seniority.png, id=152, 696.6025pt x 622.325pt>
+<images/confusion_matrix_2_seniority.png, id=161, 696.6025pt x 622.325pt>
 File: images/confusion_matrix_2_seniority.png Graphic file (type png)
 <use images/confusion_matrix_2_seniority.png>
 Package pdftex.def Info: images/confusion_matrix_2_seniority.png  used on input line 187.
@@ -715,24 +715,26 @@ Overfull \hbox (0.13724pt too wide) in paragraph at lines 204--205
 \T1/PTSans-TLF/m/n/12 per-for-mance on train/validation/test and out-of-distribution per-for-mance on the CV dataset,
  []
 
-<images/cm-1-fine-tune-department.png, id=168, 911.405pt x 793.96625pt>
+<images/cm-1-fine-tune-department.png, id=177, 911.405pt x 793.96625pt>
 File: images/cm-1-fine-tune-department.png Graphic file (type png)
 <use images/cm-1-fine-tune-department.png>
 Package pdftex.def Info: images/cm-1-fine-tune-department.png  used on input line 212.
 (pdftex.def)             Requested size: 460.72124pt x 401.35564pt.
 [7]
-<images/cm-2-department.png, id=176, 911.405pt x 793.96625pt>
+<images/cm-2-department.png, id=185, 911.405pt x 793.96625pt>
 File: images/cm-2-department.png Graphic file (type png)
 <use images/cm-2-department.png>
 Package pdftex.def Info: images/cm-2-department.png  used on input line 222.
 (pdftex.def)             Requested size: 460.72124pt x 401.35564pt.
  [8 <./images/cm-1-fine-tune-department.png>] [9 <./images/cm-2-department.png>]
-<images/cm-3-department.png, id=192, 916.42375pt x 797.98125pt>
+<images/cm-3-department.png, id=201, 916.42375pt x 797.98125pt>
 File: images/cm-3-department.png Graphic file (type png)
 <use images/cm-3-department.png>
 Package pdftex.def Info: images/cm-3-department.png  used on input line 234.
 (pdftex.def)             Requested size: 460.72124pt x 401.18135pt.
  [10 <./images/cm-3-department.png>] [11] [12] [13
+
+] [14
 
 ] (./main.lot
 Overfull \hbox (2.95644pt too wide) in paragraph at lines 2--2
@@ -743,36 +745,36 @@ Overfull \hbox (2.95644pt too wide) in paragraph at lines 2--2
 \tf@lot=\write6
 \openout6 = `main.lot'.
 
- [14
+ [15
 
 ] (./main.lof)
 \tf@lof=\write7
 \openout7 = `main.lof'.
 
- [15] (./main.aux)
+ [16] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 209651A896B51BF5D89041D9F6819E87;3603.
+(rerunfilecheck)             Checksum: EBBE80734C51020A0AA35856144BA4AA;3771.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 19944 strings out of 474116
- 349664 string characters out of 5743683
- 1940187 words of memory out of 5000000
- 41974 multiletter control sequences out of 15000+600000
+ 19948 strings out of 474116
+ 349700 string characters out of 5743683
+ 1939187 words of memory out of 5000000
+ 41975 multiletter control sequences out of 15000+600000
  642198 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,12n,81p,1004b,803s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/paratype/ptmono/PTM55F.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/paratype/ptsans/PTS55F.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/paratype/ptsans/PTS56F.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/paratype/ptsans/PTS75F.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/paratype/ptsans/PTS76F.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on main.pdf (16 pages, 436277 bytes).
+Output written on main.pdf (18 pages, 437269 bytes).
 PDF statistics:
- 289 PDF objects out of 1000 (max. 8388607)
- 241 compressed objects within 3 object streams
- 56 named destinations out of 1000 (max. 500000)
- 196 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 302 PDF objects out of 1000 (max. 8388607)
+ 252 compressed objects within 3 object streams
+ 59 named destinations out of 1000 (max. 500000)
+ 204 words of extra memory for PDF output out of 10000 (max. 10000000)
 
