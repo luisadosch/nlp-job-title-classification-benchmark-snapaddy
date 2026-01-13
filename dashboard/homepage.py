@@ -1,7 +1,6 @@
 # app.py
 import streamlit as st
 import pandas as pd
-from pathlib import Path
 from rule_based_inference import predict_rule_based
 from bow_inference import predict_bow
 from gemini_inference import (
@@ -55,9 +54,9 @@ def predict_labels(job_title: str, mode: str) -> dict:
 
 
 def load_logos():
-    uni = Path("images/uni-logo.png")
-    snap = Path("images/logo_snapaddy.png")
-    return (uni if uni.exists() else None, snap if snap.exists() else None)
+    uni = "images/uni-logo.png"
+    snap = "images/logo_snapaddy.png"
+    return uni, snap
 
 
 # -----------------------------
