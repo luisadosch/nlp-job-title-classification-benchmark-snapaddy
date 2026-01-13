@@ -1,0 +1,2 @@
+\contentsline {table}{\numberline {1}{\ignorespaces Prompt-engineering evaluation results on the annotated test set.}}{2}{table.caption.9}%
+\contentsline {table}{\numberline {2}{\ignorespaces Summary of out-of-distribution results on the annotated CV dataset for the fine-tuned pretrained models. Synthetic augmentation consistently improves robustness under distribution shift for both seniority and department prediction.}}{11}{table.caption.26}%

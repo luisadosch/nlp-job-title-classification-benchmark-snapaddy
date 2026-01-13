@@ -1,0 +1,26 @@
+\contentsline {section}{\numberline {1}Data Overview}{1}{section.1}%
+\contentsline {section}{\numberline {2}Data Preprocessing}{1}{section.2}%
+\contentsline {section}{\numberline {3}EDA}{1}{section.3}%
+\contentsline {section}{\numberline {4}Experiments}{1}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Rule Based Matching}{1}{subsection.5}%
+\contentsline {subsection}{\numberline {4.2}Simple interpretable baseline: Bag of Words}{1}{subsection.6}%
+\contentsline {subsection}{\numberline {4.3}Prompt Engineering}{1}{subsection.7}%
+\contentsline {subsubsection}{\numberline {4.3.1}Evaluation with Test Set}{1}{subsubsection.8}%
+\contentsline {subsubsection}{\numberline {4.3.2}Prompt Engineering for Synthetic Data}{2}{subsubsection.10}%
+\contentsline {subsection}{\numberline {4.4}Fine-tuned classification model}{3}{subsection.13}%
+\contentsline {subsubsection}{\numberline {4.4.1}Seniority: fine-tuning approaches and results}{4}{subsubsection.14}%
+\contentsline {paragraph}{\textbf {1) Regression fine-tuning (no synthetic data, no oversampling).}}{4}{paragraph*.15}%
+\contentsline {paragraph}{\textbf {2) Multi-class classification with synthetic data and oversampling}}{5}{paragraph*.17}%
+\contentsline {subsubsection}{\numberline {4.4.2}Department fine tuning approaches and results}{7}{subsubsection.19}%
+\contentsline {paragraph}{1) Baseline fine-tuning (no oversampling, no synthetic data).}{7}{paragraph*.20}%
+\contentsline {paragraph}{2) Fine-tuning with oversampling.}{8}{paragraph*.22}%
+\contentsline {paragraph}{3) Fine-tuning with synthetic data augmentation.}{9}{paragraph*.24}%
+\contentsline {subsection}{\numberline {4.5}Hybrid Approach (Rule-Based + Fine Tuning}{11}{subsection.27}%
+\contentsline {paragraph}{Seniority.}{11}{paragraph*.28}%
+\contentsline {paragraph}{Department.}{11}{paragraph*.29}%
+\contentsline {subsection}{\numberline {4.6}Embedding-based labeling}{12}{subsection.30}%
+\contentsline {section}{\numberline {5}Summary of Findings}{12}{section.31}%
+\contentsline {section}{\numberline {6}Limitations and Future Work}{12}{section.32}%
+\contentsline {section}{\numberline {7}Appendix}{13}{section.33}%
+\contentsline {subsection}{\numberline {7.1}Group Member Contributions}{13}{subsection.34}%
+\contentsline {subsection}{\numberline {7.2}Use of Gen-AI}{13}{subsection.38}%
