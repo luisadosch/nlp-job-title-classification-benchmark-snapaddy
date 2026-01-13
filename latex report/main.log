@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.6.2)  13 JAN 2026 09:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.6.2)  13 JAN 2026 11:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -598,30 +598,30 @@ File: csquotes.cfg
 ))
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... none found.
-LaTeX Font Info:    Trying to load font information for T1+PTSans-TLF on input line 65.
+LaTeX Font Info:    Trying to load font information for T1+PTSans-TLF on input line 64.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/paratype/T1PTSans-TLF.fd
 File: T1PTSans-TLF.fd 2011/05/04 (autoinst with patch) Font definitions for T1/PTSans-TLF.
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
  (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count429
@@ -641,7 +641,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/local/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 65.
+Package hyperref Info: Link coloring OFF on input line 64.
  (./main.out) (./main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
@@ -659,85 +659,80 @@ Package biblatex Info: Automatic encoding selection.
 \openout3 = `main.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'main.bbl' not found.
-
-No file main.bbl.
-Package biblatex Info: Reference section=0 on input line 65.
-Package biblatex Info: Reference segment=0 on input line 65.
-(./main.toc)
+Package biblatex Info: ... file 'main.bbl' found.
+ (./main.bbl)
+Package biblatex Info: Reference section=0 on input line 64.
+Package biblatex Info: Reference segment=0 on input line 64.
+ (./main.toc)
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
  [1
 
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/paratype/ptsans_t1.enc}]
-LaTeX Font Info:    Trying to load font information for T1+PTMono-TLF on input line 107.
+LaTeX Font Info:    Trying to load font information for T1+PTMono-TLF on input line 106.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/paratype/T1PTMono-TLF.fd
 File: T1PTMono-TLF.fd 2014/02/02 Font definitions for T1/PTMono-TLF.
 ) [1
 
 {/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/paratype/ptmono_t1.enc}]
-Overfull \hbox (74.46169pt too wide) in paragraph at lines 129--130
+Overfull \hbox (74.46169pt too wide) in paragraph at lines 128--129
 \T1/PTSans-TLF/m/n/12 per-vised train-ing data (e.g., \T1/PTSans-TLF/m/it/12 Pro-fes-sional \T1/PTSans-TLF/m/n/12 for se-nior-ity). The re-sult-ing file (data/results/gemini_synthetic.csv)
  []
 
-<images/label-distribution-seniority-comparison.png, id=117, 867.24pt x 361.35pt>
+<images/label-distribution-seniority-comparison.png, id=122, 867.24pt x 361.35pt>
 File: images/label-distribution-seniority-comparison.png Graphic file (type png)
 <use images/label-distribution-seniority-comparison.png>
-Package pdftex.def Info: images/label-distribution-seniority-comparison.png  used on input line 135.
+Package pdftex.def Info: images/label-distribution-seniority-comparison.png  used on input line 134.
 (pdftex.def)             Requested size: 460.72124pt x 191.96672pt.
 [2 <./images/label-distribution-seniority-comparison.png>]
-<images/label-distribution-department.png, id=127, 867.24pt x 361.35pt>
+<images/label-distribution-department.png, id=132, 867.24pt x 361.35pt>
 File: images/label-distribution-department.png Graphic file (type png)
 <use images/label-distribution-department.png>
-Package pdftex.def Info: images/label-distribution-department.png  used on input line 145.
+Package pdftex.def Info: images/label-distribution-department.png  used on input line 144.
 (pdftex.def)             Requested size: 460.72124pt x 191.96672pt.
  [3 <./images/label-distribution-department.png>]
-<images/confusion_matri_regression_finetune_seniority.png, id=135, 500.87125pt x 187.70125pt>
+<images/confusion_matri_regression_finetune_seniority.png, id=140, 500.87125pt x 187.70125pt>
 File: images/confusion_matri_regression_finetune_seniority.png Graphic file (type png)
 <use images/confusion_matri_regression_finetune_seniority.png>
-Package pdftex.def Info: images/confusion_matri_regression_finetune_seniority.png  used on input line 167.
+Package pdftex.def Info: images/confusion_matri_regression_finetune_seniority.png  used on input line 166.
 (pdftex.def)             Requested size: 460.72124pt x 172.66147pt.
-LaTeX Font Info:    Trying to load font information for TS1+PTSans-TLF on input line 174.
+LaTeX Font Info:    Trying to load font information for TS1+PTSans-TLF on input line 173.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/paratype/TS1PTSans-TLF.fd
 File: TS1PTSans-TLF.fd 2011/05/04 (autoinst with patch) Font definitions for TS1/PTSans-TLF.
 ) [4{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/paratype/ptsans_ts1.enc} <./images/confusion_matri_regression_finetune_seniority.png>]
-Overfull \hbox (2.52731pt too wide) in paragraph at lines 178--179
+Overfull \hbox (2.52731pt too wide) in paragraph at lines 177--178
 []\T1/PTSans-TLF/b/n/12 Consistent er-ror pat-tern: \T1/PTSans-TLF/m/n/12 Most mis-takes oc-cur be-tween ad-ja-cent se-nior-ity lev-els, which
  []
 
-<images/confusion_matrix_2_seniority.png, id=146, 696.6025pt x 622.325pt>
+<images/confusion_matrix_2_seniority.png, id=152, 696.6025pt x 622.325pt>
 File: images/confusion_matrix_2_seniority.png Graphic file (type png)
 <use images/confusion_matrix_2_seniority.png>
-Package pdftex.def Info: images/confusion_matrix_2_seniority.png  used on input line 188.
+Package pdftex.def Info: images/confusion_matrix_2_seniority.png  used on input line 187.
 (pdftex.def)             Requested size: 460.72124pt x 411.5904pt.
 [5] [6 <./images/confusion_matrix_2_seniority.png>]
-Overfull \hbox (0.13724pt too wide) in paragraph at lines 205--206
+Overfull \hbox (0.13724pt too wide) in paragraph at lines 204--205
 \T1/PTSans-TLF/m/n/12 per-for-mance on train/validation/test and out-of-distribution per-for-mance on the CV dataset,
  []
 
-<images/cm-1-fine-tune-department.png, id=163, 911.405pt x 793.96625pt>
+<images/cm-1-fine-tune-department.png, id=168, 911.405pt x 793.96625pt>
 File: images/cm-1-fine-tune-department.png Graphic file (type png)
 <use images/cm-1-fine-tune-department.png>
-Package pdftex.def Info: images/cm-1-fine-tune-department.png  used on input line 213.
+Package pdftex.def Info: images/cm-1-fine-tune-department.png  used on input line 212.
 (pdftex.def)             Requested size: 460.72124pt x 401.35564pt.
 [7]
-<images/cm-2-department.png, id=171, 911.405pt x 793.96625pt>
+<images/cm-2-department.png, id=176, 911.405pt x 793.96625pt>
 File: images/cm-2-department.png Graphic file (type png)
 <use images/cm-2-department.png>
-Package pdftex.def Info: images/cm-2-department.png  used on input line 223.
+Package pdftex.def Info: images/cm-2-department.png  used on input line 222.
 (pdftex.def)             Requested size: 460.72124pt x 401.35564pt.
  [8 <./images/cm-1-fine-tune-department.png>] [9 <./images/cm-2-department.png>]
-<images/cm-3-department.png, id=187, 916.42375pt x 797.98125pt>
+<images/cm-3-department.png, id=192, 916.42375pt x 797.98125pt>
 File: images/cm-3-department.png Graphic file (type png)
 <use images/cm-3-department.png>
-Package pdftex.def Info: images/cm-3-department.png  used on input line 235.
+Package pdftex.def Info: images/cm-3-department.png  used on input line 234.
 (pdftex.def)             Requested size: 460.72124pt x 401.18135pt.
- [10 <./images/cm-3-department.png>] [11] [12]
-
-LaTeX Warning: Empty bibliography on input line 303.
-
-[13
+ [10 <./images/cm-3-department.png>] [11] [12] [13
 
 ] (./main.lot
 Overfull \hbox (2.95644pt too wide) in paragraph at lines 2--2
@@ -748,7 +743,9 @@ Overfull \hbox (2.95644pt too wide) in paragraph at lines 2--2
 \tf@lot=\write6
 \openout6 = `main.lot'.
 
- [14] (./main.lof)
+ [14
+
+] (./main.lof)
 \tf@lof=\write7
 \openout7 = `main.lof'.
 
@@ -758,24 +755,24 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D72AA2B2735C46B249EE01466ADE7353;3467.
+(rerunfilecheck)             Checksum: 209651A896B51BF5D89041D9F6819E87;3603.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 19945 strings out of 474116
- 349756 string characters out of 5743683
- 1939187 words of memory out of 5000000
- 41978 multiletter control sequences out of 15000+600000
+ 19944 strings out of 474116
+ 349664 string characters out of 5743683
+ 1940187 words of memory out of 5000000
+ 41974 multiletter control sequences out of 15000+600000
  642198 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,12n,81p,1004b,803s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/paratype/ptmono/PTM55F.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/paratype/ptsans/PTS55F.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/paratype/ptsans/PTS56F.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/paratype/ptsans/PTS75F.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/paratype/ptsans/PTS76F.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on main.pdf (16 pages, 432849 bytes).
+Output written on main.pdf (16 pages, 434844 bytes).
 PDF statistics:
- 283 PDF objects out of 1000 (max. 8388607)
- 235 compressed objects within 3 object streams
- 55 named destinations out of 1000 (max. 500000)
- 188 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 289 PDF objects out of 1000 (max. 8388607)
+ 241 compressed objects within 3 object streams
+ 56 named destinations out of 1000 (max. 500000)
+ 196 words of extra memory for PDF output out of 10000 (max. 10000000)
 

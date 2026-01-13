@@ -22,5 +22,6 @@
 \contentsline {section}{\numberline {5}Summary of Findings}{12}{section.31}%
 \contentsline {section}{\numberline {6}Limitations and Future Work}{12}{section.32}%
 \contentsline {section}{\numberline {7}Appendix}{13}{section.33}%
-\contentsline {subsection}{\numberline {7.1}Group Member Contributions}{13}{subsection.34}%
-\contentsline {subsection}{\numberline {7.2}Use of Gen-AI}{13}{subsection.38}%
+\contentsline {subsection}{\numberline {7.1}Code Repository}{13}{subsection.34}%
+\contentsline {subsection}{\numberline {7.2}Group Member Contributions}{13}{subsection.35}%
+\contentsline {subsection}{\numberline {7.3}Use of Gen-AI}{13}{subsection.39}%
