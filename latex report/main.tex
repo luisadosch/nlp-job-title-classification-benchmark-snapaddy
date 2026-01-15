@@ -272,8 +272,6 @@ main findings of eda and label distribution
 Table of all result metrics -> and which one is the best model and hwy
 
 \section{Limitations and Future Work}
-
-
 First, our prompt-engineering setup was only iterated a limited number of times. More systematic prompt iterations could target the most confusing class boundaries directly (e.g., \textit{Business Development} vs.\ \textit{Sales}/\textit{Consulting}, and \textit{Administrative} vs.\ \textit{Other}). This is particularly relevant because \textit{Business Development} was the weakest department class in the prompt evaluation and also remained one of the most difficult categories in the fine-tuned model trained with synthetic data. Improving the prompt in these regions would likely reduce noise in the synthetic labels and therefore improve downstream fine-tuning.
 
 Second, seniority prediction remains strongly constrained by missing or insufficient supervision for the \textit{Professional} label. Even though synthetic augmentation introduces \textit{Professional} examples, the class is still broad and heterogeneous and is a frequent source of confusion on CV data. Future work should therefore prioritize collecting additional high-quality labeled samples for \textit{Professional} (and related borderline cases such as \textit{Professional} vs.\ \textit{Senior}) to stabilize the decision boundary and improve robustness in production-like settings.

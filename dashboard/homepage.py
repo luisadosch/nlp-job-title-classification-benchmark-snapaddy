@@ -54,8 +54,8 @@ def predict_labels(job_title: str, mode: str) -> dict:
 
 
 def load_logos():
-    uni = "images/uni-logo.png"
-    snap = "images/logo_snapaddy.png"
+    uni = "dashboard/images/uni-logo.png"
+    snap = "dashboard/images/logo_snapaddy.png"
     return uni, snap
 
 

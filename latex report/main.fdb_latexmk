@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1768298914.86026 "main.bcf" "main.bbl" "main" 1768304517.89433 0
-  "main.bcf" 1768304517.71282 107314 a043a7dbb00e3a2aca3032f11116c6de "pdflatex"
+["biber main"] 1768298914.86026 "main.bcf" "main.bbl" "main" 1768327005.53952 0
+  "main.bcf" 1768327005.36815 107314 a043a7dbb00e3a2aca3032f11116c6de "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1768304515.77927 "/Users/luisadosch/Documents/Final-Project-snapAddy/latex report/main.tex" "main.pdf" "main" 1768304517.89471 0
-  "/Users/luisadosch/Documents/Final-Project-snapAddy/latex report/main.tex" 1768304513.33092 27664 c4e2cf20d1e6509c687ca4ece64191dd ""
+["pdflatex"] 1768327003.44511 "/Users/luisadosch/Documents/Final-Project-snapAddy/latex report/main.tex" "main.pdf" "main" 1768327005.53986 0
+  "/Users/luisadosch/Documents/Final-Project-snapAddy/latex report/main.tex" 1768327003.12272 27662 a572b7b702e2b5d0884c90f95c02929e ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/paratype/ptmono_t1.enc" 1391470736 2566 85d32bcd815d608c52dde2d0410884fa ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/paratype/ptsans_t1.enc" 1391470736 2581 aa32af98902e3c55fcf7bccadd42cf8a ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/paratype/ptsans_ts1.enc" 1391470736 2906 b1860f7ce9685133efbb4942788d2962 ""
@@ -158,14 +158,14 @@
   "images/confusion_matrix_2_seniority.png" 1768291909.18986 52772 c46d174e3010e77ff7f50b7a33f6b877 ""
   "images/label-distribution-department.png" 1768291897.513 47892 d0b7268fc4f3b90cee567d6cc89e1743 ""
   "images/label-distribution-seniority-comparison.png" 1768291897.58585 31857 c3ca601952c5e2e7c7c006f2cbdf302d ""
-  "main.aux" 1768304517.71043 7247 91a8b36bbe6d1fd6c1a75c205b5714a0 "pdflatex"
+  "main.aux" 1768327005.36543 7247 91a8b36bbe6d1fd6c1a75c205b5714a0 "pdflatex"
   "main.bbl" 1768298938.51146 0 d41d8cd98f00b204e9800998ecf8427e "biber main"
-  "main.lof" 1768304517.7139 1079 d578e9317023a4358f93c93a029929f4 "pdflatex"
-  "main.lot" 1768304517.71385 449 5fdb395722f95eccd1e0a3d3b7901b5f "pdflatex"
-  "main.out" 1768304517.7117 3771 ebbe80734c51020a0aa35856144ba4aa "pdflatex"
-  "main.run.xml" 1768304517.71372 2264 bc5b4d887f84613ee77440aea606917c "pdflatex"
-  "main.tex" 1768304513.33092 27664 c4e2cf20d1e6509c687ca4ece64191dd ""
-  "main.toc" 1768304517.71381 2481 a8f83617e2d7d26d2a4d54589219b33a "pdflatex"
+  "main.lof" 1768327005.36996 1079 d578e9317023a4358f93c93a029929f4 "pdflatex"
+  "main.lot" 1768327005.36992 449 5fdb395722f95eccd1e0a3d3b7901b5f "pdflatex"
+  "main.out" 1768327005.3669 3771 ebbe80734c51020a0aa35856144ba4aa "pdflatex"
+  "main.run.xml" 1768327005.36977 2264 bc5b4d887f84613ee77440aea606917c "pdflatex"
+  "main.tex" 1768327003.12272 27662 a572b7b702e2b5d0884c90f95c02929e ""
+  "main.toc" 1768327005.36986 2481 a8f83617e2d7d26d2a4d54589219b33a "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"

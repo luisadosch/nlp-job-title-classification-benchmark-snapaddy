@@ -40,8 +40,8 @@ class MatchResult:
 
 @st.cache_data
 def load_label_lists(
-    department_csv: str = "../data/raw/department-v2.csv",
-    seniority_csv: str = "../data/raw/seniority-v2.csv",
+    department_csv: str = "data/raw/department-v2.csv",
+    seniority_csv: str = "data/raw/seniority-v2.csv",
 ) -> Tuple[pd.DataFrame, pd.DataFrame]:
     dep = pd.read_csv(department_csv)
     sen = pd.read_csv(seniority_csv)
