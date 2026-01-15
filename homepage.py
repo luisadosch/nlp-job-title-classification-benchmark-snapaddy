@@ -1,9 +1,9 @@
 # app.py
 import streamlit as st
 import pandas as pd
-from rule_based_inference import predict_rule_based
-from bow_inference import predict_bow
-from gemini_inference import (
+from dashboard.rule_based_inference import predict_rule_based
+from dashboard.bow_inference import predict_bow
+from dashboard.gemini_inference import (
     PROMPT_SENIORITY_DEPARTMENT, predict_with_gemini
 )
 

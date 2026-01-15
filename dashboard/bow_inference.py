@@ -43,25 +43,15 @@ def normalize_text(text: str) -> str:
     return text
 
 
-def _find_repo_root(start: Path) -> Path:
-    """
-    Walk up until we find a folder containing 'data'.
-    This makes file paths robust no matter where Streamlit is launched from.
-    """
-    for p in [start, *start.parents]:
-        if (p / "data").exists():
-            return p
-    # fallback: assume dashboard/.. is repo root
-    return start.parents[1]
+
 
 
 @st.cache_data
 def _load_training_data() -> Tuple[pd.DataFrame, pd.DataFrame]:
     here = Path(__file__).resolve()
-    repo_root = _find_repo_root(here)
 
-    dep_path = repo_root / "data" / "raw" / "department-v2.csv"
-    sen_path = repo_root / "data" / "raw" / "seniority-v2.csv"
+    dep_path = here.parent.parent / "data" / "raw" / "department-v2.csv"
+    sen_path = here.parent.parent / "data" / "raw" / "seniority-v2.csv"
 
     dep = pd.read_csv(dep_path)
     sen = pd.read_csv(sen_path)
