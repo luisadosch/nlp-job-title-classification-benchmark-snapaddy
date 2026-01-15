@@ -1,7 +1,18 @@
-\contentsline {figure}{\numberline {1}{\ignorespaces Distribution of seniority labels in different datasets}}{2}{figure.caption.11}%
-\contentsline {figure}{\numberline {2}{\ignorespaces Distribution of department labels in different datasets}}{3}{figure.caption.12}%
-\contentsline {figure}{\numberline {3}{\ignorespaces Confusion Matrix (All Predictions) – Counts (True label = rows, Predicted = columns)}}{4}{figure.caption.16}%
-\contentsline {figure}{\numberline {4}{\ignorespaces Confusion matrix on the CV dataset after adding synthetic training data and applying oversampling.}}{6}{figure.caption.18}%
-\contentsline {figure}{\numberline {5}{\ignorespaces Confusion matrix on the CV dataset for the baseline department classifier.}}{8}{figure.caption.21}%
-\contentsline {figure}{\numberline {6}{\ignorespaces Confusion matrix on the CV dataset for the oversampled department classifier.}}{9}{figure.caption.23}%
-\contentsline {figure}{\numberline {7}{\ignorespaces Confusion matrix on the CV dataset after training with synthetic department data.}}{10}{figure.caption.25}%
+\contentsline {figure}{\numberline {1}{\ignorespaces Department Distribution}}{3}{figure.caption.6}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Seniority Distribution}}{5}{figure.caption.10}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Seniority Changes}}{6}{figure.caption.12}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Seniority Duration}}{7}{figure.caption.15}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Average Seniority Duration}}{8}{figure.caption.16}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Job Status Distribution}}{9}{figure.caption.18}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Department Distribution across Job Status}}{10}{figure.caption.21}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Seniority Distribution across Job Status}}{11}{figure.caption.23}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Job Title Length Distribution}}{11}{figure.caption.26}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Confusion Matrix Department}}{15}{figure.caption.38}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Confusion Matrix Seniority}}{16}{figure.caption.39}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Distribution of seniority labels in different datasets}}{18}{figure.caption.45}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Distribution of department labels in different datasets}}{19}{figure.caption.46}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Confusion Matrix (All Predictions) – Counts (True label = rows, Predicted = columns)}}{20}{figure.caption.50}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Confusion matrix on the CV dataset after adding synthetic training data and applying oversampling.}}{22}{figure.caption.52}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Confusion matrix on the CV dataset for the baseline department classifier.}}{24}{figure.caption.55}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Confusion matrix on the CV dataset for the oversampled department classifier.}}{25}{figure.caption.57}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Confusion matrix on the CV dataset after training with synthetic department data.}}{26}{figure.caption.59}%

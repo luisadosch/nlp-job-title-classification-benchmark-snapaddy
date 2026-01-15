@@ -88,14 +88,478 @@
 \pagenumbering{arabic}
 \setcounter{page}{1}
 \lhead{\nouppercase{\leftmark}}
-\section{Data Overview}
-Hier würde ich vlt bisschen über class imbalance in den train vs test reden
-\section{Data Preprocessing}
-an Sonia: haben wir hier überhaupt was machen müssen? ansosnten kannst du das auch weglassen
+\section{Data Overview and Preprocessing}
+\subsection{Label Datasets (department labels \& seniority labels)}
+The department and seniority files were loaded into dataframes.
+The department labels file has 10.145 rows and the seniority labels file has 9.428 rows.
+Both files have 2 columns, one column corresponds to the job title, the other one to the label (department/seniority).
+There are 11 distinct department labels. Among them, Marketing is the most common, 
+followed by Sales and Information Technology. Very rare are the labels Other, 
+Purchasing, Customer Support, with Human Resources being the most rare.
+And there are 5 distinct seniority level labels. Among them, Senior is the most common, 
+followed by Lead. Director, Management are less common and Junior the least.
+Furthermore, we found no missing values in the datasets.
+\subsection{CV Datasets (annotated \& not annotated)}
+The original CV data is stored in a nested, three level hierarchical format where each 
+CV contains a list of job entries. The datasets are a list of CVs, each CV is a list of job entries, and each job entry is a dictionary whith values. 
+Since no job field contains nested lists or dictionaries, the hierarchy ends at the job level.
+Furthermore, we have 609 CVs with labels and 390 CVs without labels and there are 
+2.638 job titles in the annotated data and 1.886 job titles in the not annotated data.
+
+For modeling purposes, the hierarchical CV data is transformed into a 
+job-level table, where each row represents one job entry.
+For that we create the following dataframe schema where each column corresponds to a 
+field (key) from the job dictionary:
+\begin{itemize}
+  \item organization : name of the employer for a given job
+  \item position : job title text
+  \item startDate : start date of the job
+  \item endDate : end date of the job
+  \item status : indicates the status of a job
+  \item department (annotated dataset only) : department label for a job
+  \item seniority (annotated dataset only) : seniority level for a job
+\end{itemize}
+We removed the linkedin field, because it only contains a URL to a linkedin page.
+
+Because we want to perserve the hierarchy information (CV identity and job order), 
+we explicitly add these columns to our dataframe schema:
+\begin{itemize}
+  \item cv\_id : this links each job back to a CV (unique identifier for each CV)
+  \item job\_index : this preserves the job order within a CV (position of a job within a CVs job list)
+\end{itemize}
+This is necessary because job entries are not independent observations, 
+they belong to the same individual and form a temporal sequence.
+The variables cv\_id and job\_index are derived from the positional indices of 
+CVs and jobs within the nested list structure using enumerate.
+All remaining columns are obtained by directly reading the corresponding fields 
+from each job dictionary using key access.
+
+We also inspected missing values in the datasets. Here it is important to note that 
+some missing values are expected in our data, such as in the endDate for active jobs (status=active).
+Also missingness is expected for department and seniority in the not annotated data.
+We found 118 missing values in startDate and in 741 endDate in the annotated data and 
+58 in startDate and 477 in endDate in the not annotated data.
+We found that all missing end dates occur for jobs with status active or unkown, 
+while all inactive jobs have an end date.
+Furthermore, we also found that all jobs marked with status unkown 
+lack both a start date and an end date.
+This inspections showed us that incomplete temporal metadata is consistently 
+captured via the unknown status rather than occurring randomly. 
+This indicates that incomplete temporal metadata is consistently reflected in the job status 
+and does not represent random missingness.
+Overall, any missingness in the data was expected, 
+missing end dates correspond to ongoing (active) positions and 
+therefore represent meaningful missingness rather than data quality issues. 
+Jobs with unknown status lack temporal information (both start and end dates).
+
+
 \section{EDA}
+The EDA aims to understand the structure, quality, and challenges of the data.
+
+\subsection{Department Distribution}
+We take a look at the distribution of the department label in the datasets and 
+understand how balanced or imbalanced the department labels are distributed. 
+This is especially important since department is one of our target variable and 
+its distribution helps us understand the difficulty of the prediction task.
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{images/dep_dist.png}
+\caption{Department Distribution}
+\label{fig:dep_dist}
+\end{figure}
+The annotated CV data and the Label List have the same 11 departments.
+Departments are very imbalanced for both data. 
+There are few departments that have a much higher percentage. 
+However they are different for the CV data and the Label List: 
+for the CV data the label Other dominates, while for the Label List it is Marketing. 
+Sales and Information Technology is strong for both. 
+The undefined label Other is much less common in the Label List than it is in the CV data.
+
+\subsubsection{How often people change Departments}
+We want to analyse if we can assume that it is rather unlikely that 
+people change the department over time.
+We compare each job to the previous one in a CV by counting how often the department changes.
+\begin{table}[H]
+\centering
+\begin{tabular}{lccc}
+\hline
+Department Change Count & CV count \\
+\hline
+0 & 288 \\
+1 & 94 \\
+2 & 78 \\
+3 & 57 \\
+4 & 31 \\
+5 & 25 \\
+6 & 21 \\
+7 & 4 \\
+8 & 7 \\
+9 & 2 \\
+10 & 1 \\
+24 & 1 \\
+\hline
+\end{tabular}
+\caption{Department Change Counts and their CV Count}
+\label{tab:prompt_metrics}
+\end{table}
+We can see that there is a strong department stability for many people.
+288 CVs (47\%) never change department and 382 CVs (63\%) change at most once.
+But department change is not completely rare, about 37\% changed department multiple times.
+While department changes do occur, particularly for a subset of highly mobile careers, 
+the overall pattern indicates substantial departmental stability.
+
+
+\subsection{Seniority Distribution}
+We also take a look at the distribution of the seniority label in the datasets and 
+understand how balanced or imbalanced the department labels are distributed. 
+This is especially important since seniority is the other one of our target variables and 
+its distribution helps us understand the difficulty of the prediction task.
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{images/sen_dist.png}
+\caption{Seniority Distribution}
+\label{fig:sen_dist}
+\end{figure}
+The plots show a big discrepancy: we have a seniority label missing in the Seniority Label List.
+We have 6 seniorities in the annotated CV, but only 5 in the Label List. 
+The label Professional is completely absend from the Label List. 
+This is especially problematic since Professional is the most common Label in the CV data. 
+Overall the distribution of seniority labels is more balanced compared to the distribution of department labels.
+Professional is the most common seniority in the annotated CVs, followed by Lead and Management.
+Senior is the most common seniority in the Label List, followed by Lead.
+
+
+\subsubsection{Comparison of current Seniority to previous Seniority}
+This analysis compares the seniority level of the current position to earlier 
+roles within the same CV, highlighting whether individuals are currently in higher, 
+similar, or lower seniority positions relative to their past experience.
+For that we map seniority manually to an ordinal scale (Junior = 0, Professional = 1, Senior = 2, Lead = 3, Management = 4, Director = 5)
+and check seniority changes between consecutive jobs in a CV.
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{images/senchanges.png}
+\caption{Seniority Changes}
+\label{fig:senchanges}
+\end{figure}
+\begin{table}[H]
+\centering
+\begin{tabular}{lccc}
+\hline
+Job-to-Job seniority comparison  & Percentage \\
+\hline
+current\_higher\_than\_previous & 31.1\% \\
+current\_same\_as\_previous & 50.37\%  \\
+current\_lower\_than\_previous & 18.53\%  \\
+\hline
+\end{tabular}
+\caption{Job-to-Job Seniority Comparison}
+\label{tab:prompt_metrics}
+\end{table}
+The majority of job-to-job comparisons show no change in seniority between the 
+current position and earlier roles. 
+Upward deviations are more frequent than downward deviations.
+This shows that seniority does not consistently increase relative to earlier roles. 
+A large proportion of current positions remain at the same seniority level (50\%).
+
+\subsubsection{How many years do people spend on each Seniority Level}
+We want to analyze how long (years) individuals typically remain in each seniority level. 
+Therefore we compute the duration of job positions using their start and end dates.
+We restrict the analysis to inactive jobs, because we do not have a time period for 
+active jobs. We also only use those inactive jobs with both a start and end date. 
+Job durations are calculated in years and then aggregated by seniority level.
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{images/senduration2.png}
+\caption{Seniority Duration}
+\label{fig:senduration2}
+\end{figure}
+Junior positions tend to be relatively short-lived, lasting on average for one year (mean=1.58 and median=0.75 years).
+Professional roles represent a stable mid-career stage, with longer typical 
+durations than junior roles but shorter durations than management or 
+director positions. On average they last for 2-3 years (mean=3.41 and median=2.25 years).
+Senior and Lead roles show comparable job durations. They last on 
+average for 2-4 years (Senior: mean=4.18 and median=2.5 years and Lead: mean=4.34 and 
+median=2.75 years). Management positions tend to be more stable, with individuals 
+remaining in these roles the longest. On average they last for 3-5 years 
+(mean=5.46 and median=3.91 years). Director roles also show relatively long durations, 
+although slightly shorter median tenure than management positions. 
+On average they last for 3-4 years (mean=4.56 and median=2.98 years).
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{images/senduration.png}
+\caption{Average Seniority Duration}
+\label{fig:senduration}
+\end{figure}
+We can see that the average (mean) job duration increases with seniority level, 
+with junior roles exhibiting the shortest average tenure and management-level roles 
+showing the longest.
+
+\subsection{Job Status Distribution}
+We now take a look at the status distribution of jobs in the annotated CVs.
+This is important as our prediciton will be based on the characteristics of the current job, 
+meaning where the status is active. We want to understand how many active jobs 
+there are in the data and whether CVs can have multiple active jobs.
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{images/jobstatus.png}
+\caption{Job Status Distribution}
+\label{fig:job status}
+\end{figure}
+We can clearly see that most jobs are inactive and historical, given by the 
+fact that ~72\% of all job entries are of status inactive. 
+This however is a logical consequence of CV data and confirms to us that the CVs contain 
+rich career history.
+Approximately 24\% of jobs are labeled as active, while a small fraction
+has a status unknown likely due to incomplete temporal metadata.
+
+Our first intuition based on common sense and also based on the data (24\% of jobs are labeled as active) 
+is that there is 1 active job per CV. 
+To support this intuition we take a look at the distribution of active jobs per CV.
+\begin{table}[H]
+\centering
+\begin{tabular}{lccc}
+\hline
+Count of active jobs & CV count \\
+\hline
+0 & 131 \\
+1 & 380 \\
+2 & 78 \\
+3 & 10 \\
+4 & 3 \\
+5 & 4 \\
+7 & 1 \\
+8 & 1 \\
+10 & 1 \\
+\hline
+\end{tabular}
+\caption{CV counts and their amount of active jobs}
+\label{tab:prompt_metrics}
+\end{table}
+Most CVs (380) have exactly 1 active job and represents the largest group. 
+However, we also have a high amount of CVs (131) without a current job. 
+Some have 2 (78) or 3 (10), and there are some minor edge cases with a 
+maximum 10 current jobs in one CV.
+This tells us CVs can have multiple active jobs, this however are minority cases.
+
+\subsection{Department vs Job Status}
+We want to understand how the departments are distributed among the different job status.
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{images/depjob.png}
+\caption{Department Distribution across Job Status}
+\label{fig:depjob}
+\end{figure}
+Status active clearly shows a dominance of department Other. 
+After that, IT and Sales are the strongest specific departments. 
+This suggests that current job titles often lack strong department specific signal.
+Status inactive also has Other dominating but less extreme percentage wise and 
+shows more diversity across departments. 
+Historical jobs show broader departmental diversity than current roles.
+Status unknown is extremely dominated by Other and has a sparse representation elsewhere. 
+These unknown status jobs lack sufficient structure for reliable department inference.
+Overall, the distribution of department labels differs by job status. 
+Active jobs are strongly dominated by the Other category, 
+whereas inactive jobs exhibit greater departmental diversity.
+
+
+\subsection{Seniority vs Job Status}
+We take the same look at seniority and their distribution among the different job status.
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{images/senjob.png}
+\caption{Seniority Distribution across Job Status}
+\label{fig:senjob}
+\end{figure}
+Active jobs are strongly skewed toward mid to high seniority levels. 
+Junior roles are rare among current jobs. Management amd Lead together alone represent 51\%. 
+Current positions tend to represent later career stages.
+Junior roles are much more common in inactive jobs. 
+Earlier career stages are more prevalent in past positions.
+
+\subsection{Job Titles}
+Since all our approaches use the job titles as predictor, 
+we must understand their overall structure: how long they are and how diverse / noisy they are linguistically.
+
+\subsubsection{Job Title Length Distribution}
+Th job title length tells us how much information is available per sample and 
+whether titles are mostly short or descriptive.
+For that we measure the number of words per title.
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{images/jobtitle_length.png}
+\caption{Job Title Length Distribution}
+\label{fig:jobtitle_length}
+\end{figure}
+Overall most job titles are short for all 3 datasets, ranging between 1-6 words on average per title.
+We can see the annotated CV data has overall shorter titles, with most of them being between 1-2 words.
+
+\subsubsection{ Language and Character Diversity of Job Titles}
+To not overkill the analysis, we look at random samples of about 100 jobs for each dataset to 
+get an overall view on the diversity of languages and characters in the titles.
+Looking at the samples, we primarily inspect the following: we analyse if non-English 
+titles exist and we look for any special characters and whitespacing.
+For space reasons the full samples are only printed out in our notebook.
+The main insights we gained are that we have non-English titles and 
+we have special characters (such as /, (), -, \&) and whitespacing in the data for all datasets.
+
+We also checked for the proportion of non-ASCII characters. Non-ASCII characters typically 
+indicate: non-English titles (e.g. German, French, Spanish), localized spellings (ä, ö, ü, ß, é, ñ, etc.)
+or mixed-language titles.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lccc}
+\hline
+Data & Titles with non-ASCII characters \\
+\hline
+Annotated CVs & 11.1\% \\
+Department Label-List & 7.1\% \\
+Seniority Label-List & 9.7\% \\
+\hline
+\end{tabular}
+\caption{Amount of non-ASCII characters in the job titles}
+\label{tab:prompt_metrics}
+\end{table}
+
+For each datafile the job titles contain a small proportion of non-ASCII characters, 
+indicating the presence of non-English or language-specific titles. 
+This linguistic diversity introduces additional variability and noise, 
+however the non-ascii amount is very small.
+Note that these are a lower bound, not an upper bound: English titles can still 
+exist in other languages and ASCII-only does not mean “English”.
+
+\section{Preparation}
+\subsection{Evaluation Preparation}
+We use the following metrics to evaluate and compare all approaches:
+\begin{itemize}
+  \item Accuracy: shows the overall fraction of correctly classified samples
+  \item macro-averaged F1-Score: is the harmonic mean of precision and recall, computed independently for each class and averaged across classes. This metric is particularly important due to the strong class imbalance in both department and seniority labels, as it ensures that performance on minority classes is weighted equally.
+  \item MAE: measures the average absolute difference between predicted and true labels. It is only meaningful for ordinal or numerical labels (e.g. seniority levels), where it captures how far predictions deviate from the correct class on average; for nominal class labels, the metric is not applicable.
+\end{itemize}
+Together, these metrics allow us to assess how often each model is correct overall 
+and how well it performs across all classes, including rare ones.
+
+The function evaluate\_predictions is created in utils for each model to use and 
+computes the evaluation metrics. Some approaches have different metrics (numbers or strings).
+The function assigns None to the metric that cannot be computed for a model. 
+This ensures a consistent output structure across different models and label types.
+
+\subsection{Results Comparison Preparation}
+The result\_utils were created for each model to use and to add their results. 
+In the end we can therefore get a dataframe with each model and their corresponding 
+results to allow comparison between approaches.
+
+The results table captures and compares across:
+\begin{itemize}
+  \item Model
+  \item Target (department vs seniority)
+  \item Metrics (accuracy, macro F1, MAE)
+\end{itemize}
+
+Each row in that table represents one experiment.
+
+
 \section{Experiments}
 \subsection{Rule Based Matching}
+The rule based matching is performed with the annotated CV dataset transformed to a job-level
+and the Seniority and Department Label Lists.
 
+\subsubsection{Preparation}
+For the rule-based matching, job titles and label-list entries are normalized using 
+lowercasing and whitespace stripping before applying the substring matching.
+This is done to avoid any accidental mismatching due to lower/uppercasing 
+or spacing (spaces, tabs, line breaks).
+We want to make sure the normalization does not alter meaning or generalize semantics, 
+but simply removes formatting noise. Therefore, no further text processing is applied 
+in order to keep the baseline fully interpretable. 
+We apply the same normalization to CV titles and the label-list titles.
+
+Furthermore, we only include CVs that contain exactly one active job (= current job) 
+in order to ensure an unambiguous definition of the current position. 
+CVs with zero active jobs do not provide a target position for prediction, 
+while CVs with multiple active jobs introduce ambiguity regarding which role 
+should be considered the primary current position. 
+Restricting the dataset to CVs with exactly one active job therefore ensures a 
+consistent and well-defined evaluation setup.
+
+\subsubsection{Rule-based Matching Logic}
+
+Our rule-based matching functions implement a rule-based classifier using the provided 
+department and seniority label lists, where job titles from the LinkedIn CV data 
+are matched against predefined keywords via substring rules.
+Unmatched titles to departments are assigned to the label ‘Other’. 
+For seniority we explicitly use "Professional" as default for unmatched titles, 
+because no label such as "Other" exists in seniority. 
+There are two reasons as to why we use “Professional” as the fallback: first, this is 
+the most frequent seniority class and using it as the fallback label avoids artificially inflating rare classes.
+Second, it is present in the CV annotations but not in the predefined seniority keyword list. 
+Whenever no seniority-specific keyword is matched, the model can default to “Professional”.
+
+\subsubsection{Rule Based Matching Results}
+The rule-based matching baseline does not involve 
+training and is therefore evaluated on the full dataset.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lccc}
+\hline
+Baseline & Accuracy & Macro F1 \\
+\hline
+Department prediction & 60.26\% & 0.449 \\
+Seniority prediction & 53.68\% & 0.426 \\
+\hline
+\end{tabular}
+\caption{Rule-based matching evaluation results}
+\label{tab:prompt_metrics}
+\end{table}
+
+Results show that for department prediction, the baseline achieves an accuracy of 60.26\% 
+and a macro-averaged F1 score of 0.449. 
+For seniority prediction, the accuracy is 53.68\% with a macro F1 score of 0.426.
+
+The relatively higher accuracy compared to the macro F1 score in both tasks reflects 
+the strong class imbalance present in the data. 
+Dominant classes such as Other (department) and Professional (seniority) are 
+frequently predicted due to the fallback behavior of the rule-based system, 
+which inflates overall accuracy while reducing performance on minority classes.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{images/confusionmatrix_dep_1.png}
+\caption{Confusion Matrix Department}
+\label{fig:confusionmatrix_dep_1}
+\end{figure}
+The department confusion matrix reveals that the rule-based baseline strongly 
+relies on explicit keywords and defaults to the “Other” category when no clear match 
+is found. While domains such as Sales and Consulting are identified reasonably well, 
+many roles from related or ambiguous departments are misclassified as “Other”, 
+indicating limited contextual understanding.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{images/confusionmatrix_sen_1.png}
+\caption{Confusion Matrix Seniority}
+\label{fig:confusionmatrix_sen_1}
+\end{figure}
+The seniority confusion matrix is strongly influenced by the role of “Professional” as a 
+fallback class in the rule-based baseline. Since many job titles do not contain 
+explicit seniority indicators, they are defaulted to “Professional”, 
+leading to a high concentration of predictions in this class. 
+While seniority levels with clear keywords (e.g. Lead or Management) are 
+recognized reasonably well, substantial confusion arises for mid-level roles. 
+This behavior highlights the limitations of keyword-based matching and motivates 
+the use of context-aware machine learning models.
+
+Confusion matrix analysis shows that the baseline performs reasonably well for 
+labels associated with explicit keywords in job titles, such as Sales, Consulting, 
+Lead, and Management. However, substantial confusion occurs between semantically 
+related classes and for ambiguous job titles that lack clear indicators. 
+In these cases, predictions are often assigned to fallback categories.
+
+Overall, the rule-based baseline provides a transparent and interpretable reference point. 
+While its predictive performance is limited, particularly in terms of balanced class-wise 
+performance, it establishes a meaningful lower bound and highlights the need for 
+more expressive, context-aware machine learning models.
 
 \subsection{Simple interpretable baseline: Bag of Words}
 
@@ -125,7 +589,7 @@ Department prediction & 79.61\% & 0.734 & 0.804 \\
 
 
 \subsubsection{Prompt Engineering for Synthetic Data}
-We additionally apply the same prompting setup to unlabeled job titles to generate synthetic labels as extra training data. We use prompt-based labeling instead of a purely rule-based approach because it achieved higher department accuracy on the annotated dataset and because it can produce labels that are missing (or strongly underrepresented) in the supervised training data (e.g., \textit{Professional} for seniority). The resulting file (data/results/gemini\_synthetic.csv) is concatenated with the supervised training split and used for fine-tuning transformer classifier/regressor models.
+<We additionally apply the same prompting setup to unlabeled job titles to generate synthetic labels as extra training data. We use prompt-based labeling instead of a purely rule-based approach because it achieved higher department accuracy on the annotated dataset and because it can produce labels that are missing (or strongly underrepresented) in the supervised training data (e.g., \textit{Professional} for seniority). The resulting file (data/results/gemini\_synthetic.csv) is concatenated with the supervised training split and used for fine-tuning transformer classifier/regressor models.
 
 Figures~\ref{fig:labeldistsyntheticseniority} and~\ref{fig:labeldistsyntheticsdepartment} illustrate why this augmentation is relevant: the label distributions differ substantially between the training data and the CV (out-of-production) dataset. 
 
@@ -292,7 +756,7 @@ The complete implementation of our project is available in the following GitHub 
 In this section we summarize the role of each group member:
 
 \begin{enumerate}
-    \item \textbf{Sonia Bronner:} Data overview, data preprocessing, exploratory data analysis (EDA), and implementation of the rule-based matching baseline.
+    \item \textbf{Sonia Bronner:} Data overview, data preprocessing and preparation, exploratory data analysis (EDA), and implementation of the rule-based matching baseline.
     \item \textbf{Laura Hüsam:} Implementation of the bag-of-words approach and the embedding-based labeling approach.
     \item \textbf{Luisa Dosch:} Implementation of the prompt-engineering pipeline (test-set evaluation and synthetic data generation), fine-tuned classification model experiments (with and without synthetic data), and the hybrid approach (rule-based + fine-tuning).
 \end{enumerate}
