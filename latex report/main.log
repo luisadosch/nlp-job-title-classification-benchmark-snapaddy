@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.6.2)  15 JAN 2026 09:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.6.2)  16 JAN 2026 14:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -817,7 +817,17 @@ File: images/cm-3-department.png Graphic file (type png)
 <use images/cm-3-department.png>
 Package pdftex.def Info: images/cm-3-department.png  used on input line 698.
 (pdftex.def)             Requested size: 460.72124pt x 401.18135pt.
- [26 <./images/cm-3-department.png>] [27] [28] [29
+ [26 <./images/cm-3-department.png>] [27] [28]
+Overfull \hbox (64.86397pt too wide) in paragraph at lines 751--752
+\T1/PTSans-TLF/m/n/12 Stream-lit se-crets vari-able dur-ing de-ploy-ment, us-ing a file \T1/PTMono-TLF/m/n/12 dash-board/.streamlit/secrets.toml
+ []
+
+
+Overfull \hbox (14.3055pt too wide) in paragraph at lines 759--760
+[]\T1/PTSans-TLF/m/n/12 Overall, the dash-board pro-vides an ac-ces-si-ble in-ter-face to demon-strate the be-hav-ior, strengths,
+ []
+
+[29
 
 ] [30
 
@@ -860,18 +870,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 20104 strings out of 474116
- 353090 string characters out of 5743683
+ 20106 strings out of 474116
+ 353150 string characters out of 5743683
  1941187 words of memory out of 5000000
- 42081 multiletter control sequences out of 15000+600000
+ 42083 multiletter control sequences out of 15000+600000
  642198 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,12n,81p,1004b,803s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/paratype/ptmono/PTM55F.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/paratype/ptsans/PTS55F.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/paratype/ptsans/PTS56F.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/paratype/ptsans/PTS75F.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/paratype/ptsans/PTS76F.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on main.pdf (34 pages, 861930 bytes).
+</usr/local/texlive/2024/texmf-dist/fonts/type1/paratype/ptmono/PTM55F.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/paratype/ptsans/PTS55F.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/paratype/ptsans/PTS56F.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/paratype/ptsans/PTS75F.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/paratype/ptsans/PTS76F.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on main.pdf (34 pages, 880792 bytes).
 PDF statistics:
- 526 PDF objects out of 1000 (max. 8388607)
- 436 compressed objects within 5 object streams
+ 536 PDF objects out of 1000 (max. 8388607)
+ 442 compressed objects within 5 object streams
  109 named destinations out of 1000 (max. 500000)
  403 words of extra memory for PDF output out of 10000 (max. 10000000)
 

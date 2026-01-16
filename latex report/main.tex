@@ -744,7 +744,19 @@ Second, seniority prediction remains strongly constrained by missing or insuffic
 \newpage
 \section{Dashboard Implementation}
 
-can be found in the repo under the folder \textit{dashboard/}
+To complement the experimental results, we implemented an interactive dashboard using \texttt{Streamlit}. The dashboard is intended as a lightweight presentation and exploration tool rather than a full reproduction of all experiments, as some approaches require GPU resources or offline training and are therefore not suitable for interactive execution.
+
+The dashboard allows users to enter a single job title, representing the current position in a CV, and returns predictions for seniority level, department, and an associated confidence score. Three inference modes are supported: a rule-based baseline using substring matching, a Bag-of-Words model based on TF--IDF features and logistic regression, and a prompt-engineering approach using a large language model (Gemini). The Streamlit entry point is located in \texttt{homepage.py}, while all dashboard-specific logic is organized in the \texttt{dashboard/} folder. This structure follows Streamlit deployment conventions and cleanly separates the user interface from the modeling components.
+
+The prompt-engineering mode relies on the Google Gemini API and therefore requires a valid API key. For security reasons, the key is not hard-coded but must be provided via a Streamlit secrets variable during deployment, using a file \texttt{dashboard/.streamlit/secrets.toml} with the entry
+\begin{verbatim}
+GEMINI_API_KEY = "YOUR_API_KEY"
+\end{verbatim}
+During the correction of this report, the API key may be expired, as it was created under a free trial. In this case, clicking the \textit{Predict} button in prompt-engineering mode will not produce a response. Importantly, this behavior does not indicate a coding error: when the \textit{Debug} option in the sidebar is enabled, the dashboard explicitly shows that the request fails due to an invalid or missing API key, allowing the issue to be clearly attributed to authentication rather than implementation.
+
+All dashboard predictions include a confidence value in the range $[0,1]$, where low values indicate high uncertainty and higher values suggest more reliable predictions. For the rule-based and Bag-of-Words approaches, this score is computed heuristically based on match specificity or model output probabilities, while for prompt engineering it is generated directly by the language model and reflects its own uncertainty assessment. The confidence score is intended as an interpretability aid for demonstration purposes and should not be interpreted as a calibrated probability.
+
+Overall, the dashboard provides an accessible interface to demonstrate the behavior, strengths, and limitations of the different labeling approaches under realistic usage conditions.
 
 \clearpage
 \newpage
