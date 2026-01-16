@@ -4,7 +4,7 @@ import random
 import time
 from typing import Any, Dict
 import streamlit as st
-from google import genai
+from google import genais
 
 PROMPT_SENIORITY_DEPARTMENT = """
 # SCENARIO
