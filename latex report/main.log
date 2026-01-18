@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.6.2)  16 JAN 2026 14:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.6.2)  16 JAN 2026 14:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -818,11 +818,6 @@ File: images/cm-3-department.png Graphic file (type png)
 Package pdftex.def Info: images/cm-3-department.png  used on input line 698.
 (pdftex.def)             Requested size: 460.72124pt x 401.18135pt.
  [26 <./images/cm-3-department.png>] [27] [28]
-Overfull \hbox (64.86397pt too wide) in paragraph at lines 751--752
-\T1/PTSans-TLF/m/n/12 Stream-lit se-crets vari-able dur-ing de-ploy-ment, us-ing a file \T1/PTMono-TLF/m/n/12 dash-board/.streamlit/secrets.toml
- []
-
-
 Overfull \hbox (14.3055pt too wide) in paragraph at lines 759--760
 []\T1/PTSans-TLF/m/n/12 Overall, the dash-board pro-vides an ac-ces-si-ble in-ter-face to demon-strate the be-hav-ior, strengths,
  []
@@ -853,18 +848,10 @@ L3 programming layer <2024-02-20>
  ***********
 
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: C0815DE98C760A539935CBBBDECAA0E9;7864.
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                main
-(biblatex)                and rerun LaTeX afterwards.
-
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
@@ -878,7 +865,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  75i,12n,81p,1004b,803s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/paratype/ptmono/PTM55F.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/paratype/ptsans/PTS55F.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/paratype/ptsans/PTS56F.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/paratype/ptsans/PTS75F.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/paratype/ptsans/PTS76F.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on main.pdf (34 pages, 880792 bytes).
+Output written on main.pdf (34 pages, 880801 bytes).
 PDF statistics:
  536 PDF objects out of 1000 (max. 8388607)
  442 compressed objects within 5 object streams

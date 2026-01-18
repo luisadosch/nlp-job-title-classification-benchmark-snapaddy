@@ -748,7 +748,7 @@ To complement the experimental results, we implemented an interactive dashboard 
 
 The dashboard allows users to enter a single job title, representing the current position in a CV, and returns predictions for seniority level, department, and an associated confidence score. Three inference modes are supported: a rule-based baseline using substring matching, a Bag-of-Words model based on TF--IDF features and logistic regression, and a prompt-engineering approach using a large language model (Gemini). The Streamlit entry point is located in \texttt{homepage.py}, while all dashboard-specific logic is organized in the \texttt{dashboard/} folder. This structure follows Streamlit deployment conventions and cleanly separates the user interface from the modeling components.
 
-The prompt-engineering mode relies on the Google Gemini API and therefore requires a valid API key. For security reasons, the key is not hard-coded but must be provided via a Streamlit secrets variable during deployment, using a file \texttt{dashboard/.streamlit/secrets.toml} with the entry
+The prompt-engineering mode relies on the Google Gemini API and therefore requires a valid API key. For security reasons, the key is not hard-coded but must be provided via a Streamlit secrets variable during deployment, with the entry
 \begin{verbatim}
 GEMINI_API_KEY = "YOUR_API_KEY"
 \end{verbatim}
@@ -769,8 +769,8 @@ In this section we summarize the role of each group member:
 
 \begin{enumerate}
     \item \textbf{Sonia Bronner:} Data overview, data preprocessing and preparation, exploratory data analysis (EDA), and implementation of the rule-based matching baseline.
-    \item \textbf{Laura Hüsam:} Implementation of the bag-of-words approach and the embedding-based labeling approach.
-    \item \textbf{Luisa Dosch:} Implementation of the prompt-engineering pipeline (test-set evaluation and synthetic data generation), fine-tuned classification model experiments (with and without synthetic data), and the hybrid approach (rule-based + fine-tuning).
+    \item \textbf{Laura Hüsam:} Implementation of the bag-of-words approach and the embedding-based labeling approach (implementation of models with and without synthetic data).
+    \item \textbf{Luisa Dosch:} Implementation of the prompt-engineering pipeline (test-set evaluation and synthetic data generation), fine-tuned classification model experiments (with and without synthetic data), and the hybrid approach (rule-based + fine-tuning), and the streamlit dashboard.
 \end{enumerate}
 
 
