@@ -104,7 +104,7 @@ The original CV data is stored in a nested, three level hierarchical format wher
 CV contains a list of job entries. The datasets are a list of CVs, each CV is a list of job entries, and each job entry is a dictionary whith values. 
 Since no job field contains nested lists or dictionaries, the hierarchy ends at the job level.
 Furthermore, we have 609 CVs with labels and 390 CVs without labels and there are 
-2.638 job titles in the annotated data and 1.886 job titles in the not annotated data.
+2.638 jobs in the annotated data and 1.886 jobs in the not annotated data.
 
 For modeling purposes, the hierarchical CV data is transformed into a 
 job-level table, where each row represents one job entry.
@@ -116,8 +116,8 @@ field (key) from the job dictionary:
   \item startDate : start date of the job
   \item endDate : end date of the job
   \item status : indicates the status of a job
-  \item department (annotated dataset only) : department label for a job
-  \item seniority (annotated dataset only) : seniority level for a job
+  \item department (annotated dataset only, not annotated dataset is filled with None here) : department label for a job
+  \item seniority (annotated dataset only, not annotated dataset is filled with None here) : seniority level for a job
 \end{itemize}
 We removed the linkedin field, because it only contains a URL to a linkedin page.
 
@@ -137,7 +137,7 @@ from each job dictionary using key access.
 We also inspected missing values in the datasets. Here it is important to note that 
 some missing values are expected in our data, such as in the endDate for active jobs (status=active).
 Also missingness is expected for department and seniority in the not annotated data.
-We found 118 missing values in startDate and in 741 endDate in the annotated data and 
+We found 118 missing values in startDate and 741 in endDate in the annotated data and 
 58 in startDate and 477 in endDate in the not annotated data.
 We found that all missing end dates occur for jobs with status active or unkown, 
 while all inactive jobs have an end date.
@@ -159,7 +159,7 @@ The EDA aims to understand the structure, quality, and challenges of the data.
 \subsection{Department Distribution}
 We take a look at the distribution of the department label in the datasets and 
 understand how balanced or imbalanced the department labels are distributed. 
-This is especially important since department is one of our target variable and 
+This is especially important since department is one of our target variables and 
 its distribution helps us understand the difficulty of the prediction task.
 \begin{figure}[H]
 \centering
@@ -434,7 +434,7 @@ We use the following metrics to evaluate and compare all approaches:
 \begin{itemize}
   \item Accuracy: shows the overall fraction of correctly classified samples
   \item macro-averaged F1-Score: is the harmonic mean of precision and recall, computed independently for each class and averaged across classes. This metric is particularly important due to the strong class imbalance in both department and seniority labels, as it ensures that performance on minority classes is weighted equally.
-  \item MAE: measures the average absolute difference between predicted and true labels. It is only meaningful for ordinal or numerical labels (e.g. seniority levels), where it captures how far predictions deviate from the correct class on average; for nominal class labels, the metric is not applicable.
+  \item MAE: measures the average absolute difference between predicted and true labels. It is only meaningful for ordinal or numerical labels, where it captures how far predictions deviate from the correct class on average; for nominal class labels, the metric is not applicable.
 \end{itemize}
 Together, these metrics allow us to assess how often each model is correct overall 
 and how well it performs across all classes, including rare ones.
@@ -469,10 +469,7 @@ For the rule-based matching, job titles and label-list entries are normalized us
 lowercasing and whitespace stripping before applying the substring matching.
 This is done to avoid any accidental mismatching due to lower/uppercasing 
 or spacing (spaces, tabs, line breaks).
-We want to make sure the normalization does not alter meaning or generalize semantics, 
-but simply removes formatting noise. Therefore, no further text processing is applied 
-in order to keep the baseline fully interpretable. 
-We apply the same normalization to CV titles and the label-list titles.
+No additional text preprocessing is performed in order to preserve the original lexical content and keep the rule-based baseline fully interpretable. The same normalization procedure is applied consistently to both CV job titles and label-list entries.
 
 Furthermore, we only include CVs that contain exactly one active job (= current job) 
 in order to ensure an unambiguous definition of the current position. 
@@ -515,7 +512,7 @@ Seniority prediction & 53.68\% & 0.426 \\
 
 Results show that for department prediction, the baseline achieves an accuracy of 60.26\% 
 and a macro-averaged F1 score of 0.449. 
-For seniority prediction, the accuracy is 53.68\% with a macro F1 score of 0.426.
+For seniority prediction, the accuracy is in comparison lower at 53.68\% with a lower macro F1 score of 0.426.
 
 The relatively higher accuracy compared to the macro F1 score in both tasks reflects 
 the strong class imbalance present in the data. 
@@ -542,11 +539,11 @@ indicating limited contextual understanding.
 \label{fig:confusionmatrix_sen_1}
 \end{figure}
 The seniority confusion matrix is strongly influenced by the role of “Professional” as a 
-fallback class in the rule-based baseline. Since many job titles do not contain 
-explicit seniority indicators, they are defaulted to “Professional”, 
-leading to a high concentration of predictions in this class. 
+fallback class in the rule-based baseline. 
+The frequent assignment of the “Professional” class is likely driven by the absence of explicit seniority markers in many job titles.
+This effect is further reinforced by the fact that “Professional” is not explicitly represented in the seniority keyword list and is therefore only reachable via the default assignment.
 While seniority levels with clear keywords (e.g. Lead or Management) are 
-recognized reasonably well, substantial confusion arises for mid-level roles. 
+recognized reasonably well, substantial confusion arises for mid-level roles. A lot of Professionals are assigned to Senior. 
 This behavior highlights the limitations of keyword-based matching and motivates 
 the use of context-aware machine learning models.
 
@@ -554,12 +551,12 @@ Confusion matrix analysis shows that the baseline performs reasonably well for
 labels associated with explicit keywords in job titles, such as Sales, Consulting, 
 Lead, and Management. However, substantial confusion occurs between semantically 
 related classes and for ambiguous job titles that lack clear indicators. 
-In these cases, predictions are often assigned to fallback categories.
+In these cases, predictions are often assigned to the fallback categories.
 
 Overall, the rule-based baseline provides a transparent and interpretable reference point. 
-While its predictive performance is limited, particularly in terms of balanced class-wise 
-performance, it establishes a meaningful lower bound and highlights the need for 
-more expressive, context-aware machine learning models.
+While its predictive performance is limited, particularly in terms of balanced classwise 
+performance, it establishes a lower bound and highlights the need for 
+more expressive and context aware machine learning models.
 
 \subsection{Simple interpretable baseline: Bag of Words}
 
