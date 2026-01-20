@@ -89,6 +89,7 @@
 \setcounter{page}{1}
 \lhead{\nouppercase{\leftmark}}
 \section{Data Overview and Preprocessing}
+The implementation is available in the GitHub repository under \textit{data\_prep\_eda}.
 \subsection{Label Datasets (department labels \& seniority labels)}
 The department and seniority files were loaded into dataframes.
 The department labels file has 10.145 rows and the seniority labels file has 9.428 rows.
@@ -155,6 +156,7 @@ Jobs with unknown status lack temporal information (both start and end dates).
 
 \section{EDA}
 The EDA aims to understand the structure, quality, and challenges of the data.
+The implementation is available in the GitHub repository under \textit{data\_prep\_eda}.
 
 \subsection{Department Distribution}
 We take a look at the distribution of the department label in the datasets and 
@@ -429,6 +431,7 @@ Note that these are a lower bound, not an upper bound: English titles can still
 exist in other languages and ASCII-only does not mean “English”.
 
 \section{Preparation}
+The implementation is available in the GitHub repository under the folder \textit{src/utils}.
 \subsection{Evaluation Preparation}
 We use the following metrics to evaluate and compare all approaches:
 \begin{itemize}
@@ -439,13 +442,13 @@ We use the following metrics to evaluate and compare all approaches:
 Together, these metrics allow us to assess how often each model is correct overall 
 and how well it performs across all classes, including rare ones.
 
-The function evaluate\_predictions is created in utils for each model to use and 
+The function \textit{evaluate\_predictions} is created in \textit{eval\_utils.py} for each model to use and 
 computes the evaluation metrics. Some approaches have different metrics (numbers or strings).
 The function assigns None to the metric that cannot be computed for a model. 
 This ensures a consistent output structure across different models and label types.
 
 \subsection{Results Comparison Preparation}
-The result\_utils were created for each model to use and to add their results. 
+The \textit{results\_utils.py} were created for each model to use and to add their results. 
 In the end we can therefore get a dataframe with each model and their corresponding 
 results to allow comparison between approaches.
 
@@ -463,6 +466,7 @@ Each row in that table represents one experiment.
 \subsection{Rule Based Matching}
 The rule based matching is performed with the annotated CV dataset transformed to a job-level
 and the Seniority and Department Label Lists.
+The implementation is available in the GitHub repository under the folder \textit{src/model-1-baseline}.
 
 \subsubsection{Preparation}
 For the rule-based matching, job titles and label-list entries are normalized using 
