@@ -88,6 +88,36 @@
 \pagenumbering{arabic}
 \setcounter{page}{1}
 \lhead{\nouppercase{\leftmark}}
+
+\section{Introduction and Motivation}
+LinkedIn profiles contain rich but highly unstructured information about individuals’ professional careers. 
+Job titles, employment histories, and organizational affiliations provide valuable signals about a person’s current role, 
+yet these signals are expressed in free text and can vary strongly across industries, languages and career stages. 
+For companies that rely on structured CRM or sales intelligence systems, this heterogeneity poses a major challenge.
+
+SnapAddy aims to automatically enrich and structure contact data in order to support sales, recruiting
+and business intelligence processes. 
+A key aspect of this enrichment is the ability to reliably infer a person’s professional department and seniority level 
+from their LinkedIn CV. Accurate predictions of these attributes enable better lead qualification, segmentation
+and prioritization, while reducing the need for manual data cleaning and annotation.
+
+However, predicting department and seniority from LinkedIn profiles can be a challenging task. 
+Job titles are often short, ambiguous and context dependent. The same title may correspond to different 
+departments across organizations and seniority is not always explicitly stated. 
+In addition, real-world LinkedIn data can be noisy and multilingual. These characteristics make simple 
+heuristics unreliable and motivate the use of more robust NLP-based approaches.
+
+The goal of this project is to develop and compare different methods for predicting the department and seniority 
+of the current job. Starting from a transparent rule-based baseline, we progressively explore more 
+expressive machine learning approaches that can capture contextual information and implicit patterns in job titles. 
+Throughout the project, we emphasize fair evaluation and comparison of each approach 
+in order to understand both the strengths and limitations of each approach.
+
+By systematically comparing rule-based matching, classical machine learning models, and more advanced NLP techniques, 
+this project aims to provide practical insights into how LinkedIn CV data can be transformed into structured, 
+actionable information for a real world business application at SnapAddy.
+
+
 \section{Data Overview and Preprocessing}
 The implementation is available in the GitHub repository under \textit{data\_prep\_eda}.
 \subsection{Label Datasets (department labels \& seniority labels)}

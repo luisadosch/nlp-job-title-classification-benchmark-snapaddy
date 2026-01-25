@@ -1,7 +1,7 @@
-\contentsline {table}{\numberline {1}{\ignorespaces Department Change Counts and their CV Count}}{4}{table.caption.8}%
-\contentsline {table}{\numberline {2}{\ignorespaces Job-to-Job Seniority Comparison}}{6}{table.caption.13}%
-\contentsline {table}{\numberline {3}{\ignorespaces CV counts and their amount of active jobs}}{10}{table.caption.19}%
-\contentsline {table}{\numberline {4}{\ignorespaces Amount of non-ASCII characters in the job titles}}{12}{table.caption.28}%
-\contentsline {table}{\numberline {5}{\ignorespaces Rule-based matching evaluation results}}{14}{table.caption.37}%
-\contentsline {table}{\numberline {6}{\ignorespaces Prompt-engineering evaluation results on the annotated test set.}}{18}{table.caption.43}%
-\contentsline {table}{\numberline {7}{\ignorespaces Summary of out-of-distribution results on the annotated CV dataset for the fine-tuned pretrained models. Synthetic augmentation consistently improves robustness under distribution shift for both seniority and department prediction.}}{27}{table.caption.60}%
+\contentsline {table}{\numberline {1}{\ignorespaces Department Change Counts and their CV Count}}{4}{table.caption.9}%
+\contentsline {table}{\numberline {2}{\ignorespaces Job-to-Job Seniority Comparison}}{6}{table.caption.14}%
+\contentsline {table}{\numberline {3}{\ignorespaces CV counts and their amount of active jobs}}{10}{table.caption.20}%
+\contentsline {table}{\numberline {4}{\ignorespaces Amount of non-ASCII characters in the job titles}}{12}{table.caption.29}%
+\contentsline {table}{\numberline {5}{\ignorespaces Rule-based matching evaluation results}}{14}{table.caption.38}%
+\contentsline {table}{\numberline {6}{\ignorespaces Prompt-engineering evaluation results on the annotated test set.}}{18}{table.caption.44}%
+\contentsline {table}{\numberline {7}{\ignorespaces Summary of out-of-distribution results on the annotated CV dataset for the fine-tuned pretrained models. Synthetic augmentation consistently improves robustness under distribution shift for both seniority and department prediction.}}{27}{table.caption.61}%

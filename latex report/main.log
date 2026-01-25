@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.11.1)  20 JAN 2026 15:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.11.1)  25 JAN 2026 11:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -696,87 +696,88 @@ Package biblatex Info: Reference segment=0 on input line 64.
 
 
 [2]
-LaTeX Font Info:    Trying to load font information for TS1+PTSans-TLF on input line 115.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/paratype/TS1PTSans-TLF.fd
-File: TS1PTSans-TLF.fd 2011/05/04 (autoinst with patch) Font definitions for TS1/PTSans-TLF.
-)
 
 [1
 
-{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/paratype/ptsans_ts1.enc}]
-Overfull \hbox (4.17984pt too wide) in paragraph at lines 138--155
+]
+LaTeX Font Info:    Trying to load font information for TS1+PTSans-TLF on input line 145.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/paratype/TS1PTSans-TLF.fd
+File: TS1PTSans-TLF.fd 2011/05/04 (autoinst with patch) Font definitions for TS1/PTSans-TLF.
+)
+Overfull \hbox (4.17984pt too wide) in paragraph at lines 168--185
 \T1/PTSans-TLF/m/n/12 miss-ing val-ues are ex-pected in our data, such as in the end-Date for ac-tive jobs (sta-tus=active).
  []
 
-<images/dep_dist.png, id=217, 855.6768pt x 422.0568pt>
+
+
+[2{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/paratype/ptsans_ts1.enc}]
+<images/dep_dist.png, id=226, 855.6768pt x 422.0568pt>
 File: images/dep_dist.png Graphic file (type png)
 <use images/dep_dist.png>
-Package pdftex.def Info: images/dep_dist.png  used on input line 168.
+Package pdftex.def Info: images/dep_dist.png  used on input line 198.
 (pdftex.def)             Requested size: 460.72124pt x 227.25038pt.
 
 
-[2]
-
 [3 <./images/dep_dist.png>]
-<images/sen_dist.png, id=229, 711.1368pt x 422.0568pt>
+<images/sen_dist.png, id=234, 711.1368pt x 422.0568pt>
 File: images/sen_dist.png Graphic file (type png)
 <use images/sen_dist.png>
-Package pdftex.def Info: images/sen_dist.png  used on input line 221.
+Package pdftex.def Info: images/sen_dist.png  used on input line 251.
 (pdftex.def)             Requested size: 460.72124pt x 273.43849pt.
 
 
 [4]
-<images/senchanges.png, id=235, 566.5968pt x 349.7868pt>
+<images/senchanges.png, id=240, 566.5968pt x 349.7868pt>
 File: images/senchanges.png Graphic file (type png)
 <use images/senchanges.png>
-Package pdftex.def Info: images/senchanges.png  used on input line 242.
+Package pdftex.def Info: images/senchanges.png  used on input line 272.
 (pdftex.def)             Requested size: 460.72124pt x 284.42525pt.
 
 
 [5 <./images/sen_dist.png>]
-<images/senduration2.png, id=243, 660.4675pt x 247.92625pt>
+<images/senduration2.png, id=248, 660.4675pt x 247.92625pt>
 File: images/senduration2.png Graphic file (type png)
 <use images/senduration2.png>
-Package pdftex.def Info: images/senduration2.png  used on input line 274.
+Package pdftex.def Info: images/senduration2.png  used on input line 304.
 (pdftex.def)             Requested size: 460.72124pt x 172.94946pt.
 
 
 [6 <./images/senchanges.png>]
-<images/senduration.png, id=251, 494.3268pt x 349.7868pt>
+<images/senduration.png, id=256, 494.3268pt x 349.7868pt>
 File: images/senduration.png Graphic file (type png)
 <use images/senduration.png>
-Package pdftex.def Info: images/senduration.png  used on input line 291.
+Package pdftex.def Info: images/senduration.png  used on input line 321.
 (pdftex.def)             Requested size: 460.72124pt x 326.01357pt.
 
 
 [7 <./images/senduration2.png>]
-<images/jobstatus.png, id=258, 422.0568pt x 277.5168pt>
+<images/jobstatus.png, id=263, 422.0568pt x 277.5168pt>
 File: images/jobstatus.png Graphic file (type png)
 <use images/jobstatus.png>
-Package pdftex.def Info: images/jobstatus.png  used on input line 306.
+Package pdftex.def Info: images/jobstatus.png  used on input line 336.
 (pdftex.def)             Requested size: 460.72124pt x 302.95734pt.
 
 
 [8 <./images/senduration.png>]
 
 [9 <./images/jobstatus.png>]
-<images/depjob.png, id=271, 1178.4025pt x 177.66376pt>
+<images/depjob.png, id=276, 1178.4025pt x 177.66376pt>
 File: images/depjob.png Graphic file (type png)
 <use images/depjob.png>
-Package pdftex.def Info: images/depjob.png  used on input line 350.
+Package pdftex.def Info: images/depjob.png  used on input line 380.
 (pdftex.def)             Requested size: 460.72124pt x 69.46208pt.
-<images/senjob.png, id=272, 577.15625pt x 162.6075pt>
+<images/senjob.png, id=277, 577.15625pt x 162.6075pt>
 File: images/senjob.png Graphic file (type png)
 <use images/senjob.png>
-Package pdftex.def Info: images/senjob.png  used on input line 371.
+Package pdftex.def Info: images/senjob.png  used on input line 401.
 (pdftex.def)             Requested size: 460.72124pt x 129.80827pt.
 
 
 [10 <./images/depjob.png>]
-<images/jobtitle_length.png, id=280, 1289.2968pt x 284.0211pt>
+<images/jobtitle_length.png, id=285, 1289.2968pt x 284.0211pt>
 File: images/jobtitle_length.png Graphic file (type png)
 <use images/jobtitle_length.png>
-Package pdftex.def Info: images/jobtitle_length.png  used on input line 391.
+Package pdftex.def Info: images/jobtitle_length.png  used on input line 421.
 (pdftex.def)             Requested size: 460.72124pt x 101.49342pt.
 
 
@@ -785,97 +786,97 @@ Package pdftex.def Info: images/jobtitle_length.png  used on input line 391.
 [12]
 
 [13]
-<images/confusionmatrix_dep_1.png, id=299, 501.5538pt x 435.7881pt>
+<images/confusionmatrix_dep_1.png, id=305, 501.5538pt x 435.7881pt>
 File: images/confusionmatrix_dep_1.png Graphic file (type png)
 <use images/confusionmatrix_dep_1.png>
-Package pdftex.def Info: images/confusionmatrix_dep_1.png  used on input line 529.
+Package pdftex.def Info: images/confusionmatrix_dep_1.png  used on input line 559.
 (pdftex.def)             Requested size: 460.72124pt x 400.32478pt.
 
 
 [14]
-<images/confusionmatrix_sen_1.png, id=306, 425.6703pt x 339.669pt>
+<images/confusionmatrix_sen_1.png, id=311, 425.6703pt x 339.669pt>
 File: images/confusionmatrix_sen_1.png Graphic file (type png)
 <use images/confusionmatrix_sen_1.png>
-Package pdftex.def Info: images/confusionmatrix_sen_1.png  used on input line 541.
+Package pdftex.def Info: images/confusionmatrix_sen_1.png  used on input line 571.
 (pdftex.def)             Requested size: 460.72124pt x 367.64558pt.
 
 
 [15 <./images/confusionmatrix_dep_1.png>]
 
 [16 <./images/confusionmatrix_sen_1.png>]
-LaTeX Font Info:    Trying to load font information for T1+PTMono-TLF on input line 571.
+LaTeX Font Info:    Trying to load font information for T1+PTMono-TLF on input line 601.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/paratype/T1PTMono-TLF.fd
 File: T1PTMono-TLF.fd 2014/02/02 Font definitions for T1/PTMono-TLF.
 )
 
 [17{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/paratype/ptmono_t1.enc}]
-Overfull \hbox (74.46169pt too wide) in paragraph at lines 593--594
+Overfull \hbox (74.46169pt too wide) in paragraph at lines 623--624
 \T1/PTSans-TLF/m/n/12 per-vised train-ing data (e.g., \T1/PTSans-TLF/m/it/12 Pro-fes-sional \T1/PTSans-TLF/m/n/12 for se-nior-ity). The re-sult-ing file (data/results/gemini_synthetic.csv)
  []
 
-<images/label-distribution-seniority-comparison.png, id=330, 867.24pt x 361.35pt>
+<images/label-distribution-seniority-comparison.png, id=335, 867.24pt x 361.35pt>
 File: images/label-distribution-seniority-comparison.png Graphic file (type png)
 <use images/label-distribution-seniority-comparison.png>
-Package pdftex.def Info: images/label-distribution-seniority-comparison.png  used on input line 599.
+Package pdftex.def Info: images/label-distribution-seniority-comparison.png  used on input line 629.
 (pdftex.def)             Requested size: 460.72124pt x 191.96672pt.
-<images/label-distribution-department.png, id=332, 867.24pt x 361.35pt>
+<images/label-distribution-department.png, id=337, 867.24pt x 361.35pt>
 File: images/label-distribution-department.png Graphic file (type png)
 <use images/label-distribution-department.png>
-Package pdftex.def Info: images/label-distribution-department.png  used on input line 609.
+Package pdftex.def Info: images/label-distribution-department.png  used on input line 639.
 (pdftex.def)             Requested size: 460.72124pt x 191.96672pt.
 
 
 [18 <./images/label-distribution-seniority-comparison.png>]
 
 [19 <./images/label-distribution-department.png>]
-<images/confusion_matri_regression_finetune_seniority.png, id=347, 500.87125pt x 187.70125pt>
+<images/confusion_matri_regression_finetune_seniority.png, id=352, 500.87125pt x 187.70125pt>
 File: images/confusion_matri_regression_finetune_seniority.png Graphic file (type png)
 <use images/confusion_matri_regression_finetune_seniority.png>
-Package pdftex.def Info: images/confusion_matri_regression_finetune_seniority.png  used on input line 631.
+Package pdftex.def Info: images/confusion_matri_regression_finetune_seniority.png  used on input line 661.
 (pdftex.def)             Requested size: 460.72124pt x 172.66147pt.
 
 
 [20 <./images/confusion_matri_regression_finetune_seniority.png>]
-Overfull \hbox (2.52731pt too wide) in paragraph at lines 642--643
+Overfull \hbox (2.52731pt too wide) in paragraph at lines 672--673
 []\T1/PTSans-TLF/b/n/12 Consistent er-ror pat-tern: \T1/PTSans-TLF/m/n/12 Most mis-takes oc-cur be-tween ad-ja-cent se-nior-ity lev-els, which
  []
 
-<images/confusion_matrix_2_seniority.png, id=357, 696.6025pt x 622.325pt>
+<images/confusion_matrix_2_seniority.png, id=362, 696.6025pt x 622.325pt>
 File: images/confusion_matrix_2_seniority.png Graphic file (type png)
 <use images/confusion_matrix_2_seniority.png>
-Package pdftex.def Info: images/confusion_matrix_2_seniority.png  used on input line 652.
+Package pdftex.def Info: images/confusion_matrix_2_seniority.png  used on input line 682.
 (pdftex.def)             Requested size: 460.72124pt x 411.5904pt.
 
 
 [21]
 
 [22 <./images/confusion_matrix_2_seniority.png>]
-Overfull \hbox (0.13724pt too wide) in paragraph at lines 669--670
+Overfull \hbox (0.13724pt too wide) in paragraph at lines 699--700
 \T1/PTSans-TLF/m/n/12 per-for-mance on train/validation/test and out-of-distribution per-for-mance on the CV dataset,
  []
 
-<images/cm-1-fine-tune-department.png, id=372, 911.405pt x 793.96625pt>
+<images/cm-1-fine-tune-department.png, id=377, 911.405pt x 793.96625pt>
 File: images/cm-1-fine-tune-department.png Graphic file (type png)
 <use images/cm-1-fine-tune-department.png>
-Package pdftex.def Info: images/cm-1-fine-tune-department.png  used on input line 677.
+Package pdftex.def Info: images/cm-1-fine-tune-department.png  used on input line 707.
 (pdftex.def)             Requested size: 460.72124pt x 401.35564pt.
 
 
 [23]
-<images/cm-2-department.png, id=381, 911.405pt x 793.96625pt>
+<images/cm-2-department.png, id=386, 911.405pt x 793.96625pt>
 File: images/cm-2-department.png Graphic file (type png)
 <use images/cm-2-department.png>
-Package pdftex.def Info: images/cm-2-department.png  used on input line 687.
+Package pdftex.def Info: images/cm-2-department.png  used on input line 717.
 (pdftex.def)             Requested size: 460.72124pt x 401.35564pt.
 
 
 [24 <./images/cm-1-fine-tune-department.png>]
 
 [25 <./images/cm-2-department.png>]
-<images/cm-3-department.png, id=397, 916.42375pt x 797.98125pt>
+<images/cm-3-department.png, id=402, 916.42375pt x 797.98125pt>
 File: images/cm-3-department.png Graphic file (type png)
 <use images/cm-3-department.png>
-Package pdftex.def Info: images/cm-3-department.png  used on input line 699.
+Package pdftex.def Info: images/cm-3-department.png  used on input line 729.
 (pdftex.def)             Requested size: 460.72124pt x 401.18135pt.
 
 
@@ -884,7 +885,7 @@ Package pdftex.def Info: images/cm-3-department.png  used on input line 699.
 [27]
 
 [28]
-Overfull \hbox (14.3055pt too wide) in paragraph at lines 760--761
+Overfull \hbox (14.3055pt too wide) in paragraph at lines 790--791
 []\T1/PTSans-TLF/m/n/12 Overall, the dash-board pro-vides an ac-ces-si-ble in-ter-face to demon-strate the be-hav-ior, strengths,
  []
 
@@ -925,24 +926,24 @@ L3 programming layer <2025-01-18>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: C0815DE98C760A539935CBBBDECAA0E9;7864.
+(rerunfilecheck)             Checksum: 572C69B2494830C4D3B0E990F1C02303;8052.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 20446 strings out of 473190
- 360459 string characters out of 5715800
+ 20448 strings out of 473190
+ 360481 string characters out of 5715800
  1190643 words of memory out of 5000000
- 43316 multiletter control sequences out of 15000+600000
+ 43317 multiletter control sequences out of 15000+600000
  642966 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,12n,81p,998b,803s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/paratype/ptmono/PTM55F.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/paratype/ptsans/PTS55F.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/paratype/ptsans/PTS56F.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/paratype/ptsans/PTS75F.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/paratype/ptsans/PTS76F.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on main.pdf (34 pages, 880027 bytes).
+Output written on main.pdf (34 pages, 881908 bytes).
 PDF statistics:
- 536 PDF objects out of 1000 (max. 8388607)
- 442 compressed objects within 5 object streams
- 109 named destinations out of 1000 (max. 500000)
- 403 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 541 PDF objects out of 1000 (max. 8388607)
+ 447 compressed objects within 5 object streams
+ 110 named destinations out of 1000 (max. 500000)
+ 411 words of extra memory for PDF output out of 10000 (max. 10000000)
 
