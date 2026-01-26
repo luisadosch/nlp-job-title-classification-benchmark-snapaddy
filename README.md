@@ -45,7 +45,18 @@ A key challenge is **distribution shift**: our curated fine-tuning datasets diff
     rule-based matching baseline approach.
     
 
+### Für dich sonia damit du weißt was das ist
+Hinweis für den project overview
+in dashboard ordner sind in der folder images die bilder für streamlit dashboard, bow_inference die impleemtnierung für den aufruf des bag of word modells und gemini_inference die implementierung für den aufruf von prompt engineering;
+rule_based_inference ist die implementierung für den aufruf des rule based modells (Baseline)
+Der hauptcode der streamlit webseite ist in homepage.py (ist nicht im dashboard -> sonst geht deployment nicht - also bitte nicht verschieben)
+- im ordner prompt engineering sind config_utils ->  system prompt und output schema für prompt engineering
+main processor -> hauptcode für prompt engineering pipeline
+prompt_engineering_results.ipynb -> auswertung der ergebnisse von prompt engineering
 
+im ordner fine tuning pretrained sind die ganzen implementierungen für fine tuning von xlm roberta base
+- pretrained_class_seniority -> fine tuning für seniority
+- pretrained_classification_department -> fine tuning für department 
 ---
 
 ## Data Overview

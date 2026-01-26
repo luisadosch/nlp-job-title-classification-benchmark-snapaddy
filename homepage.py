@@ -6,6 +6,7 @@ from dashboard.bow_inference import predict_bow
 from dashboard.gemini_inference import (
     PROMPT_SENIORITY_DEPARTMENT, predict_with_gemini
 )
+import numpy as np
 
 # -----------------------------
 # Page config
@@ -120,16 +121,78 @@ st.divider()
 
 metrics = pd.DataFrame(
     [
-        {"Model variant": "Rule-based baseline", "Target": "Seniority", "Accuracy": 0.3124, "F1": 0.31},
-        {"Model variant": "Rule-based baseline", "Target": "Department", "Accuracy": 0.5123, "F1": 0.51},
-        {"Model variant": "Prompt engineering (Gemini)", "Target": "Seniority", "Accuracy": 0.5843, "F1": 0.57},
-        {"Model variant": "Prompt engineering (Gemini)", "Target": "Department", "Accuracy": 0.7961, "F1": 0.79},
-        {"Model variant": "Fine-tuned pretrained transformer model", "Target": "Seniority", "Accuracy": 0.4943, "F1": 0.49},
-        {"Model variant": "Fine-tuned pretrained + synthetic", "Target": "Seniority", "Accuracy": 0.6516, "F1": 0.65},
-        {"Model variant": "Fine-tuned pretrained transformer model", "Target": "Department", "Accuracy": 0.2792, "F1": 0.27},
-        {"Model variant": "Fine-tuned pretrained + synthetic", "Target": "Department", "Accuracy": 0.6886, "F1": 0.69},
+        {"Model": "Rule-based", "Target": "Department", "Accuracy": 0.6026315789473684, "Macro F1": 0.44918940911600075, "MAE": np.nan},
+        {"Model": "Rule-based", "Target": "Seniority",  "Accuracy": 0.5368421052631579, "Macro F1": 0.42616200731397247, "MAE": np.nan},
+
+        {"Model": "Prompt-engineered", "Target": "Department", "Accuracy": 0.7961, "Macro F1": 0.7340, "MAE": np.nan},
+        {"Model": "Prompt-engineered", "Target": "Seniority",  "Accuracy": 0.5843, "Macro F1": 0.5402, "MAE": np.nan},
+
+        {"Model": "Transformer-Fine-Tuned", "Target": "Department", "Accuracy": 0.2792, "Macro F1": 0.3813, "MAE": np.nan},
+        {"Model": "Transformer-Fine-Tuned-augmented", "Target": "Department", "Accuracy": 0.6886, "Macro F1": 0.6374, "MAE": np.nan},
+        {"Model": "Transformer-Fine-Tuned", "Target": "Seniority", "Accuracy": 0.4943, "Macro F1": 0.4756, "MAE": 0.7751},
+        {"Model": "Transformer-Fine-Tuned-augmented", "Target": "Seniority", "Accuracy": 0.6516, "Macro F1": 0.5840, "MAE": np.nan},
+
+        {"Model": "Bag-of-words", "Target": "Department", "Accuracy": 0.223114, "Macro F1": 0.338219, "MAE": np.nan},
+        {"Model": "Bag-of-words-augmented + oversampling", "Target": "Department", "Accuracy": 0.685393, "Macro F1": 0.611904, "MAE": np.nan},
+        {"Model": "Bag-of-words", "Target": "Seniority", "Accuracy": 0.436597, "Macro F1": 0.409319, "MAE": np.nan},
+        {"Model": "Bag-of-words-augmented", "Target": "Seniority", "Accuracy": 0.645265, "Macro F1": 0.571373, "MAE": np.nan},
+
+        {"Model": "embedding-based", "Target": "Department", "Accuracy": 0.314607, "Macro F1": 0.314955, "MAE": np.nan},
+        {"Model": "embedding-based-augmented + oversampling", "Target": "Department", "Accuracy": 0.698234, "Macro F1": 0.600751, "MAE": np.nan},
+        {"Model": "embedding-based", "Target": "Seniority", "Accuracy": 0.409310, "Macro F1": 0.35037, "MAE": np.nan},
+        {"Model": "embedding-based-augmented + oversampling", "Target": "Seniority", "Accuracy": 0.600321, "Macro F1": 0.527059, "MAE": np.nan},
     ]
 )
+
+
+# 2) Improvement immer relativ zu Rule-based (pro Target)
+# 2) Improvement relativ zu Rule-based (pro Target)
+baseline = metrics[metrics["Model"] == "Rule-based"].set_index("Target")["Accuracy"].to_dict()
+
+# ALT (relativ): (acc / baseline - 1) * 100
+# NEU (Prozentpunkte):
+metrics["Improvement over baseline"] = (
+    (metrics["Accuracy"] - metrics["Target"].map(baseline)) * 100
+).round(0).astype(int)
+
+
+# 3) Präsentations-Reihenfolge: immer gleiche Modelle untereinander, erst ohne aug, dann mit aug
+def family(m: str) -> str:
+    if m == "Rule-based":
+        return "Rule-based"
+    if m == "Prompt-engineered":
+        return "Prompt-engineered"
+    if m.startswith("Transformer-Fine-Tuned"):
+        return "Transformer-Fine-Tuned"
+    if m.startswith("Bag-of-words"):
+        return "Bag-of-words"
+    if m.startswith("embedding-based"):
+        return "embedding-based"
+    return m
+
+def is_aug(m: str) -> int:
+    return int(("augmented" in m) or ("oversampling" in m))
+
+family_order = {
+    "Rule-based": 0,
+    "Prompt-engineered": 1,
+    "Transformer-Fine-Tuned": 2,
+    "Bag-of-words": 3,
+    "embedding-based": 4,
+}
+target_order = {"Department": 0, "Seniority": 1}
+
+metrics["Family"] = metrics["Model"].apply(family)
+metrics["Augmented"] = metrics["Model"].apply(is_aug)
+metrics["TargetOrder"] = metrics["Target"].map(target_order)
+metrics["FamilyOrder"] = metrics["Family"].map(family_order)
+
+metrics = metrics.sort_values(
+    ["TargetOrder", "FamilyOrder", "Augmented", "Model"],
+    ascending=[True, True, True, True],
+).drop(columns=["TargetOrder", "FamilyOrder"])
+
+
 
 # -----------------------------
 # Pages
@@ -241,7 +304,7 @@ elif page == "Project Overview":
 
 
 
-else:  # "Model Statistics"
+else:  
     st.subheader("📊 Model statistics")
     st.caption("This is a table summarizing precision metrics for our different model variants. The metrics are computed on the out-of-distribution CV dataset.")
 
@@ -252,19 +315,60 @@ else:  # "Model Statistics"
     )
 
     df = metrics.copy()
+
     if view == "Seniority only":
         df = df[df["Target"] == "Seniority"]
     elif view == "Department only":
         df = df[df["Target"] == "Department"]
 
+
+
+    
+
     df_display = df.copy()
-    df_display["Accuracy"] = (df_display["Accuracy"] * 100).round(2).astype(str) + "%"
-    df_display["F1"] = df_display["F1"].round(2)
 
-    st.dataframe(df_display, use_container_width=True, hide_index=True)
+    df_display["Accuracy"] = (df_display["Accuracy"] * 100).round(2).map(lambda x: f"{x:.2f}%")
+    df_display["Macro F1"] = (df_display["Macro F1"] * 100).round(2).map(lambda x: f"{x:.2f}%")
+    df_display["MAE"] = df_display["MAE"].apply(lambda v: "" if pd.isna(v) else f"{v:.2f}")
 
-    best = df.sort_values("Accuracy", ascending=False).head(1).iloc[0]
-    st.success(f"Highest accuracy: {best['Model variant']} ({best['Target']})")
+    def imp_badge(v: int) -> str:
+        v = int(v)
+        cls = "pos" if v > 0 else ("neg" if v < 0 else "zero")
+        sign = "+" if v > 0 else ""
+        return f'<span class="imp {cls}">{sign}{v}pp</span>'
+
+
+    df_display["Improvement over baseline"] = df_display["Improvement over baseline"].apply(imp_badge)
+
+    st.markdown(
+        """
+        <style>
+        .imp {font-weight:800; font-size:1.05rem; padding:2px 10px; border-radius:999px; display:inline-block;}
+        .imp.pos {background:#e8f7ee; color:#137a3b; border:1px solid #bfe7cf;}
+        .imp.neg {background:#fdecec; color:#b42318; border:1px solid #f3c2c2;}
+        .imp.zero{background:#f2f4f7; color:#344054; border:1px solid #d0d5dd;}
+        table {width:100%;}
+        th, td {padding: 8px 10px;}
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    df_display = df_display.rename(columns={"Model": "Model variant"})
+    df_show = df_display[["Model variant", "Target", "Improvement over baseline", "Accuracy", "Macro F1", "MAE"]]
+
+    st.markdown(df_show.to_html(index=False, escape=False), unsafe_allow_html=True)
+
+    best = df.sort_values("Improvement over baseline", ascending=False).iloc[0]
+    st.success(
+        f"Best improvement: {best['Model']} ({best['Target']}) — "
+        f"{best['Improvement over baseline']:+d}pp | "
+        f"Acc: {best['Accuracy']*100:.2f}% | "
+        f"Macro F1: {best['Macro F1']*100:.2f}%"
+    )
+
+
+
 
 st.divider()
 

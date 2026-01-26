@@ -3,7 +3,16 @@ Rule-based,department,0.6026315789473684,0.44918940911600075,
 Rule-based,seniority,0.5368421052631579,0.42616200731397247,
 Prompt-engineered,department,0.7961,0.7340,
 Prompt-engineered,seniority,0.5843,0.5402,
-Fine-tuned-pretrained,seniority,0.4943 ,0.4756,0.7751
-Fine-tuned-pretrained-augmented,seniority,0.6516,0.5840
-Fine-tuned-pretrained,department,0.2792,0.3813
-Fine-tuned-pretrained-augmented,department,0.6886,0.6374
+Transformer-Fine-Tuned,seniority,0.4943 ,0.4756,0.7751
+Transformer-Fine-Tuned-augmented,seniority,0.6516,0.5840
+Transformer-Fine-Tuned,department,0.2792,0.3813
+Transformer-Fine-Tuned-augmented,department,0.6886,0.6374
+Bag-of-words,seniority,0.436597,0.409319,
+Bag-of-words-augmented,seniority,0.645265,0.571373,
+Bag-of-words,department,0.223114,0.338219,
+Bag-of-words-augmented + oversampling,department,0.685393,0.611904,
+embedding-based,seniority,0.409310,0.35037,
+embedding-based-augmented + oversampling,seniority,0.600321,0.527059,
+embedding-based,department,0.314607,0.314955,
+embedding-based-augmented + oversampling,department,0.698234,0.600751,
+
