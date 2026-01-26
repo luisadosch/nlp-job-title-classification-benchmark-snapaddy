@@ -22,6 +22,15 @@ A key challenge is **distribution shift**: our curated fine-tuning datasets diff
 
 - `archive/`
   Task description and meeting protocols.
+- `dashboard/`
+    - `images/`
+      the images for the streamlit dashboard
+    - `bow_inference.py`
+      dashboard implementation for bag of words models
+    - `gemini_inference.py`
+      dashboard implementation for prompt engineering
+    - `rule_based_inference.py`
+      dashboard implementation for the rule-based baseline
 - `data/`
   - `raw/`
     annotated csv files that are used for in-distribution training
@@ -34,29 +43,39 @@ A key challenge is **distribution shift**: our curated fine-tuning datasets diff
     Transformer fine-tuning experiments using **xlm-roberta-base** for:
     - seniority (regression + classification with synthetic data and oversampling)
     - department (baseline vs oversampling vs synthetic augmentation)
+      - `pretrained_class_seniority.ipynb`
+        fine tuning for seniority
+      - `pretrained_classification_department.ipynb`
+        fine tuning for department 
   - `prompt_engineering/`  
     Prompt-engineering pipeline using **gemini-2.0-flash** for:
     - evaluation on annotated titles (accuracy/F1 + classification report)
     - synthetic label generation for unlabeled titles (`gemini_synthetic.csv`)
-  
+      - `config_utils.py`
+        system prompt and output schema for prompt engineering
+      - `main_processor.py`
+        main code for the prompt engineering pipeline
+      - `prompt_engineering_results.ipynb`
+        evaluation of results of the prompt engineering
+  - `utils/`
+    utilization functions to call when evaluating model performance and appending model results
+      - `eval_utils.py`
+        evaluation function to evaluate model on the accuracy_score, f1_score and mean_absolute_error
+      - `results_utils.py`
+        result function to append model results to the result table
+  - `baseline_approach.ipynb`
+    rule-based matching baseline approach
   - `baseline_hybrid_finetuned_approach.ipynb`  
-    Hybrid experiment: rule-based first, fine-tuned model as fallback on remaining titles
-  - `model-1-baseline.ipynb`  
-    rule-based matching baseline approach.
+    hybrid experiment: rule-based first, fine-tuned model as fallback on remaining titles
+  - `bow_approach.ipynb`
+    bow approach
+  - `embedding-based_approach.ipynb`
+    embedding based approach
+- `data_prep_eda.ipynb`
+  data preparation and preprocessing + exploratory data analysis
+- `homepage.py`
+  main code for the dashboard
     
-
-### Für dich sonia damit du weißt was das ist
-Hinweis für den project overview
-in dashboard ordner sind in der folder images die bilder für streamlit dashboard, bow_inference die impleemtnierung für den aufruf des bag of word modells und gemini_inference die implementierung für den aufruf von prompt engineering;
-rule_based_inference ist die implementierung für den aufruf des rule based modells (Baseline)
-Der hauptcode der streamlit webseite ist in homepage.py (ist nicht im dashboard -> sonst geht deployment nicht - also bitte nicht verschieben)
-- im ordner prompt engineering sind config_utils ->  system prompt und output schema für prompt engineering
-main processor -> hauptcode für prompt engineering pipeline
-prompt_engineering_results.ipynb -> auswertung der ergebnisse von prompt engineering
-
-im ordner fine tuning pretrained sind die ganzen implementierungen für fine tuning von xlm roberta base
-- pretrained_class_seniority -> fine tuning für seniority
-- pretrained_classification_department -> fine tuning für department 
 ---
 
 ## Data Overview
