@@ -94,8 +94,3 @@ This dataset is **never used for training or early stopping** and is used only f
 
 ---
 
-## Results of Methods Implemented
-
-Hier machen wir am ende eine tablle of all results hin
-
----
