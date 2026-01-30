@@ -2,6 +2,21 @@
 \contentsline {table}{\numberline {2}{\ignorespaces Job-to-Job Seniority Comparison}}{6}{table.caption.14}%
 \contentsline {table}{\numberline {3}{\ignorespaces CV counts and their amount of active jobs}}{10}{table.caption.20}%
 \contentsline {table}{\numberline {4}{\ignorespaces Amount of non-ASCII characters in the job titles}}{12}{table.caption.29}%
-\contentsline {table}{\numberline {5}{\ignorespaces Rule-based matching evaluation results}}{14}{table.caption.38}%
-\contentsline {table}{\numberline {6}{\ignorespaces Prompt-engineering evaluation results on the annotated test set.}}{18}{table.caption.44}%
-\contentsline {table}{\numberline {7}{\ignorespaces Summary of out-of-distribution results on the annotated CV dataset for the fine-tuned pretrained models. Synthetic augmentation consistently improves robustness under distribution shift for both seniority and department prediction.}}{27}{table.caption.61}%
+\contentsline {table}{\numberline {5}{\ignorespaces Rule-based matching evaluation results}}{14}{table.caption.35}%
+\contentsline {table}{\numberline {6}{\ignorespaces Prompt-engineering evaluation results on the annotated test set.}}{17}{table.caption.40}%
+\contentsline {table}{\numberline {7}{\ignorespaces In-distribution evaluation of baseline seniority classification}}{19}{table.caption.47}%
+\contentsline {table}{\numberline {8}{\ignorespaces Out-of-distribution evaluation of baseline seniority classification}}{20}{table.caption.48}%
+\contentsline {table}{\numberline {9}{\ignorespaces Top terms per seniority class}}{20}{table.caption.49}%
+\contentsline {table}{\numberline {10}{\ignorespaces Out-of-distribution evaluation of seniority classification with synthetic data}}{21}{table.caption.51}%
+\contentsline {table}{\numberline {11}{\ignorespaces In-distribution evaluation of baseline department classification}}{22}{table.caption.54}%
+\contentsline {table}{\numberline {12}{\ignorespaces Out-of-distribution evaluation of baseline department classification (ACTIVE jobs)}}{22}{table.caption.55}%
+\contentsline {table}{\numberline {13}{\ignorespaces Top terms per department – baseline department model}}{23}{table.caption.56}%
+\contentsline {table}{\numberline {14}{\ignorespaces Out-of-distribution evaluation of department classification with synthetic data and oversampling (ACTIVE jobs)}}{24}{table.caption.58}%
+\contentsline {table}{\numberline {15}{\ignorespaces Comparison of all bag-of-words-based models for seniority and department classification on label data and real CV data (ACTIVE jobs).}}{25}{table.caption.60}%
+\contentsline {table}{\numberline {16}{\ignorespaces Summary of out-of-distribution results on the annotated CV dataset for the fine-tuned pretrained models. Synthetic augmentation consistently improves robustness under distribution shift for both seniority and department prediction.}}{32}{table.caption.72}%
+\contentsline {table}{\numberline {17}{\ignorespaces Embedding-based seniority classification – out-of-distribution evaluation (ACTIVE jobs), baseline model}}{34}{table.caption.84}%
+\contentsline {table}{\numberline {18}{\ignorespaces Embedding-based seniority classification – out-of-distribution evaluation (ACTIVE jobs), final embedding model (\texttt {BAAI/bge-m3})}}{34}{table.caption.86}%
+\contentsline {table}{\numberline {19}{\ignorespaces Embedding-based department classification – out-of-distribution evaluation (ACTIVE jobs), baseline model}}{35}{table.caption.89}%
+\contentsline {table}{\numberline {20}{\ignorespaces Embedding-based department classification – out-of-distribution evaluation (ACTIVE jobs) using \texttt {intfloat/multilingual-e5-base}}}{36}{table.caption.91}%
+\contentsline {table}{\numberline {21}{\ignorespaces Comparison of all embedding-based models for seniority and department classification on real CV data (ACTIVE jobs).}}{37}{table.caption.93}%
+\contentsline {table}{\numberline {22}{\ignorespaces Overall comparison of all models on annotated CV data (ACTIVE jobs). MAE is reported only for the regression-based seniority setup. Best-performing models per target are highlighted.}}{38}{table.caption.95}%

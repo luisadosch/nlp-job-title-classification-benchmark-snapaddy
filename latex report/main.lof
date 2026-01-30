@@ -7,12 +7,11 @@
 \contentsline {figure}{\numberline {7}{\ignorespaces Department Distribution across Job Status}}{10}{figure.caption.22}%
 \contentsline {figure}{\numberline {8}{\ignorespaces Seniority Distribution across Job Status}}{11}{figure.caption.24}%
 \contentsline {figure}{\numberline {9}{\ignorespaces Job Title Length Distribution}}{11}{figure.caption.27}%
-\contentsline {figure}{\numberline {10}{\ignorespaces Confusion Matrix Department}}{15}{figure.caption.39}%
-\contentsline {figure}{\numberline {11}{\ignorespaces Confusion Matrix Seniority}}{16}{figure.caption.40}%
-\contentsline {figure}{\numberline {12}{\ignorespaces Distribution of seniority labels in different datasets}}{18}{figure.caption.46}%
-\contentsline {figure}{\numberline {13}{\ignorespaces Distribution of department labels in different datasets}}{19}{figure.caption.47}%
-\contentsline {figure}{\numberline {14}{\ignorespaces Confusion Matrix (All Predictions) – Counts (True label = rows, Predicted = columns)}}{20}{figure.caption.51}%
-\contentsline {figure}{\numberline {15}{\ignorespaces Confusion matrix on the CV dataset after adding synthetic training data and applying oversampling.}}{22}{figure.caption.53}%
-\contentsline {figure}{\numberline {16}{\ignorespaces Confusion matrix on the CV dataset for the baseline department classifier.}}{24}{figure.caption.56}%
-\contentsline {figure}{\numberline {17}{\ignorespaces Confusion matrix on the CV dataset for the oversampled department classifier.}}{25}{figure.caption.58}%
-\contentsline {figure}{\numberline {18}{\ignorespaces Confusion matrix on the CV dataset after training with synthetic department data.}}{26}{figure.caption.60}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Confusion Matrix Department}}{14}{figure.caption.36}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Confusion Matrix Seniority}}{15}{figure.caption.37}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Distribution of seniority labels in different datasets}}{17}{figure.caption.42}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Distribution of department labels in different datasets}}{18}{figure.caption.43}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Confusion Matrix (All Predictions) – Counts (True label = rows, Predicted = columns)}}{26}{figure.caption.64}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Confusion matrix on the CV dataset after adding synthetic training data and applying oversampling.}}{28}{figure.caption.66}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Confusion matrix on the CV dataset for the baseline department classifier.}}{30}{figure.caption.69}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Confusion matrix on the CV dataset after training with synthetic department data.}}{31}{figure.caption.71}%

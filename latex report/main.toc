@@ -15,33 +15,43 @@
 \contentsline {subsubsection}{\numberline {3.6.1}Job Title Length Distribution}{11}{subsubsection.26}%
 \contentsline {subsubsection}{\numberline {3.6.2} Language and Character Diversity of Job Titles}{12}{subsubsection.28}%
 \contentsline {section}{\numberline {4}Preparation}{12}{section.30}%
-\contentsline {subsection}{\numberline {4.1}Evaluation Preparation}{12}{subsection.31}%
-\contentsline {subsection}{\numberline {4.2}Results Comparison Preparation}{13}{subsection.32}%
-\contentsline {section}{\numberline {5}Experiments}{13}{section.33}%
-\contentsline {subsection}{\numberline {5.1}Rule Based Matching}{13}{subsection.34}%
-\contentsline {subsubsection}{\numberline {5.1.1}Preparation}{13}{subsubsection.35}%
-\contentsline {subsubsection}{\numberline {5.1.2}Rule-based Matching Logic}{14}{subsubsection.36}%
-\contentsline {subsubsection}{\numberline {5.1.3}Rule Based Matching Results}{14}{subsubsection.37}%
-\contentsline {subsection}{\numberline {5.2}Simple interpretable baseline: Bag of Words}{17}{subsection.41}%
-\contentsline {subsection}{\numberline {5.3}Prompt Engineering}{17}{subsection.42}%
-\contentsline {subsubsection}{\numberline {5.3.1}Evaluation with Test Set}{17}{subsubsection.43}%
-\contentsline {subsubsection}{\numberline {5.3.2}Prompt Engineering for Synthetic Data}{18}{subsubsection.45}%
-\contentsline {subsection}{\numberline {5.4}Fine-tuned classification model}{19}{subsection.48}%
-\contentsline {subsubsection}{\numberline {5.4.1}Seniority: fine-tuning approaches and results}{20}{subsubsection.49}%
-\contentsline {paragraph}{\textbf {1) Regression fine-tuning (no synthetic data, no oversampling).}}{20}{paragraph*.50}%
-\contentsline {paragraph}{\textbf {2) Multi-class classification with synthetic data and oversampling}}{21}{paragraph*.52}%
-\contentsline {subsubsection}{\numberline {5.4.2}Department fine tuning approaches and results}{23}{subsubsection.54}%
-\contentsline {paragraph}{1) Baseline fine-tuning (no oversampling, no synthetic data).}{23}{paragraph*.55}%
-\contentsline {paragraph}{2) Fine-tuning with oversampling.}{24}{paragraph*.57}%
-\contentsline {paragraph}{3) Fine-tuning with synthetic data augmentation.}{25}{paragraph*.59}%
-\contentsline {subsection}{\numberline {5.5}Hybrid Approach (Rule-Based + Fine Tuning}{27}{subsection.62}%
-\contentsline {paragraph}{Seniority.}{27}{paragraph*.63}%
-\contentsline {paragraph}{Department.}{27}{paragraph*.64}%
-\contentsline {subsection}{\numberline {5.6}Embedding-based labeling}{28}{subsection.65}%
-\contentsline {section}{\numberline {6}Summary of Findings}{28}{section.66}%
-\contentsline {section}{\numberline {7}Limitations and Future Work}{28}{section.67}%
-\contentsline {section}{\numberline {8}Dashboard Implementation}{29}{section.68}%
-\contentsline {section}{\numberline {9}Appendix}{30}{section.69}%
-\contentsline {subsection}{\numberline {9.1}Code Repository}{30}{subsection.70}%
-\contentsline {subsection}{\numberline {9.2}Group Member Contributions}{30}{subsection.71}%
-\contentsline {subsection}{\numberline {9.3}Use of Gen-AI}{30}{subsection.75}%
+\contentsline {section}{\numberline {5}Experiments}{13}{section.31}%
+\contentsline {subsection}{\numberline {5.1}Rule Based Matching}{13}{subsection.32}%
+\contentsline {paragraph}{Rule-based Matching Logic}{13}{paragraph*.33}%
+\contentsline {paragraph}{Rule Based Matching Results.}{13}{paragraph*.34}%
+\contentsline {subsection}{\numberline {5.2}Prompt Engineering}{16}{subsection.38}%
+\contentsline {subsubsection}{\numberline {5.2.1}Evaluation with Test Set}{16}{subsubsection.39}%
+\contentsline {subsubsection}{\numberline {5.2.2}Prompt Engineering for Synthetic Data}{17}{subsubsection.41}%
+\contentsline {subsection}{\numberline {5.3}Simple interpretable baseline: Bag of words/ TF-IDF + Logistic Regression}{18}{subsection.44}%
+\contentsline {subsubsection}{\numberline {5.3.1}Seniority: bag of words approaches and results}{19}{subsubsection.45}%
+\contentsline {paragraph}{(1) Seniority Baseline Model}{19}{paragraph*.46}%
+\contentsline {paragraph}{(2) Best performing seniority model configuration: seniority model with synthetic data}{20}{paragraph*.50}%
+\contentsline {subsubsection}{\numberline {5.3.2}Department: bag of words approaches and results}{21}{subsubsection.52}%
+\contentsline {paragraph}{(1) Baseline Department Model.}{21}{paragraph*.53}%
+\contentsline {paragraph}{(2) Best performing department model: synthetic data and oversampling.}{24}{paragraph*.57}%
+\contentsline {subsubsection}{\numberline {5.3.3}Comparison of all bag of words models}{24}{subsubsection.59}%
+\contentsline {subsection}{\numberline {5.4}Fine-tuned classification model}{25}{subsection.61}%
+\contentsline {subsubsection}{\numberline {5.4.1}Seniority: fine-tuning approaches and results}{26}{subsubsection.62}%
+\contentsline {paragraph}{\textbf {1) Regression fine-tuning (no synthetic data, no oversampling).}}{26}{paragraph*.63}%
+\contentsline {paragraph}{\textbf {2) Multi-class classification with synthetic data and oversampling}}{27}{paragraph*.65}%
+\contentsline {subsubsection}{\numberline {5.4.2}Department fine tuning approaches and results}{29}{subsubsection.67}%
+\contentsline {paragraph}{1) Baseline fine-tuning.}{29}{paragraph*.68}%
+\contentsline {paragraph}{2) Fine-tuning with synthetic data augmentation.}{30}{paragraph*.70}%
+\contentsline {subsection}{\numberline {5.5}Hybrid Approach (Rule-Based + Fine Tuning}{32}{subsection.73}%
+\contentsline {paragraph}{Seniority.}{32}{paragraph*.74}%
+\contentsline {paragraph}{Department.}{32}{paragraph*.75}%
+\contentsline {subsection}{\numberline {5.6}Embedding-based labeling}{32}{subsection.76}%
+\contentsline {subsubsection}{\numberline {5.6.1}Seniority: embedding-based approaches and results}{33}{subsubsection.82}%
+\contentsline {paragraph}{(1) Baseline Seniority Model.}{33}{paragraph*.83}%
+\contentsline {paragraph}{(2) Best Seniority Model with synthetic data and optimized embedding model.}{34}{paragraph*.85}%
+\contentsline {subsubsection}{\numberline {5.6.2}Department: embedding-based approaches and results}{35}{subsubsection.87}%
+\contentsline {paragraph}{(1) Baseline Department model.}{35}{paragraph*.88}%
+\contentsline {paragraph}{(Best Department model with synthetic data, oversampling}{35}{paragraph*.90}%
+\contentsline {subsubsection}{\numberline {5.6.3}Comparison of all embedding-based models}{36}{subsubsection.92}%
+\contentsline {section}{\numberline {6}Conclusion}{37}{section.94}%
+\contentsline {section}{\numberline {7}Limitations and Future Work}{38}{section.96}%
+\contentsline {section}{\numberline {8}Dashboard Implementation}{39}{section.97}%
+\contentsline {section}{\numberline {9}Appendix}{40}{section.98}%
+\contentsline {subsection}{\numberline {9.1}Code Repository}{40}{subsection.99}%
+\contentsline {subsection}{\numberline {9.2}Group Member Contributions}{40}{subsection.100}%
+\contentsline {subsection}{\numberline {9.3}Use of Gen-AI}{40}{subsection.104}%

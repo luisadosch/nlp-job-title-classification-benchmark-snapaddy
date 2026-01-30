@@ -2,7 +2,7 @@
 \providecommand\hyper@newdestlabel[2]{}
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
-\abx@aux@refcontext{nyt/global//global/global/global}
+\abx@aux@refcontext{nyt/global//global/global}
 \@writefile{toc}{\contentsline {section}{\numberline {1}Introduction and Motivation}{1}{section.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {2}Data Overview and Preprocessing}{1}{section.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Label Datasets (department labels \& seniority labels)}{1}{subsection.3}\protected@file@percent }
@@ -47,59 +47,93 @@
 \@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Amount of non-ASCII characters in the job titles}}{12}{table.caption.29}\protected@file@percent }
 \newlabel{tab:prompt_metrics}{{4}{12}{Amount of non-ASCII characters in the job titles}{table.caption.29}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {4}Preparation}{12}{section.30}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Evaluation Preparation}{12}{subsection.31}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Results Comparison Preparation}{13}{subsection.32}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5}Experiments}{13}{section.33}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Rule Based Matching}{13}{subsection.34}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.1}Preparation}{13}{subsubsection.35}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.2}Rule-based Matching Logic}{14}{subsubsection.36}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.3}Rule Based Matching Results}{14}{subsubsection.37}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Rule-based matching evaluation results}}{14}{table.caption.38}\protected@file@percent }
-\newlabel{tab:prompt_metrics}{{5}{14}{Rule-based matching evaluation results}{table.caption.38}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Confusion Matrix Department}}{15}{figure.caption.39}\protected@file@percent }
-\newlabel{fig:confusionmatrix_dep_1}{{10}{15}{Confusion Matrix Department}{figure.caption.39}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Confusion Matrix Seniority}}{16}{figure.caption.40}\protected@file@percent }
-\newlabel{fig:confusionmatrix_sen_1}{{11}{16}{Confusion Matrix Seniority}{figure.caption.40}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Simple interpretable baseline: Bag of Words}{17}{subsection.41}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Prompt Engineering}{17}{subsection.42}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.1}Evaluation with Test Set}{17}{subsubsection.43}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Prompt-engineering evaluation results on the annotated test set.}}{18}{table.caption.44}\protected@file@percent }
-\newlabel{tab:prompt_metrics}{{6}{18}{Prompt-engineering evaluation results on the annotated test set}{table.caption.44}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.2}Prompt Engineering for Synthetic Data}{18}{subsubsection.45}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Distribution of seniority labels in different datasets}}{18}{figure.caption.46}\protected@file@percent }
-\newlabel{fig:labeldistsyntheticseniority}{{12}{18}{Distribution of seniority labels in different datasets}{figure.caption.46}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Distribution of department labels in different datasets}}{19}{figure.caption.47}\protected@file@percent }
-\newlabel{fig:labeldistsyntheticsdepartment}{{13}{19}{Distribution of department labels in different datasets}{figure.caption.47}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Fine-tuned classification model}{19}{subsection.48}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.4.1}Seniority: fine-tuning approaches and results}{20}{subsubsection.49}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{\textbf  {1) Regression fine-tuning (no synthetic data, no oversampling).}}{20}{paragraph*.50}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Confusion Matrix (All Predictions) – Counts (True label = rows, Predicted = columns)}}{20}{figure.caption.51}\protected@file@percent }
-\newlabel{fig:cm-1}{{14}{20}{Confusion Matrix (All Predictions) – Counts (True label = rows, Predicted = columns)}{figure.caption.51}{}}
-\@writefile{toc}{\contentsline {paragraph}{\textbf  {2) Multi-class classification with synthetic data and oversampling}}{21}{paragraph*.52}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Confusion matrix on the CV dataset after adding synthetic training data and applying oversampling.}}{22}{figure.caption.53}\protected@file@percent }
-\newlabel{fig:cm-2}{{15}{22}{Confusion matrix on the CV dataset after adding synthetic training data and applying oversampling}{figure.caption.53}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.4.2}Department fine tuning approaches and results}{23}{subsubsection.54}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{1) Baseline fine-tuning (no oversampling, no synthetic data).}{23}{paragraph*.55}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces Confusion matrix on the CV dataset for the baseline department classifier.}}{24}{figure.caption.56}\protected@file@percent }
-\newlabel{fig:cm-1-department}{{16}{24}{Confusion matrix on the CV dataset for the baseline department classifier}{figure.caption.56}{}}
-\@writefile{toc}{\contentsline {paragraph}{2) Fine-tuning with oversampling.}{24}{paragraph*.57}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces Confusion matrix on the CV dataset for the oversampled department classifier.}}{25}{figure.caption.58}\protected@file@percent }
-\newlabel{fig:cm-2-department}{{17}{25}{Confusion matrix on the CV dataset for the oversampled department classifier}{figure.caption.58}{}}
-\@writefile{toc}{\contentsline {paragraph}{3) Fine-tuning with synthetic data augmentation.}{25}{paragraph*.59}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {18}{\ignorespaces Confusion matrix on the CV dataset after training with synthetic department data.}}{26}{figure.caption.60}\protected@file@percent }
-\newlabel{fig:cm-3-department}{{18}{26}{Confusion matrix on the CV dataset after training with synthetic department data}{figure.caption.60}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Summary of out-of-distribution results on the annotated CV dataset for the fine-tuned pretrained models. Synthetic augmentation consistently improves robustness under distribution shift for both seniority and department prediction.}}{27}{table.caption.61}\protected@file@percent }
-\newlabel{tab:finetune_summary_results}{{7}{27}{Summary of out-of-distribution results on the annotated CV dataset for the fine-tuned pretrained models. Synthetic augmentation consistently improves robustness under distribution shift for both seniority and department prediction}{table.caption.61}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.5}Hybrid Approach (Rule-Based + Fine Tuning}{27}{subsection.62}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Seniority.}{27}{paragraph*.63}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Department.}{27}{paragraph*.64}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.6}Embedding-based labeling}{28}{subsection.65}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {6}Summary of Findings}{28}{section.66}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {7}Limitations and Future Work}{28}{section.67}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {8}Dashboard Implementation}{29}{section.68}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {9}Appendix}{30}{section.69}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.1}Code Repository}{30}{subsection.70}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.2}Group Member Contributions}{30}{subsection.71}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.3}Use of Gen-AI}{30}{subsection.75}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Experiments}{13}{section.31}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Rule Based Matching}{13}{subsection.32}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Rule-based Matching Logic}{13}{paragraph*.33}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Rule Based Matching Results.}{13}{paragraph*.34}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Rule-based matching evaluation results}}{14}{table.caption.35}\protected@file@percent }
+\newlabel{tab:prompt_metrics}{{5}{14}{Rule-based matching evaluation results}{table.caption.35}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Confusion Matrix Department}}{14}{figure.caption.36}\protected@file@percent }
+\newlabel{fig:confusionmatrix_dep_1}{{10}{14}{Confusion Matrix Department}{figure.caption.36}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Confusion Matrix Seniority}}{15}{figure.caption.37}\protected@file@percent }
+\newlabel{fig:confusionmatrix_sen_1}{{11}{15}{Confusion Matrix Seniority}{figure.caption.37}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Prompt Engineering}{16}{subsection.38}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.1}Evaluation with Test Set}{16}{subsubsection.39}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Prompt-engineering evaluation results on the annotated test set.}}{17}{table.caption.40}\protected@file@percent }
+\newlabel{tab:prompt_metrics}{{6}{17}{Prompt-engineering evaluation results on the annotated test set}{table.caption.40}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.2}Prompt Engineering for Synthetic Data}{17}{subsubsection.41}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Distribution of seniority labels in different datasets}}{17}{figure.caption.42}\protected@file@percent }
+\newlabel{fig:labeldistsyntheticseniority}{{12}{17}{Distribution of seniority labels in different datasets}{figure.caption.42}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Distribution of department labels in different datasets}}{18}{figure.caption.43}\protected@file@percent }
+\newlabel{fig:labeldistsyntheticsdepartment}{{13}{18}{Distribution of department labels in different datasets}{figure.caption.43}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Simple interpretable baseline: Bag of words/ TF-IDF + Logistic Regression}{18}{subsection.44}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.1}Seniority: bag of words approaches and results}{19}{subsubsection.45}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{(1) Seniority Baseline Model}{19}{paragraph*.46}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces In-distribution evaluation of baseline seniority classification}}{19}{table.caption.47}\protected@file@percent }
+\newlabel{tab:seniority_in_baseline}{{7}{19}{In-distribution evaluation of baseline seniority classification}{table.caption.47}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces Out-of-distribution evaluation of baseline seniority classification}}{20}{table.caption.48}\protected@file@percent }
+\newlabel{tab:seniority_in_synthetic}{{8}{20}{Out-of-distribution evaluation of baseline seniority classification}{table.caption.48}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {9}{\ignorespaces Top terms per seniority class}}{20}{table.caption.49}\protected@file@percent }
+\newlabel{tab:seniority_in_words}{{9}{20}{Top terms per seniority class}{table.caption.49}{}}
+\@writefile{toc}{\contentsline {paragraph}{(2) Best performing seniority model configuration: seniority model with synthetic data}{20}{paragraph*.50}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {10}{\ignorespaces Out-of-distribution evaluation of seniority classification with synthetic data}}{21}{table.caption.51}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.2}Department: bag of words approaches and results}{21}{subsubsection.52}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{(1) Baseline Department Model.}{21}{paragraph*.53}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {11}{\ignorespaces In-distribution evaluation of baseline department classification}}{22}{table.caption.54}\protected@file@percent }
+\newlabel{tab:department_in_baseline}{{11}{22}{In-distribution evaluation of baseline department classification}{table.caption.54}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {12}{\ignorespaces Out-of-distribution evaluation of baseline department classification (ACTIVE jobs)}}{22}{table.caption.55}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {13}{\ignorespaces Top terms per department – baseline department model}}{23}{table.caption.56}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{(2) Best performing department model: synthetic data and oversampling.}{24}{paragraph*.57}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {14}{\ignorespaces Out-of-distribution evaluation of department classification with synthetic data and oversampling (ACTIVE jobs)}}{24}{table.caption.58}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.3}Comparison of all bag of words models}{24}{subsubsection.59}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {15}{\ignorespaces Comparison of all bag-of-words-based models for seniority and department classification on label data and real CV data (ACTIVE jobs).}}{25}{table.caption.60}\protected@file@percent }
+\newlabel{tab:bow_full_comparison}{{15}{25}{Comparison of all bag-of-words-based models for seniority and department classification on label data and real CV data (ACTIVE jobs)}{table.caption.60}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Fine-tuned classification model}{25}{subsection.61}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.4.1}Seniority: fine-tuning approaches and results}{26}{subsubsection.62}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{\textbf  {1) Regression fine-tuning (no synthetic data, no oversampling).}}{26}{paragraph*.63}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Confusion Matrix (All Predictions) – Counts (True label = rows, Predicted = columns)}}{26}{figure.caption.64}\protected@file@percent }
+\newlabel{fig:cm-1}{{14}{26}{Confusion Matrix (All Predictions) – Counts (True label = rows, Predicted = columns)}{figure.caption.64}{}}
+\@writefile{toc}{\contentsline {paragraph}{\textbf  {2) Multi-class classification with synthetic data and oversampling}}{27}{paragraph*.65}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Confusion matrix on the CV dataset after adding synthetic training data and applying oversampling.}}{28}{figure.caption.66}\protected@file@percent }
+\newlabel{fig:cm-2}{{15}{28}{Confusion matrix on the CV dataset after adding synthetic training data and applying oversampling}{figure.caption.66}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.4.2}Department fine tuning approaches and results}{29}{subsubsection.67}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{1) Baseline fine-tuning.}{29}{paragraph*.68}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces Confusion matrix on the CV dataset for the baseline department classifier.}}{30}{figure.caption.69}\protected@file@percent }
+\newlabel{fig:cm-1-department}{{16}{30}{Confusion matrix on the CV dataset for the baseline department classifier}{figure.caption.69}{}}
+\@writefile{toc}{\contentsline {paragraph}{2) Fine-tuning with synthetic data augmentation.}{30}{paragraph*.70}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces Confusion matrix on the CV dataset after training with synthetic department data.}}{31}{figure.caption.71}\protected@file@percent }
+\newlabel{fig:cm-3-department}{{17}{31}{Confusion matrix on the CV dataset after training with synthetic department data}{figure.caption.71}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {16}{\ignorespaces Summary of out-of-distribution results on the annotated CV dataset for the fine-tuned pretrained models. Synthetic augmentation consistently improves robustness under distribution shift for both seniority and department prediction.}}{32}{table.caption.72}\protected@file@percent }
+\newlabel{tab:finetune_summary_results}{{16}{32}{Summary of out-of-distribution results on the annotated CV dataset for the fine-tuned pretrained models. Synthetic augmentation consistently improves robustness under distribution shift for both seniority and department prediction}{table.caption.72}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5}Hybrid Approach (Rule-Based + Fine Tuning}{32}{subsection.73}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Seniority.}{32}{paragraph*.74}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Department.}{32}{paragraph*.75}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.6}Embedding-based labeling}{32}{subsection.76}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.6.1}Seniority: embedding-based approaches and results}{33}{subsubsection.82}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{(1) Baseline Seniority Model.}{33}{paragraph*.83}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {17}{\ignorespaces Embedding-based seniority classification – out-of-distribution evaluation (ACTIVE jobs), baseline model}}{34}{table.caption.84}\protected@file@percent }
+\newlabel{tab:seniority_emb_ood_baseline}{{17}{34}{Embedding-based seniority classification – out-of-distribution evaluation (ACTIVE jobs), baseline model}{table.caption.84}{}}
+\@writefile{toc}{\contentsline {paragraph}{(2) Best Seniority Model with synthetic data and optimized embedding model.}{34}{paragraph*.85}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {18}{\ignorespaces Embedding-based seniority classification – out-of-distribution evaluation (ACTIVE jobs), final embedding model (\texttt  {BAAI/bge-m3})}}{34}{table.caption.86}\protected@file@percent }
+\newlabel{tab:seniority_embedding_final}{{18}{34}{Embedding-based seniority classification – out-of-distribution evaluation (ACTIVE jobs), final embedding model (\texttt {BAAI/bge-m3})}{table.caption.86}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.6.2}Department: embedding-based approaches and results}{35}{subsubsection.87}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{(1) Baseline Department model.}{35}{paragraph*.88}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {19}{\ignorespaces Embedding-based department classification – out-of-distribution evaluation (ACTIVE jobs), baseline model}}{35}{table.caption.89}\protected@file@percent }
+\newlabel{tab:department_emb_baseline_ood}{{19}{35}{Embedding-based department classification – out-of-distribution evaluation (ACTIVE jobs), baseline model}{table.caption.89}{}}
+\@writefile{toc}{\contentsline {paragraph}{(Best Department model with synthetic data, oversampling}{35}{paragraph*.90}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {20}{\ignorespaces Embedding-based department classification – out-of-distribution evaluation (ACTIVE jobs) using \texttt  {intfloat/multilingual-e5-base}}}{36}{table.caption.91}\protected@file@percent }
+\newlabel{tab:department_embedding_final}{{20}{36}{Embedding-based department classification – out-of-distribution evaluation (ACTIVE jobs) using \texttt {intfloat/multilingual-e5-base}}{table.caption.91}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.6.3}Comparison of all embedding-based models}{36}{subsubsection.92}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {21}{\ignorespaces Comparison of all embedding-based models for seniority and department classification on real CV data (ACTIVE jobs).}}{37}{table.caption.93}\protected@file@percent }
+\newlabel{tab:embedding_full_comparison}{{21}{37}{Comparison of all embedding-based models for seniority and department classification on real CV data (ACTIVE jobs)}{table.caption.93}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Conclusion}{37}{section.94}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {22}{\ignorespaces Overall comparison of all models on annotated CV data (ACTIVE jobs). MAE is reported only for the regression-based seniority setup. Best-performing models per target are highlighted.}}{38}{table.caption.95}\protected@file@percent }
+\newlabel{tab:overall_model_comparison}{{22}{38}{Overall comparison of all models on annotated CV data (ACTIVE jobs). MAE is reported only for the regression-based seniority setup. Best-performing models per target are highlighted}{table.caption.95}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Limitations and Future Work}{38}{section.96}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {8}Dashboard Implementation}{39}{section.97}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {9}Appendix}{40}{section.98}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.1}Code Repository}{40}{subsection.99}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.2}Group Member Contributions}{40}{subsection.100}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.3}Use of Gen-AI}{40}{subsection.104}\protected@file@percent }
 \abx@aux@read@bbl@mdfivesum{D41D8CD98F00B204E9800998ECF8427E}
-\gdef \@abspage@last{34}
+\gdef \@abspage@last{46}

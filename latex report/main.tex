@@ -90,7 +90,6 @@
 \lhead{\nouppercase{\leftmark}}
 
 \section{Introduction and Motivation}
-LinkedIn profiles contain rich but highly unstructured information about individuals’ professional careers. 
 Job titles, employment histories, and organizational affiliations provide valuable signals about a person’s current role, 
 yet these signals are expressed in free text and can vary strongly across industries, languages and career stages. 
 For companies that rely on structured CRM or sales intelligence systems, this heterogeneity poses a major challenge.
@@ -462,8 +461,7 @@ exist in other languages and ASCII-only does not mean “English”.
 
 \section{Preparation}
 The implementation is available in the GitHub repository under the folder \textit{src/utils}.
-\subsection{Evaluation Preparation}
-We use the following metrics to evaluate and compare all approaches:
+For evaluation, we use the following metrics to evaluate and compare all approaches:
 \begin{itemize}
   \item Accuracy: shows the overall fraction of correctly classified samples
   \item macro-averaged F1-Score: is the harmonic mean of precision and recall, computed independently for each class and averaged across classes. This metric is particularly important due to the strong class imbalance in both department and seniority labels, as it ensures that performance on minority classes is weighted equally.
@@ -477,20 +475,6 @@ computes the evaluation metrics. Some approaches have different metrics (numbers
 The function assigns None to the metric that cannot be computed for a model. 
 This ensures a consistent output structure across different models and label types.
 
-\subsection{Results Comparison Preparation}
-The \textit{results\_utils.py} were created for each model to use and to add their results. 
-In the end we can therefore get a dataframe with each model and their corresponding 
-results to allow comparison between approaches.
-
-The results table captures and compares across:
-\begin{itemize}
-  \item Model
-  \item Target (department vs seniority)
-  \item Metrics (accuracy, macro F1, MAE)
-\end{itemize}
-
-Each row in that table represents one experiment.
-
 
 \section{Experiments}
 \subsection{Rule Based Matching}
@@ -498,7 +482,6 @@ The rule based matching is performed with the annotated CV dataset transformed t
 and the Seniority and Department Label Lists.
 The implementation is available in the GitHub repository under the folder \textit{src/model-1-baseline}.
 
-\subsubsection{Preparation}
 For the rule-based matching, job titles and label-list entries are normalized using 
 lowercasing and whitespace stripping before applying the substring matching.
 This is done to avoid any accidental mismatching due to lower/uppercasing 
@@ -513,7 +496,7 @@ should be considered the primary current position.
 Restricting the dataset to CVs with exactly one active job therefore ensures a 
 consistent and well-defined evaluation setup.
 
-\subsubsection{Rule-based Matching Logic}
+\paragraph{Rule-based Matching Logic}
 
 Our rule-based matching functions implement a rule-based classifier using the provided 
 department and seniority label lists, where job titles from the LinkedIn CV data 
@@ -526,9 +509,16 @@ the most frequent seniority class and using it as the fallback label avoids arti
 Second, it is present in the CV annotations but not in the predefined seniority keyword list. 
 Whenever no seniority-specific keyword is matched, the model can default to “Professional”.
 
-\subsubsection{Rule Based Matching Results}
-The rule-based matching baseline does not involve 
-training and is therefore evaluated on the full dataset.
+\paragraph{Rule Based Matching Results.}
+Results show that for department prediction, the baseline achieves an accuracy of 60.26\% 
+and a macro-averaged F1 score of 0.449. 
+For seniority prediction, the accuracy is in comparison lower at 53.68\% with a lower macro F1 score of 0.426.
+
+The relatively higher accuracy compared to the macro F1 score in both tasks reflects 
+the strong class imbalance present in the data. 
+Dominant classes such as Other (department) and Professional (seniority) are 
+frequently predicted due to the fallback behavior of the rule-based system, 
+which inflates overall accuracy while reducing performance on minority classes.
 
 \begin{table}[H]
 \centering
@@ -544,15 +534,6 @@ Seniority prediction & 53.68\% & 0.426 \\
 \label{tab:prompt_metrics}
 \end{table}
 
-Results show that for department prediction, the baseline achieves an accuracy of 60.26\% 
-and a macro-averaged F1 score of 0.449. 
-For seniority prediction, the accuracy is in comparison lower at 53.68\% with a lower macro F1 score of 0.426.
-
-The relatively higher accuracy compared to the macro F1 score in both tasks reflects 
-the strong class imbalance present in the data. 
-Dominant classes such as Other (department) and Professional (seniority) are 
-frequently predicted due to the fallback behavior of the rule-based system, 
-which inflates overall accuracy while reducing performance on minority classes.
 
 \begin{figure}[H]
 \centering
@@ -592,7 +573,6 @@ While its predictive performance is limited, particularly in terms of balanced c
 performance, it establishes a lower bound and highlights the need for 
 more expressive and context aware machine learning models.
 
-\subsection{Simple interpretable baseline: Bag of Words}
 
 \subsection{Prompt Engineering}
 We use prompt engineering to benchmark how far a large language model can go on our labeling tasks without training a dedicated classifier. In addition, we use the same setup to generate synthetic labels for unlabeled job titles as extra training data for downstream experiments. The implementation is available in the GitHub repository under the folder \textit{src/prompt\_engineering/}.
@@ -620,7 +600,9 @@ Department prediction & 79.61\% & 0.734 & 0.804 \\
 
 
 \subsubsection{Prompt Engineering for Synthetic Data}
-<We additionally apply the same prompting setup to unlabeled job titles to generate synthetic labels as extra training data. We use prompt-based labeling instead of a purely rule-based approach because it achieved higher department accuracy on the annotated dataset and because it can produce labels that are missing (or strongly underrepresented) in the supervised training data (e.g., \textit{Professional} for seniority). The resulting file (data/results/gemini\_synthetic.csv) is concatenated with the supervised training split and used for fine-tuning transformer classifier/regressor models.
+We additionally apply the same prompting setup to unlabeled job titles to generate synthetic labels as extra training data. We use prompt-based labeling instead of a purely rule-based approach because it achieved higher department accuracy on the annotated dataset and because it can produce labels that are missing (or strongly underrepresented) in the supervised training data (e.g., \textit{Professional} for seniority). 
+The resulting file {\small \texttt{gemini\_synthetic.csv}}
+ is concatenated with the supervised training split and used for fine-tuning transformer classifier/regressor models.
 
 Figures~\ref{fig:labeldistsyntheticseniority} and~\ref{fig:labeldistsyntheticsdepartment} illustrate why this augmentation is relevant: the label distributions differ substantially between the training data and the CV (out-of-production) dataset. 
 
@@ -645,6 +627,261 @@ In Figure~\ref{fig:labeldistsyntheticsdepartment}, \textit{Other} is the most fr
 
 At the same time, we need to account for potential label noise in the synthetic data: in the prompt evaluation, \textit{Business Development} was the weakest department category (lowest F1), so synthetic labels for this class may be less reliable. We therefore treat synthetic augmentation as an empirical experiment and evaluate downstream performance to determine whether the additional data improves robustness on the CV (out-of-production) distribution.
 
+\subsection{Simple interpretable baseline: Bag of words/ TF-IDF + Logistic Regression}
+
+This section presents a classic bag-of-words approach to the automatic classification of job titles. A combination of TF–IDF vectorization and logistic regression is used as the baseline model, as this approach is easy to interpret and allows for a structured comparison with finely tuned transformer models. The implementation of the bag-of-words/TF–IDF + logistic regression model is available in the GitHub repository at \\
+src/model6\_Bag\_of\_Words\_TF–IDF\_+\_Logistic\_Regression/.
+The models use the curated, labeled datasets (\texttt{seniority\_df} and \texttt{department\_df}), which are first divided into training and test sets. A pipeline consisting of TF–IDF vectorizer and logistic regression is used for classification. The model is then trained on the training data, followed by an in-distribution evaluation on the test sets and an out-of-distribution evaluation on real, annotated CV data.
+Several model variants are available for analysis: a baseline model without synthetic data or oversampling, and a final, optimized model with synthetic data, oversampling, and an adapted pipeline. The out-of-distribution results of the intermediate stages (model with synthetic data and model with synthetic data and oversampling) are only briefly compared, while the focus is on the comparison between the baseline model and the best pipeline.
+Model performance is evaluated using accuracy, macro-F1, and a classification report, supplemented by an analysis of the most important features (top features) to ensure the traceability of classification decisions.
+
+\subsubsection{Seniority: bag of words approaches and results}
+We tried out different model configurations which are highlighted in \ref{tab:bow_full_comparison}. We will only discuss further our (1) baseline model for our bag of words approach and (2) our best performing model configuration. 
+For the first model without synthetic data and oversampling, a pipeline consisting of a TF–IDF vectorizer and logistic regression is used. The vectorizer takes unigrams and bigrams into account and filters out very rare (min\_df=3) and extremely frequent terms (max\_df=0.9). A multinomial logistic regression with an increased number of iterations (max\_iter=1000) and balanced class weights (class\_weight=“balanced”) serves as the classifier.
+
+\paragraph{(1) Seniority Baseline Model} The in-distribution evaluation in Table \ref{tab:seniority_in_baseline} shows very high model performance. With an accuracy of 0.97 and a macro F1 score of 0.956, most seniority levels are classified reliably. As can be seen in Table \ref{tab:seniority_in_baseline}, the Lead, Senior, and Director classes in particular have very high precision and recall values. Although the Junior and Management classes achieve a slightly lower precision, they are recognized completely.
+\begin{table}[H]
+\centering
+\begin{tabular}{lcccc}
+\hline
+\textbf{Class} & \textbf{Precision} & \textbf{Recall} & \textbf{F1-score} & \textbf{Support} \\
+\hline
+Director     & 0.99 & 0.98 & 0.98 & 197 \\
+Junior       & 0.85 & 1.00 & 0.92 & 82 \\
+Lead         & 0.97 & 0.98 & 0.98 & 709 \\
+Management   & 0.92 & 0.93 & 0.92 & 151 \\
+Senior       & 0.99 & 0.97 & 0.98 & 747 \\
+\hline
+\textbf{Accuracy} & \multicolumn{3}{c}{0.97} & 1886 \\
+\textbf{Macro F1} & \multicolumn{3}{c}{0.956} & \\
+\hline
+\end{tabular}
+\caption{In-distribution evaluation of baseline seniority classification}
+\label{tab:seniority_in_baseline}
+\end{table}
+
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lcccc}
+\hline
+\textbf{Class} & \textbf{Precision} & \textbf{Recall} & \textbf{F1-score} & \textbf{Support} \\
+\hline
+Director       & 0.58 & 0.88 & 0.70 & 34 \\
+Junior         & 0.18 & 0.33 & 0.24 & 12 \\
+Lead           & 0.33 & 0.71 & 0.45 & 125 \\
+Management     & 0.90 & 0.59 & 0.72 & 192 \\
+Professional   & 0.00 & 0.00 & 0.00 & 216 \\
+Senior         & 0.23 & 0.80 & 0.36 & 44 \\
+\hline
+\textbf{Accuracy} & \multicolumn{3}{c}{0.437} & 623 \\
+\textbf{Macro F1} & \multicolumn{3}{c}{0.409} & \\
+\hline
+\end{tabular}
+\caption{Out-of-distribution evaluation of baseline seniority classification}
+\label{tab:seniority_in_synthetic}
+\end{table}
+
+The out-of-distribution evaluation of Table \ref{tab:seniority_in_synthetic} reveals a significant drop in performance. With an accuracy of 0.437 and a macro F1 score of 0.409, it is clear that the model generalizes only to a limited extent outside the training distribution. The Professional class in particular is never predicted correctly, as it is not included in the training dataset. 
+\begin{table}[H]
+\centering
+\begin{tabular}{ll}
+\hline
+\textbf{Class} & \textbf{Top Terms} \\
+\hline
+Director    & marketing director, managing directors, director sales, abteilungsdirektor, director \\
+Junior      & junior, assistant, analyst, referent, employee \\
+Lead        & department head, project lead, team lead, leadership, head of \\
+Management  & ceo, vice president, cio, founder, executive management \\
+Senior      & senior, manager, marketing manager, engineer, consultant \\
+\hline
+\end{tabular}
+\caption{Top terms per seniority class}
+\label{tab:seniority_in_words}
+\end{table}
+
+As Table \ref{tab:seniority_in_words} shows, the model predominantly uses specific keywords to distinguish between seniority levels. For example, we can see that the top terms for the Director class all include the word “director,” while the Junior class is characterized by terms such as “junior” and “assistant.” This indicates that the model relies heavily on explicit lexical cues present in job titles to make classification decisions. While this approach works well for titles containing clear seniority indicators, it may struggle with more ambiguous or nuanced titles that lack such keywords.
+
+\paragraph{(2) Best performing seniority model configuration: seniority model with synthetic data}
+
+The procedure for our best performing seniority model corresponds to the baseline model. The only difference is that the training data set is expanded with synthetic seniority data before being divided into training and test sets in order to better cover underrepresented classes such as “Professional.” 
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lcccc}
+\hline
+\textbf{Class} & \textbf{Precision} & \textbf{Recall} & \textbf{F1-score} & \textbf{Support} \\
+\hline
+Director       & 0.50 & 0.85 & 0.63 & 34 \\
+Junior         & 0.17 & 0.58 & 0.26 & 12 \\
+Lead           & 0.86 & 0.50 & 0.63 & 125 \\
+Management     & 0.85 & 0.72 & 0.78 & 192 \\
+Professional   & 0.69 & 0.61 & 0.64 & 216 \\
+Senior         & 0.35 & 0.77 & 0.48 & 44 \\
+\hline
+\textbf{Accuracy} & \multicolumn{3}{c}{0.645} & 623 \\
+\textbf{Macro F1} & \multicolumn{3}{c}{0.571} & \\
+\hline
+\end{tabular}
+\caption{Out-of-distribution evaluation of seniority classification with synthetic data}
+\end{table}
+
+The out-of-distribution evaluation on real CV data shows improved generalization compared to the baseline model without synthetic data. Accuracy increases to 0.645 and macro F1 to 0.571. In particular, the Professional class is now recognized correctly much more frequently, reducing confusion between neighboring seniority levels. However, uncertainties remain for some classes, particularly Junior and Senior. We also tried different model variants to boost accuracy and macro F1 further (like e.g. oversampling), but the results did not improve.
+
+\subsubsection{Department: bag of words approaches and results}
+
+Similar to the seniority models, synthetic data and oversampling are also integrated in the same way for the department classification. 
+
+\paragraph{(1) Baseline Department Model.} The in-distribution evaluation on the test set shows very good model performance. With an accuracy of 0.934 and a macro F1 score of 0.860, most departments are classified reliably. As can be seen in Table \ref{tab:department_in_baseline}, purchasing, marketing, sales, and information technology in particular have very high precision and recall values. Smaller classes such as Administrative, Other, or Project Management achieve slightly lower precision, but are mostly recognized correctly.
+
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lcccc}
+\hline
+\textbf{Class} & \textbf{Precision} & \textbf{Recall} & \textbf{F1-score} & \textbf{Support} \\
+\hline
+Administrative            & 0.62 & 0.94 & 0.74 & 17 \\
+Business Development      & 0.83 & 0.99 & 0.90 & 124 \\
+Consulting                & 0.82 & 0.97 & 0.89 & 33 \\
+Customer Support          & 0.88 & 1.00 & 0.93 & 7 \\
+Human Resources           & 0.75 & 1.00 & 0.86 & 6 \\
+Information Technology    & 0.92 & 0.95 & 0.94 & 261 \\
+Marketing                 & 0.99 & 0.92 & 0.96 & 859 \\
+Other                     & 0.50 & 1.00 & 0.67 & 8 \\
+Project Management        & 0.57 & 0.88 & 0.69 & 40 \\
+Purchasing                & 0.89 & 1.00 & 0.94 & 8 \\
+Sales                     & 0.96 & 0.93 & 0.94 & 666 \\
+\hline
+\textbf{Accuracy} & \multicolumn{3}{c}{0.934} & 2029 \\
+\textbf{Macro F1} & \multicolumn{3}{c}{0.860} & \\
+\hline
+\end{tabular}
+\caption{In-distribution evaluation of baseline department classification}
+\label{tab:department_in_baseline}
+\end{table}
+
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lcccc}
+\hline
+\textbf{Class} & \textbf{Precision} & \textbf{Recall} & \textbf{F1-score} & \textbf{Support} \\
+\hline
+Administrative            & 0.17 & 0.07 & 0.10 & 14 \\
+Business Development      & 0.38 & 0.30 & 0.33 & 20 \\
+Consulting                & 0.86 & 0.46 & 0.60 & 39 \\
+Customer Support          & 1.00 & 0.17 & 0.29 & 6 \\
+Human Resources           & 0.73 & 0.50 & 0.59 & 16 \\
+Information Technology    & 0.31 & 0.44 & 0.36 & 62 \\
+Marketing                 & 0.17 & 0.41 & 0.24 & 22 \\
+Other                     & 0.00 & 0.00 & 0.00 & 344 \\
+Project Management        & 0.27 & 0.56 & 0.37 & 39 \\
+Purchasing                & 0.80 & 0.53 & 0.64 & 15 \\
+Sales                     & 0.12 & 0.85 & 0.21 & 46 \\
+\hline
+\textbf{Accuracy} & \multicolumn{3}{c}{0.223} & 623 \\
+\textbf{Macro F1} & \multicolumn{3}{c}{0.338} & \\
+\hline
+\end{tabular}
+\caption{Out-of-distribution evaluation of baseline department classification (ACTIVE jobs)}
+\end{table}
+
+As with the seniority classification, performance drops significantly on real CV data (accuracy 0.223, macro-F1 0.338), showing that the model is strongly tied to the training distribution and that generalization to new positions is limited. Particularly striking is the \emph{Other} category, which comprises almost half of the CV data but is practically not recognized, while smaller classes such as Purchasing or Consulting are classified much more reliably.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lp{10cm}}
+\hline
+\textbf{Department} & \textbf{Top Terms} \\
+\hline
+Administrative          & assistentin des, geschäftsführung, gf, assistent der, geschäftsleitung, der, sekretärin, assistent, assistenz, assistentin \\
+Business Development     & business intelligence, crm, digital business, of business, business process, ebusiness, it business, development, business development, business \\
+Consulting               & senior berater, sap, coach, senior consultant, von, senior, recruitment, beraterin, berater, consultant \\
+Customer Support         & service and, it systems, customer, technical, it support, it, customer support, technical support, supporter, support \\
+Human Resources          & qualitätsmanagement, director digital, project director, gl, manager hr, of human, resources, human resources, human, hr \\
+Information Technology   & digitalization, administrator, entwickler, digitale, administration, digitalisierung, sap, digital, it, crm \\
+Marketing                & marketing und, marketing sales, marketing manager, messen, sales marketing, kommunikation, messe, communications, communication, marketing \\
+Other                    & transformation and, customer management, of commercial, senior director, operations officer, chief operations, of, operations manager, of operations, operations \\
+Project Management       & projektingenieur, projects, projekt, projektmanagerin, projekte, projektleitung, projektmanager, projektmanagement, projektleiter, project \\
+Purchasing               & strategische, einkauf und, and global, und it, operative, leiter einkauf, einkäuferin, einkäufer, purchasing, einkauf \\
+Sales                    & account, sales manager, of sales, vertriebsinnendienst, vertriebsleitung, account manager, vertriebsleiter, salesforce, vertrieb, sales \\
+\hline
+\end{tabular}
+\caption{Top terms per department – baseline department model}
+\end{table}
+
+The top words show that the model predominantly uses specific keywords to distinguish between departments. For example, we can see that the top terms for the Sales department all include the word “sales” or “vertrieb,” while the Information Technology department is characterized by terms such as “it” and “digital.” This indicates that the model relies heavily on explicit lexical cues present in job titles to make classification decisions. While this approach works well for titles containing clear department indicators, it may struggle with more ambiguous or nuanced titles that lack such keywords.
+
+\paragraph{(2) Best performing department model: synthetic data and oversampling.} In our experiments, we observed that while adding the synthetic data alone already improved performace (accuracy 0.676, macro-F1 0.563), combining synthetic data with oversampling of minority classes led to further enhancements in out-of-distribution generalization. The oversampling technique helps to balance the class distribution during training, allowing the model to better learn the characteristics of underrepresented departments. This combination proved effective in boosting the model's ability to generalize to real CV data.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lcccc}
+\hline
+\textbf{Department} & \textbf{Precision} & \textbf{Recall} & \textbf{F1-Score} & \textbf{Support} \\
+\hline
+Administrative           & 0.28 & 0.36 & 0.31 & 14 \\
+Business Development      & 0.24 & 0.60 & 0.35 & 20 \\
+Consulting                & 0.71 & 0.62 & 0.66 & 39 \\
+Customer Support          & 1.00 & 0.83 & 0.91 & 6 \\
+Human Resources           & 0.62 & 0.62 & 0.62 & 16 \\
+Information Technology    & 0.60 & 0.52 & 0.56 & 62 \\
+Marketing                 & 0.59 & 0.45 & 0.51 & 22 \\
+Other                     & 0.77 & 0.77 & 0.77 & 344 \\
+Project Management        & 0.68 & 0.64 & 0.66 & 39 \\
+Purchasing                & 0.67 & 0.67 & 0.67 & 15 \\
+Sales                     & 0.79 & 0.65 & 0.71 & 46 \\
+\hline
+\textbf{Accuracy} & \multicolumn{3}{c}{0.685} & 623 \\
+\textbf{Macro F1} & \multicolumn{3}{c}{0.612} & \\
+\hline
+\end{tabular}
+\caption{Out-of-distribution evaluation of department classification with synthetic data and oversampling (ACTIVE jobs)}
+\end{table}
+
+As with previous models, performance remains limited to real CV data. Oversampling and synthetic data improve the detection of underrepresented classes, especially \emph{Other}, which is now reliably classified with a recall of 0.77. Overall performance is 0.685 accuracy and 0.612 macro-F1.
+
+
+\subsubsection{Comparison of all bag of words models}
+
+Table \ref{tab:bow_full_comparison} summarizes the most important evaluation results of all seniority and department models. The overview highlights that the biggest improvement of the models came with adding synthetic data. 
+
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lcc}
+\hline
+\textbf{Model / Target} & \textbf{Accuracy} & \textbf{Macro F1} \\
+\hline
+\multicolumn{3}{l}{\textbf{Seniority -- Label Data}} \\
+Baseline (TF--IDF + LR)                    & 0.970 & 0.956 \\
++ Synthetic data                           & 0.871 & 0.811 \\
++ Oversampling                             & 0.888 & 0.824 \\
++ Optimized pipeline                       & 0.877 & 0.818 \\
+\hline
+\multicolumn{3}{l}{\textbf{Seniority -- ACTIVE Jobs}} \\
+Baseline                                   & 0.437 & 0.409 \\
+\textbf{+ Synthetic data}                  & \textbf{0.645} & \textbf{0.571} \\
++ Oversampling                             & 0.544 & 0.506 \\
++ Optimized pipeline                       & 0.555 & 0.522 \\
+\hline
+\multicolumn{3}{l}{\textbf{Department -- Label Data}} \\
+Baseline (TF--IDF + LR)                    & 0.934 & 0.860 \\
++ Synthetic data                           & 0.888 & 0.779 \\
++ Oversampling                             & 0.921 & 0.839 \\
++ Optimized pipeline                       & 0.908 & 0.819 \\
+\hline
+\multicolumn{3}{l}{\textbf{Department -- ACTIVE Jobs}} \\
+Baseline                                   & 0.223 & 0.338 \\
++ Synthetic data                           & 0.676 & 0.563 \\
+\textbf{+ Oversampling}                    & \textbf{0.685} & \textbf{0.612} \\
+\textbf{+ Optimized pipeline}              & \textbf{0.682} & \textbf{0.618} \\
+\hline
+\end{tabular}
+\caption{Comparison of all bag-of-words-based models for seniority and department classification on label data and real CV data (ACTIVE jobs).}
+\label{tab:bow_full_comparison}
+\end{table}
 
 \subsection{Fine-tuned classification model}
 The implementation of our fine-tuning experiments is provided in the GitHub repository under the folder \textit{src/fine\_tuning\_pretrained/}. We train transformer-based models to predict seniority level and department directly from job titles, and we evaluate both in-distribution performance (on the curated fine-tuning datasets) and out-of-distribution performance on real CV data.
@@ -696,9 +933,9 @@ Overall, synthetic augmentation plus oversampling improves robustness on real CV
 \subsubsection{Department fine tuning approaches and results}
 As already mentioned in figure \ref{fig:labeldistsyntheticsdepartment}, the department fine-tuning dataset is highly imbalanced: most job titles fall into \textit{Marketing} and \textit{Sales}, while classes such as \textit{Human Resources}, \textit{Customer Support}, \textit{Purchasing}, \textit{Administrative}, and especially \textit{Other} are sparsely represented. In contrast, the out-of-production CV dataset follows a markedly different distribution where \textit{Other} dominates and \textit{Marketing} and \textit{Sales} are much less frequent. This mismatch represents a strong distribution shift between training and deployment data. Additionally, department labels are non-ordinal and can overlap semantically (e.g., \textit{Sales} vs.\ \textit{Business Development} vs.\ \textit{Consulting}), while \textit{Other} acts as a catch-all category in CV data, increasing ambiguity.
 
-We evaluate three training variants on the same splits: **(1) baseline fine-tuning with department csv data**, **(2) fine-tuning with oversampling on the training split**, and **(3) fine-tuning with synthetic data augmentation**. For each variant we report in-distribution performance on train/validation/test and out-of-distribution performance on the CV dataset, focusing on macro-averaged metrics due to class imbalance.
+We evaluate three training variants on the same splits: **(1) baseline fine-tuning with department csv data**, **(2) fine-tuning with oversampling on the training split**, and **(3) fine-tuning with synthetic data augmentation**. Since the oversampling did not improve our performance, we will not further discuss it here.
 
-\paragraph{1) Baseline fine-tuning (no oversampling, no synthetic data).}
+\paragraph{1) Baseline fine-tuning.}
 In-distribution results are near-perfect (test accuracy $\approx$ 0.9980, macro F1 $\approx$ 0.9913), indicating that the model fits the fine-tuning distribution extremely well. However, performance drops sharply on CV data (accuracy $\approx$ 0.2793, macro F1 $\approx$ 0.3813), demonstrating that the learned decision boundaries do not transfer to production-like titles under distribution shift.
 Figure~\ref{fig:cm-1-department} highlights a systematic failure mode: many CV examples with the true label \textit{Other} are predicted as more specific departments such as \textit{Information Technology} or \textit{Administrative}. This is consistent with \textit{Other} being rare in the training data but dominant in CV data, and with the model relying on training-specific lexical patterns.
 
@@ -709,18 +946,8 @@ Figure~\ref{fig:cm-1-department} highlights a systematic failure mode: many CV e
     \label{fig:cm-1-department}
 \end{figure}
 
-\paragraph{2) Fine-tuning with oversampling.}
-To mitigate the strong class imbalance, we oversample minority departments in the \textit{training split only}, while keeping validation and test unchanged. This again yields near-perfect in-distribution metrics (test accuracy $\approx$ 0.9993, macro F1 $\approx$ 0.9983), but it does not improve robustness on CV data (accuracy $\approx$ 0.2793, macro F1 $\approx$ 0.3459). The confusion matrix in Figure~\ref{fig:cm-2-department} shows that the dominant error pattern remains: \textit{Other} examples are still frequently mapped to specific departments. In this setting, oversampling mainly increases exposure to duplicated minority examples from the same distribution, which improves in-distribution fit but does not address the distribution mismatch to CV titles.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1\linewidth]{images/cm-2-department.png}
-    \caption{Confusion matrix on the CV dataset for the oversampled department classifier.}
-    \label{fig:cm-2-department}
-\end{figure}
-
-\paragraph{3) Fine-tuning with synthetic data augmentation.}
-Finally, we augment the training split with synthetic department labels generated via prompt engineering. The primary goal is to increase both coverage and diversity of job-title formulations, especially for \textit{Other} and other underrepresented departments, thereby reducing the training--CV distribution gap. With synthetic augmentation, in-distribution performance remains strong but decreases compared to the baseline (test accuracy $\approx$ 0.9947, macro F1 $\approx$ 0.9770), which is expected because the task becomes harder and the synthetic labels introduce additional variability.
+\paragraph{2) Fine-tuning with synthetic data augmentation.}
+While we also tried oversampling, it did not improve the overall model performance. Therefore we now augment the training split with synthetic department labels generated via prompt engineering. The primary goal is to increase both coverage and diversity of job-title formulations, especially for \textit{Other} and other underrepresented departments, thereby reducing the training--CV distribution gap. With synthetic augmentation, in-distribution performance remains strong but decreases compared to the baseline (test accuracy $\approx$ 0.9947, macro F1 $\approx$ 0.9770), which is expected because the task becomes harder and the synthetic labels introduce additional variability.
 
 Crucially, out-of-distribution performance on CV data improves substantially (accuracy $\approx$ 0.6886, macro F1 $\approx$ 0.6374). Figure~\ref{fig:cm-3-department} illustrates why: the model predicts \textit{Other} much more reliably (235 correct \textit{Other} predictions), directly addressing the dominant failure mode of the baseline and oversampling variants. At the same time, the diagonal mass for core departments (e.g., \textit{Sales}, \textit{Information Technology}, \textit{Project Management}) remains visible, indicating that improved \textit{Other} handling does not simply collapse predictions into a single class. Remaining confusions are primarily between \textit{Other} and \textit{Business Development}. 
 
@@ -761,18 +988,224 @@ Motivated by this, we tested whether adding synthetic data (which includes \text
 We also tested the hybrid idea for department prediction, where the label space is consistent across datasets (i.e., there is no missing label analogous to \textit{Professional}). Nevertheless, the rule-based baseline without fallback achieves only 49\% accuracy (204 predictions), which is not competitive. As a result, we also discard the hybrid approach for department prediction.
 
 \subsection{Embedding-based labeling}
+Several embedding backbones were evaluated for the prototype-based labeling approach. We start with a lightweight baseline, and then test stronger multilingual alternatives, namely:
+\begin{enumerate}
+    \item \texttt{all-MiniLM-L6-v2} (baseline)
+    \item \texttt{sentence-transformers/paraphrase-multilingual-mpnet-base-v2}
+    \item \texttt{sentence-transformers/distiluse-base-multilingual-cased-v2}
+    \item \texttt{intfloat/multilingual-e5-base}
+    \item \texttt{BAAI/bge-m3}
+\end{enumerate}
 
-\section{Summary of Findings}
-main findings of eda and label distribution
-Table of all result metrics -> and which one is the best model and hwy
+These models are combined with incremental data strategies (synthetic label generation and oversampling of label descriptions) to assess their impact on out-of-distribution performance. 
+While all variants are reported in the final comparison Table \ref{tab:embedding_full_comparison}, the following discussion focuses on the baseline setup and the best-performing configuration, which together illustrate the performance gap between a minimal embedding baseline and the strongest embedding-based approach.
+The implementation of the embedding based labeling model is available in the GitHub repository at src/model2-embedding-based/.
+
+This approach uses the curated, labeled datasets (\texttt{seniority\_df} and \texttt{department\_df}) to construct prototypical representations for each class. To do this, the text descriptions are embedded for each label and a centroid (mean value of the embeddings) is calculated for each class, which serves as a class prototype. For prediction, the embeddings of the real, annotated CV data (\texttt{jobs\_annotated\_active\_df}) are compared with these prototypes. The assignment is made using the highest cosine similarity (nearest prototype classification). 
+
+\subsubsection{Seniority: embedding-based approaches and results} 
+
+\paragraph{(1) Baseline Seniority Model.} For the first embedding model, a pre-trained Sentence Transformer model \\ (\texttt{all-MiniLM-L6-v2}) is used to project job titles and label descriptions into a common semantic vector space. As shown in Table~\ref{tab:seniority_emb_ood_baseline}, the embedding-based baseline model achieves an accuracy of 0.409 and a macro F1 score of 0.350 on the real CV data. The Management class in particular is recognized relatively consistently, while the Professional class is not predicted correctly. This is consistent with the training setup, as the label Professional is not included in the original label data but only occurs in the annotated CV data. Overall, the results show that pure prototype assignment in the embedding space is limited in its generalizability for seniority classification.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lcccc}
+\hline
+\textbf{Class} & \textbf{Precision} & \textbf{Recall} & \textbf{F1-Score} & \textbf{Support} \\
+\hline
+Director       & 0.41 & 0.82 & 0.55 & 34 \\
+Junior         & 0.07 & 0.33 & 0.12 & 12 \\
+Lead           & 0.39 & 0.43 & 0.41 & 125 \\
+Management     & 0.73 & 0.70 & 0.71 & 192 \\
+Professional   & 0.00 & 0.00 & 0.00 & 216 \\
+Senior         & 0.19 & 0.77 & 0.31 & 44 \\
+\hline
+\textbf{Accuracy} & \multicolumn{3}{c}{0.409} & 623 \\
+\textbf{Macro F1} & \multicolumn{3}{c}{0.350} & \\
+\hline
+\end{tabular}
+\caption{Embedding-based seniority classification – out-of-distribution evaluation (ACTIVE jobs), baseline model}
+\label{tab:seniority_emb_ood_baseline}
+\end{table}
+
+\paragraph{(2) Best Seniority Model with synthetic data and optimized embedding model.} To improve the baseline model, we experimented with different strategies, summarized in Table~\ref{tab:embedding_full_comparison}. 
+When we added synthetic data to our baseline embedding model, performance improved significantly to an accuracy of 0.478 and a macro F1 score of 0.409 as shown in Table~\ref{tab:embedding_full_comparison}. Building on this, we then experimented with different pre-trained embedding models. The best results were achieved with the combination of synthetic data and embedding model “BAAI/bge-m3”, which we are now going to explain further.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lcccc}
+\hline
+\textbf{Class} & \textbf{Precision} & \textbf{Recall} & \textbf{F1-Score} & \textbf{Support} \\
+\hline
+Director       & 0.62 & 0.94 & 0.74 & 34 \\
+Junior         & 0.13 & 0.75 & 0.23 & 12 \\
+Lead           & 0.93 & 0.43 & 0.59 & 125 \\
+Management     & 0.83 & 0.81 & 0.82 & 192 \\
+Professional   & 0.61 & 0.50 & 0.55 & 216 \\
+Senior         & 0.17 & 0.32 & 0.23 & 44 \\
+\hline
+\textbf{Accuracy} & \multicolumn{3}{c}{0.60} & 623 \\
+\textbf{Macro F1} & \multicolumn{3}{c}{0.527} & \\
+\hline
+\end{tabular}
+\caption{Embedding-based seniority classification – out-of-distribution evaluation (ACTIVE jobs), final embedding model (\texttt{BAAI/bge-m3})}
+\label{tab:seniority_embedding_final}
+\end{table}
+
+Compared to the initial embedding baseline model, the final model shows a significant improvement in performance. Accuracy increases from 0.409 to 0.600, while Macro-F1 increases from 0.35 to 0.527. In particular, the previously unrecognized class \emph{Professional} now shows improved predictions, and \emph{Director} and \emph{Management} are also classified much more reliably.
+Despite this progress, the classes \emph{Junior} and \emph{Senior} remain difficult to distinguish.
+
+%%%% Department
+\subsubsection{Department: embedding-based approaches and results}
+
+The department models follow the same methodology as the previously presented seniority models. In particular, identical strategies are used to expand the label data with synthetic examples, for oversampling, and the same pre-trained embedding models are used. To avoid redundancy, only the results achieved are reported below, while a detailed description of the procedure is omitted.
+
+\paragraph{(1) Baseline Department model.} The baseline model shows low overall performance on the real CV data (accuracy 0.315, macro-F1 0.315). While individual departments such as project management or marketing are moderately recognized, several classes—especially administrative and purchasing—remain difficult to classify. The results illustrate the limited generalizability of pure embedding-based prototype assignment for department classification.
+
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lcccc}
+\hline
+\textbf{Class} & \textbf{Precision} & \textbf{Recall} & \textbf{F1-Score} & \textbf{Support} \\
+\hline
+Administrative           & 0.03 & 0.21 & 0.05 & 14 \\
+Business Development     & 0.17 & 0.35 & 0.23 & 20 \\
+Consulting               & 0.28 & 0.67 & 0.40 & 39 \\
+Customer Support         & 0.29 & 0.33 & 0.31 & 6 \\
+Human Resources          & 0.31 & 0.62 & 0.42 & 16 \\
+Information Technology   & 0.35 & 0.31 & 0.32 & 62 \\
+Marketing                & 0.39 & 0.50 & 0.44 & 22 \\
+Other                    & 0.74 & 0.22 & 0.33 & 344 \\
+Project Management       & 0.57 & 0.59 & 0.58 & 39 \\
+Purchasing               & 0.02 & 0.07 & 0.03 & 15 \\
+Sales                    & 0.29 & 0.43 & 0.35 & 46 \\
+\hline
+\textbf{Accuracy} & \multicolumn{3}{c}{0.315} & 623 \\
+\textbf{Macro F1} & \multicolumn{3}{c}{0.315} & \\
+\hline
+\end{tabular}
+\caption{Embedding-based department classification – out-of-distribution evaluation (ACTIVE jobs), baseline model}
+\label{tab:department_emb_baseline_ood}
+\end{table}
+
+
+\paragraph{(Best Department model with synthetic data, oversampling}
+
+To improve the baseline model, we tried different strategies, summarized in Table~\ref{tab:embedding_full_comparison}. The highest improvements were achieved by combining synthetic data, but then we also improved our model further by incorporating oversampling and using a more powerful pre-trained embedding model. The final results are presented in Table~\ref{tab:department_embedding_final}.
+Our best model uses the synthetic data, oversampling and the embedding model “intfloat/multilingual-e5-base” which we will now describe in more detail.
+
+The model achieves an accuracy of 0.698 and a macro F1 score of 0.601. Table~\ref{tab:department_embedding_final} shows that improvements are particularly evident for Other, Project Management, and Sales, which are recognized more reliably with higher recall and F1 scores.
+
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lcccc}
+\hline
+\textbf{Class} & \textbf{Precision} & \textbf{Recall} & \textbf{F1-Score} & \textbf{Support} \\
+\hline
+Administrative            & 0.13 & 0.43 & 0.20 & 14 \\
+Business Development      & 0.25 & 0.45 & 0.32 & 20 \\
+Consulting                & 0.69 & 0.62 & 0.65 & 39 \\
+Customer Support           & 0.86 & 1.00 & 0.92 & 6 \\
+Human Resources            & 0.62 & 0.62 & 0.62 & 16 \\
+Information Technology     & 0.64 & 0.52 & 0.57 & 62 \\
+Marketing                  & 0.64 & 0.41 & 0.50 & 22 \\
+Other                      & 0.84 & 0.79 & 0.82 & 344 \\
+Project Management         & 0.73 & 0.77 & 0.75 & 39 \\
+Purchasing                 & 0.44 & 0.80 & 0.57 & 15 \\
+Sales                      & 0.93 & 0.54 & 0.68 & 46 \\
+\hline
+\textbf{Accuracy} & \multicolumn{3}{c}{0.698} & 623 \\
+\textbf{Macro F1} & \multicolumn{3}{c}{0.601} & \\
+\hline
+\end{tabular}
+\caption{Embedding-based department classification – out-of-distribution evaluation (ACTIVE jobs) using \texttt{intfloat/multilingual-e5-base}}
+\label{tab:department_embedding_final}
+\end{table}
+
+\subsubsection{Comparison of all embedding-based models}
+
+Table~\ref{tab:embedding_full_comparison} summarizes the evaluation results of all embedding-based models for the \emph{Seniority} and \emph{Department} tasks. The starting point in each case is a baseline model with the pre-trained Sentence Transformer \texttt{all-MiniLM-L6-v2}. Building on this, synthetic data, oversampling of label descriptions, and more powerful
+pre-trained embedding models are successively integrated. 
+
+Compared to the respective baseline models, both tasks show significant performance gains through the gradual expansion of the approach. The integration of synthetic data alone already improves the results noticeably, especially for previously underrepresented classes, while oversampling alone achieves only minor additional effects.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lcc}
+\hline
+\textbf{Model / Target (ACTIVE Jobs)} & \textbf{Accuracy} & \textbf{Macro F1} \\
+\hline
+Seniority – Baseline (MiniLM)            & 0.409 & 0.350 \\
+Seniority – with Synthetic Data          & 0.478 & 0.409 \\
+Seniority – + Oversampling               & 0.474 & 0.405 \\
+Seniority – + MPNet                      & 0.528 & 0.453 \\
+Seniority – + DistilUSE                  & 0.502 & 0.398 \\
+Seniority – + E5                         & 0.576 & 0.483 \\
+\textbf{Seniority – + BGE-M3}                     & \textbf{0.600} & \textbf{0.527} \\
+\hline
+Department – Baseline (MiniLM)           & 0.315 & 0.315 \\
+Department – with Synthetic Data         & 0.496 & 0.440 \\
+Department – + Oversampling              & 0.502 & 0.446 \\
+Department – + MPNet                     & 0.623 & 0.512 \\
+Department – + DistilUSE                 & 0.661 & 0.546 \\
+\textbf{Department – + E5}                        & \textbf{0.698} & \textbf{0.601} \\
+Department – + BGE-M3                    & 0.695 & 0.545 \\
+\hline
+\end{tabular}
+\caption{Comparison of all embedding-based models for seniority and department classification on real CV data (ACTIVE jobs).}
+\label{tab:embedding_full_comparison}
+\end{table}
+
+\section{Conclusion}
+
+Table~\ref{tab:overall_model_comparison} summarizes the out-of-distribution results of all approaches on annotated CV data (ACTIVE jobs). Overall, the strongest seniority model is the fine-tuned transformer with synthetic augmentation, while department prediction performs best with the prompt-engineering approach (followed closely by the strongest embedding-based configuration). A central takeaway from the comparison is that in-distribution performance on curated label datasets can be near-perfect, yet transfer to real CV titles is substantially weaker. This highlights a pronounced distribution shift between training-style job titles and production-like LinkedIn data.
+
+The most effective strategy to improve robustness under this shift is synthetic data. For seniority, synthetic augmentation is particularly important because it introduces the otherwise missing but dominant CV label \textit{Professional} into the training signal, directly addressing the largest systematic error source. For department, augmentation primarily improves the handling of the catch-all label \textit{Other}, which dominates CV data but is strongly underrepresented in the original label datasets. In line with this, the models that generalize best are those that combine a strong backbone (fine-tuned transformer or high-quality multilingual embeddings) with synthetic augmentation, whereas models optimized purely on the curated distribution tend to transfer poorly.
+
+Beyond augmentation, oversampling shows mixed benefits: it can help when it increases exposure to minority patterns, but it is not a reliable substitute for fixing label coverage and distribution mismatches. The remaining errors are also structurally plausible given the tasks. Seniority confusions occur mainly between neighboring levels, reflecting the ordinal structure and the fact that many titles do not explicitly encode rank. For department, confusions concentrate around the boundary between \textit{Other} and semantically adjacent categories, most notably \textit{Business Development}.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{llccc}
+\hline
+\textbf{Model} & \textbf{Target} & \textbf{Accuracy} & \textbf{Macro F1} & \textbf{MAE} \\
+\hline
+Rule-based & Department & 0.6026 & 0.4492 & -- \\
+Rule-based & Seniority  & 0.5368 & 0.4262 & -- \\
+\textbf{Prompt-engineered} & \textbf{Department} & \textbf{0.7961} & \textbf{0.7340} & -- \\
+Prompt-engineered & Seniority  & 0.5843 & 0.5402 & -- \\
+Transformer-Fine-Tuned & Seniority & 0.4943 & 0.4756 & 0.7751 \\
+\textbf{Transformer-Fine-Tuned-augmented} & \textbf{Seniority} & \textbf{0.6516} & \textbf{0.5840} & -- \\
+Transformer-Fine-Tuned & Department & 0.2792 & 0.3813 & -- \\
+Transformer-Fine-Tuned-augmented & Department & 0.6886 & 0.6374 & -- \\
+Bag-of-words & Seniority & 0.4366 & 0.4093 & -- \\
+Bag-of-words-augmented & Seniority & 0.6453 & 0.5714 & -- \\
+Bag-of-words & Department & 0.2231 & 0.3382 & -- \\
+Bag-of-words-augmented + oversampling & Department & 0.6854 & 0.6119 & -- \\
+Embedding-based & Seniority & 0.4093 & 0.3504 & -- \\
+Embedding-based-augmented + oversampling & Seniority & 0.6003 & 0.5271 & -- \\
+Embedding-based & Department & 0.3146 & 0.3150 & -- \\
+Embedding-based-augmented + oversampling & Department & 0.6982 & 0.6008 & -- \\
+\hline
+\end{tabular}
+\caption{Overall comparison of all models on annotated CV data (ACTIVE jobs). MAE is reported only for the regression-based seniority setup. Best-performing models per target are highlighted.}
+\label{tab:overall_model_comparison}
+\end{table}
+
+
 
 \section{Limitations and Future Work}
-First, our prompt-engineering setup was only iterated a limited number of times. More systematic prompt iterations could target the most confusing class boundaries directly (e.g., \textit{Business Development} vs.\ \textit{Sales}/\textit{Consulting}, and \textit{Administrative} vs.\ \textit{Other}). This is particularly relevant because \textit{Business Development} was the weakest department class in the prompt evaluation and also remained one of the most difficult categories in the fine-tuned model trained with synthetic data. Improving the prompt in these regions would likely reduce noise in the synthetic labels and therefore improve downstream fine-tuning.
 
-Second, seniority prediction remains strongly constrained by missing or insufficient supervision for the \textit{Professional} label. Even though synthetic augmentation introduces \textit{Professional} examples, the class is still broad and heterogeneous and is a frequent source of confusion on CV data. Future work should therefore prioritize collecting additional high-quality labeled samples for \textit{Professional} (and related borderline cases such as \textit{Professional} vs.\ \textit{Senior}) to stabilize the decision boundary and improve robustness in production-like settings.
+The central limitation is distribution shift. Curated label datasets differ from CV job titles in wording, multilingual noise, and—most importantly—label frequencies. This makes in-distribution test performance an overly optimistic indicator of production robustness.
 
-\clearpage
-\newpage
+A second limitation is class ambiguity. Seniority is ordinal and many titles do not explicitly encode rank, which makes boundaries between adjacent levels inherently fuzzy; \textit{Professional} remains especially hard because it is broad and inconsistently expressed. For department, labels can overlap semantically (e.g., \textit{Sales} vs.\ \textit{Business Development}), and the catch-all label \textit{Other} is intrinsically heterogeneous, leading to systematic confusions.
+
+Third, synthetic augmentation trades coverage for noise: it improves label coverage and better matches CV distributions, but prompt-labeled samples can be imperfect, particularly for the most ambiguous classes. Class imbalance also persists for small categories even with oversampling, limiting stable learning on rare labels.
+
+Future work should prioritize adding richer context beyond job titles (e.g., job descriptions, skills, employer information, and career history signals), and improving synthetic labeling quality via targeted prompt iterations and selective human validation in the most confusing class boundaries.
+
 \section{Dashboard Implementation}
 
 To complement the experimental results, we implemented an interactive dashboard using \texttt{Streamlit}. The dashboard is intended as a lightweight presentation and exploration tool rather than a full reproduction of all experiments, as some approaches require GPU resources or offline training and are therefore not suitable for interactive execution.
@@ -787,7 +1220,9 @@ During the correction of this report, the API key may be expired, as it was crea
 
 All dashboard predictions include a confidence value in the range $[0,1]$, where low values indicate high uncertainty and higher values suggest more reliable predictions. For the rule-based and Bag-of-Words approaches, this score is computed heuristically based on match specificity or model output probabilities, while for prompt engineering it is generated directly by the language model and reflects its own uncertainty assessment. The confidence score is intended as an interpretability aid for demonstration purposes and should not be interpreted as a calibrated probability.
 
-Overall, the dashboard provides an accessible interface to demonstrate the behavior, strengths, and limitations of the different labeling approaches under realistic usage conditions.
+The dashboard can be found here: \url{https://prediction-prototype.streamlit.app/}
+
+
 
 \clearpage
 \newpage
@@ -823,6 +1258,14 @@ However, we also used ChatGPT. These are the specific prompts we used:
   \item \textbf{Prompt 6:} Based on my comments, improve this README (also include the main results at the end as a Markdown table): \texttt{\# Fine-Tuning Models for Seniority and Department Prediction}
   
   \item \textbf{Prompt 7:} Improve this text for our report so it is written in correct English: \dots
+  
+  \item \textbf{Prompt 8:} Here is a list of instructions I want to use for text improvement. Can you help me write them in a more formal way for an academic report?
+  
+  \item \textbf{Prompt 9:}``Rephrase this paragraph to improve clarity and academic tone.''
+  \item \textbf{Prompt 10:}``Format this classification report as a LaTeX table.''
+  \item \textbf{Prompt 11:}``Explain the difference between precision, recall, and F1-score.''
+  \item \textbf{Prompt 12:}``Reformulate this sentence to avoid repetition and improve flow.''
+  \item \textbf{Prompt 13:}``Check this paragraph for grammatical or stylistic issues.''
 \end{itemize}
 
 
