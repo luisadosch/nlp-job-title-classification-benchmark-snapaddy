@@ -46,7 +46,7 @@
 \contentsline {paragraph}{(2) Best Seniority Model with synthetic data and optimized embedding model.}{34}{paragraph*.85}%
 \contentsline {subsubsection}{\numberline {5.6.2}Department: embedding-based approaches and results}{35}{subsubsection.87}%
 \contentsline {paragraph}{(1) Baseline Department model.}{35}{paragraph*.88}%
-\contentsline {paragraph}{(Best Department model with synthetic data, oversampling}{35}{paragraph*.90}%
+\contentsline {paragraph}{(2) Best Department model with synthetic data, oversampling}{35}{paragraph*.90}%
 \contentsline {subsubsection}{\numberline {5.6.3}Comparison of all embedding-based models}{36}{subsubsection.92}%
 \contentsline {section}{\numberline {6}Conclusion}{37}{section.94}%
 \contentsline {section}{\numberline {7}Limitations and Future Work}{38}{section.96}%

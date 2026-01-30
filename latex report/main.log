@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.6.2)  30 JAN 2026 20:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.6.2)  30 JAN 2026 20:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -824,12 +824,7 @@ Overfull \hbox (0.703pt too wide) in paragraph at lines 1008--1009
 [] \T1/PTSans-TLF/b/n/12 (1) Base-line Se-nior-ity Model. \T1/PTSans-TLF/m/n/12 For the first em-bed-ding model, a pre-trained Sen-tence Trans-
  []
 
-[33] [34]
-Overfull \hbox (3.86082pt too wide) in paragraph at lines 1095--1097
-[] \T1/PTSans-TLF/b/n/12 (Best De-part-ment model with syn-thetic data, over-sam-pling \T1/PTSans-TLF/m/n/12 To im-prove the base-line model,
- []
-
-[35] [36] [37]
+[33] [34] [35] [36] [37]
 Overfull \hbox (23.95827pt too wide) in paragraph at lines 1171--1193
  [][] 
  []
@@ -875,7 +870,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  75i,12n,81p,1004b,803s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/paratype/ptmono/PTM55F.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/paratype/ptsans/PTS55F.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/paratype/ptsans/PTS56F.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/paratype/ptsans/PTS75F.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/paratype/ptsans/PTS76F.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on main.pdf (46 pages, 842609 bytes).
+Output written on main.pdf (46 pages, 842604 bytes).
 PDF statistics:
  674 PDF objects out of 1000 (max. 8388607)
  569 compressed objects within 6 object streams
