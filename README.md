@@ -1,4 +1,4 @@
-# Capstone Project – Predicting Career Domain and Seniority from LinkedIn Profiles 
+# Job title classification – Predicting Career Domain and Seniority from LinkedIn Profiles 
 
 This repository contains our capstone project for predicting **seniority** and **department** labels from job titles extracted from LinkedIn-style profiles / CVs.  
 We evaluate multiple approaches (rule-based, classical baselines, prompt engineering, and fine-tuned transformers) with a strict focus on **out-of-distribution (OOD) evaluation** on real CV data.
