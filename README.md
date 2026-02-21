@@ -66,6 +66,7 @@ We evaluate multiple approaches:
 | Embedding-based-augmented + oversampling | Department | 0.6982 | 0.6008 | – |
 
 Notes: Macro F1 is reported for comparability under class imbalance. MAE is only applicable where seniority is treated as regression.
+
 ---
 ## Repository Structure 
 
